@@ -3,138 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aditya Verma - Full Stack Developer & AI Enthusiast. Portfolio showcasing web development projects, technical skills, and professional experience." />
+  <meta name="keywords" content="Aditya Verma, Web Developer, Portfolio, Full Stack Developer, Programming, AI Developer" />
+  <meta name="author" content="Aditya Verma" />
+  <meta property="og:title" content="Aditya Verma | Portfolio" />
+  <meta property="og:description" content="Full Stack Developer & AI Enthusiast showcasing web development projects and technical skills" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#00bcd4" />
   <title>Aditya Verma | Portfolio</title>
+  <link rel="icon" type="image/png" href="coder.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
 </head>
 <body>
-  <div class="background-animation">
+  <div class="background-animation" aria-hidden="true">
     <div class="gradient-overlay"></div>
     <div class="particles"></div>
-</div>
+  </div>
   <header>
     <div class="container">
       <h1>Aditya Verma</h1>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
+          <li><a href="#highlights" class="nav-link">Highlights</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <!-- <li><a href="#testimonials" class="nav-link">Testimonials</a></li> -->
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
   <main class="container">
-    <section id="about" class="fade-in" style="--delay: 0.1s;">
-      <div class="profile-img">
-        <img src="coder.png" alt="Aditya Verma Profile Photo" />
-      </div>
-      <div class="intro">
-        <p id="typed-intro">Hi, I'm Aditya Verma
-          I'm a passionate web developer with a strong interest in building modern, responsive, and user-friendly websites.
-          I love turning ideas into clean, functional web experiences using the latest technologies.
-          Always curious and dedicated, I'm constantly learning and improving to grow as a developer.</p>
-      </div>
-    </section>
-    <section id="statistics" class="fade-in" style="--delay: 0.8s;">
-      <h2 class="section-title">My Journey in Numbers</h2>
-      <div class="stats-container">
-        <div class="stat-card">
-          <div class="stat-number" data-count="50">161</div>
-          <div class="stat-label">Projects Completed</div>
+    <section id="about" class="hero-section fade-in" style="--delay: 0.1s;">
+      <div class="hero-content">
+        <div class="profile-img">
+          <img src="coder.png" alt="Aditya Verma profile photo" loading="lazy" />
         </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="1000">985</div>
-          <div class="stat-label">Coding Hours</div>
+        <div class="hero-text">
+          <h2 class="hero-title">Aditya Verma</h2>
+          <h3 class="hero-subtitle">Full Stack Developer & AI Enthusiast</h3>
+          <p class="intro-description">
+            I'm a passionate web developer with a strong interest in building modern, responsive, and user-friendly websites. I love turning ideas into clean, functional web experiences using the latest technologies. Always curious and dedicated, I'm constantly learning and improving to grow as a developer.
+          </p>
         </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="1000">4+ Years</div>
-          <div class="stat-label">Coding Experience</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="1000">7+</div>
-          <div class="stat-label">Programming Languages</div>
-        </div>
-        <!-- <div class="stat-card">
-          <div class="stat-number" data-count="1000">11+</div>
-          <div class="stat-label">Technologies Explored</div>
-        </div> -->
-        <!-- Add more statistics -->
       </div>
     </section>
-     <!-- Amazing Achievements/Highlights Section START -->
     <section id="highlights" class="fade-in" style="--delay: 0.2s;">
       <h2 class="section-title">Highlights</h2>
-      <div style="display: flex; flex-wrap: wrap; padding-left: 15px;
-    padding-right: 15px; gap: 32px; justify-content: center; align-items: stretch;">
-        <div style="background:#23272f; border-radius:14px; box-shadow:0 2px 12px #00bcd4aa; padding:28px 22px; min-width:220px; flex:1 1 220px; text-align:center;">
-          <i class="devicon-github-original colored" style="font-size:2.2rem;"></i>
-          <h3 style="color:#00bcd4; margin:14px 0 8px; font-size:1.2rem;"> Passionate Developer</h3>
-          <p style="color:#c7c7c7; font-size:1rem;">Started coding at the age of 13, and since then, I've built multiple websites and software projects using many languages.</p>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <i class="devicon-github-original colored" aria-hidden="true"></i>
+          <h3>Passionate Developer</h3>
+          <p>Started coding at the age of 13, and since then, I've built multiple websites and software projects using many languages.</p>
         </div>
-        <div style="background:#23272f; border-radius:14px; box-shadow:0 2px 12px #00bcd4aa; padding:28px 22px; min-width:220px; flex:1 1 220px; text-align:center;">
-          <i class="devicon-python-plain colored" style="font-size:2.2rem;"></i>
-          <h3 style="color:#00bcd4; margin:14px 0 8px; font-size:1.2rem;">Real Projects, Real Learning</h3>
-          <p style="color:#c7c7c7; font-size:1rem;">Created and deployed several personal and academic web projects, exploring everything from front-end design to back-end logic.</p>
+        <div class="highlight-card">
+          <i class="devicon-python-plain colored" aria-hidden="true"></i>
+          <h3>Real Projects, Real Learning</h3>
+          <p>Created and deployed several personal and academic web projects, exploring everything from front-end design to back-end logic.</p>
         </div>
-        <div style="background:#23272f; border-radius:14px; box-shadow:0 2px 12px #00bcd4aa; padding:28px 22px; min-width:220px; flex:1 1 220px; text-align:center;">
-          <i class="devicon-javascript-plain colored" style="font-size:2.2rem;"></i>
-          <h3 style="color:#00bcd4; margin:14px 0 8px; font-size:1.2rem;">1000+ Coding Hours</h3>
-          <p style="color:#c7c7c7; font-size:1rem;">Spent over 1000 hours building, debugging, and deploying real-world web and software projects.</p>
+        <div class="highlight-card">
+          <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+          <h3>1000+ Coding Hours</h3>
+          <p>Spent over 1000 hours building, debugging, and deploying real-world web and software projects.</p>
         </div>
       </div>
     </section>
-    <!-- Amazing Achievements/Highlights Section END -->
-
-    <section id="skills" class="fade-in" style="--delay: 0.3s;">
+    <section id="experience" class="fade-in" style="--delay: 0.3s;">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Web Development Enthusiast</h3>
+            <p class="timeline-date">2021 - Present</p>
+            <p>Started self-learning web development during school. Built multiple personal projects using HTML, CSS, JavaScript, and Python. Continuously exploring modern technologies and frameworks.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Project Creator & Learner</h3>
+            <p class="timeline-date">2022 - Present</p>
+            <p>Created various websites and applications for learning and fun. Focused on making responsive, user-friendly, and real-world web apps. Always experimenting and improving through hands-on work.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>High School Student (Science + CS)</h3>
+            <p class="timeline-date">2024 - 2026</p>
+            <p>Currently studying Physics, Chemistry, Maths, and Computer Science 12th grade. Passionate about both coding and space science, with a goal to pursue a future in tech and AI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="fade-in" style="--delay: 0.4s;">
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card" title="HTML5">
-          <i class="devicon-html5-plain colored"></i>
-          <strong>HTML5</strong>
+        <div class="skill-card" title="HTML5"><i class="devicon-html5-plain colored" aria-hidden="true"></i><strong>HTML5</strong></div>
+        <div class="skill-card" title="CSS3"><i class="devicon-css3-plain colored" aria-hidden="true"></i><strong>CSS3</strong></div>
+        <div class="skill-card" title="JavaScript"><i class="devicon-javascript-plain colored" aria-hidden="true"></i><strong>JavaScript</strong></div>
+        <div class="skill-card" title="Python"><i class="devicon-python-plain colored" aria-hidden="true"></i><strong>Python</strong></div>
+        <div class="skill-card" title="C++"><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i><strong>C++</strong></div>
+        <div class="skill-card" title="C"><i class="devicon-c-plain colored" aria-hidden="true"></i><strong>C</strong></div>
+        <div class="skill-card" title="Java"><i class="devicon-java-plain colored" aria-hidden="true"></i><strong>Java</strong></div>
+        <div class="skill-card" title="AI/ML (Python)"><i class="devicon-python-plain colored" aria-hidden="true"></i><strong>AI/ML</strong></div>
+        <div class="skill-card" title="Git"><i class="devicon-git-plain colored" aria-hidden="true"></i><strong>Git</strong></div>
+      </div>
+    </section>
+    <section id="tech-stack" class="fade-in" style="--delay: 0.5s;">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="tech-stack-container">
+        <div class="tech-category">
+          <h3>Frontend</h3>
+          <div class="skill-bar"><div class="skill-bar-title"><span>HTML/CSS</span><span>95%</span></div><div class="skill-bar-progress"><div class="skill-bar-fill" style="width: 95%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar-title"><span>JavaScript</span><span>90%</span></div><div class="skill-bar-progress"><div class="skill-bar-fill" style="width: 90%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar-title"><span>Java</span><span>52%</span></div><div class="skill-bar-progress"><div class="skill-bar-fill" style="width: 52%"></div></div></div>
         </div>
-        <div class="skill-card" title="CSS3">
-          <i class="devicon-css3-plain colored"></i>
-          <strong>CSS3</strong>
-        </div>
-        <div class="skill-card" title="JavaScript">
-          <i class="devicon-javascript-plain colored"></i>
-          <strong>JavaScript</strong>
-        </div>
-        <div class="skill-card" title="Python">
-          <i class="devicon-python-plain colored"></i>
-          <strong>Python</strong>
-        </div>
-        <div class="skill-card" title="C++">
-          <i class="devicon-cplusplus-plain colored"></i>
-          <strong>C++</strong>
-        </div>
-        <div class="skill-card" title="C">
-          <i class="devicon-c-plain colored"></i>
-          <strong>C</strong>
-        </div>
-        <div class="skill-card" title="Java">
-          <i class="devicon-java-plain colored"></i>
-          <strong>Java</strong>
-        </div>
-        <div class="skill-card" title="AI/ML (Python)">
-          <i class="devicon-python-plain colored"></i>
-          <strong>AI/ML</strong>
-        </div>
-        <div class="skill-card" title="Git">
-          <i class="devicon-git-plain colored"></i>
-          <strong>Git</strong>
+        <div class="tech-category">
+          <h3>Backend</h3>
+          <div class="skill-bar"><div class="skill-bar-title"><span>Python</span><span>88%</span></div><div class="skill-bar-progress"><div class="skill-bar-fill" style="width: 88%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar-title"><span>C/C++</span><span>82%</span></div><div class="skill-bar-progress"><div class="skill-bar-fill" style="width: 82%"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar-title"><span>SQL</span><span>80%</span></div><div class="skill-bar-progress"><div class="skill-bar-fill" style="width: 80%"></div></div></div>
         </div>
       </div>
     </section>
-
-    <section id="projects" class="fade-in " style="--delay: 0.5s;     padding-left: 18px;
-    padding-right: 18px;">
+    <section id="statistics" class="fade-in" style="--delay: 0.6s;">
+      <h2 class="section-title">My Journey in Numbers</h2>
+      <div class="stats-container">
+        <div class="stat-card"><div class="stat-number" data-count="161">161</div><div class="stat-label">Projects Completed</div></div>
+        <div class="stat-card"><div class="stat-number" data-count="985">985</div><div class="stat-label">Coding Hours</div></div>
+        <div class="stat-card"><div class="stat-number" data-count="4">4+ Years</div><div class="stat-label">Coding Experience</div></div>
+        <div class="stat-card"><div class="stat-number" data-count="7">7+</div><div class="stat-label">Programming Languages</div></div>
+      </div>
+    </section>
+    <section id="projects" class="fade-in" style="--delay: 0.7s;">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
         <article class="project-card" tabindex="0" aria-label="Project: Music Website">
@@ -192,141 +197,44 @@
           </div>
         </article>
       </div>
-    </section>   
-    <!-- Experience Timeline Section -->
-<section id="experience" class="fade-in" style="--delay: 0.6s;">
-  <h2 class="section-title">Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3 style="color: #00bcd4;">Web Development Enthusiast</h3>
-        <p style="color: #888;">2021 - Present</p>
-        <p>Started self-learning web development during school. Built multiple personal projects using HTML, CSS, JavaScript, and Python. Continuously exploring modern technologies and frameworks.</p>
+    </section>
+    <section id="blog" class="fade-in" style="--delay: 0.8s;">
+      <h2 class="section-title">Latest Blog Posts</h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg" alt="Web Development" class="blog-image">
+          <div class="blog-content">
+            <span class="blog-date">March 15, 2024</span>
+            <h3 class="blog-title">Modern Web Development Practices</h3>
+            <p class="blog-excerpt">Exploring the latest trends and best practices in modern web development...</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
+        
+        <article class="blog-card">
+          <img src="https://emeritus.org/in/wp-content/uploads/sites/3/2023/01/What-is-machine-learning-Definition-types.jpg.optimal.jpg" alt="Machine Learning" class="blog-image">
+          <div class="blog-content">
+            <span class="blog-date">May 22, 2025</span>
+            <h3 class="blog-title">Getting Started with Machine Learning</h3>
+            <p class="blog-excerpt">A beginner's guide to understanding machine learning concepts...</p>
+            <a href="https://medium.com/@youngcoder45/getting-started-with-machine-learning-be3eead8ae6b" class="read-more">Read More</a>
+          </div>
+        </article>
+        
+        <article class="blog-card">
+          <img src="https://images.pexels.com/photos/11035482/pexels-photo-11035482.jpeg" alt="Coding Tips" class="blog-image">
+          <div class="blog-content">
+            <span class="blog-date">March 5, 2024</span>
+            <h3 class="blog-title">Essential Coding Tips for Developers</h3>
+            <p class="blog-excerpt">Improve your coding skills with these essential tips and tricks...</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3 style="color: #00bcd4;">Project Creator & Learner</h3>
-        <p style="color: #888;">2022 - Present</p>
-        <p>Created various websites and applications for learning and fun. Focused on making responsive, user-friendly, and real-world web apps. Always experimenting and improving through hands-on work.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3 style="color: #00bcd4;">High School Student (Science + CS)</h3>
-        <p style="color: #888;">2024 - 2026</p>
-        <p>Currently studying Physics, Chemistry, Maths, and Computer Science 12th grade. Passionate about both coding and space science, with a goal to pursue a future in tech and AI.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Tech Stack Section -->
-<section id="tech-stack" class="fade-in" style="--delay: 0.7s;">
-  <h2 class="section-title">Tech Stack</h2>
-  <div class="tech-stack-container">
-    <div class="tech-category">
-      <h3>Frontend</h3>
-      <div class="skill-bar">
-        <div class="skill-bar-title">
-          <span>HTML/CSS</span>
-          <span>95%</span>
-        </div>
-        <div class="skill-bar-progress">
-          <div class="skill-bar-fill" style="width: 95%"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar-title">
-          <span>JavaScript</span>
-          <span>90%</span>
-        </div>
-        <div class="skill-bar-progress">
-          <div class="skill-bar-fill" style="width: 90%"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar-title">
-          <span>Java</span>
-          <span>52%</span>
-        </div>
-        <div class="skill-bar-progress">
-          <div class="skill-bar-fill" style="width: 52%"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="tech-category">
-      <h3>Backend</h3>
-      <div class="skill-bar">
-        <div class="skill-bar-title">
-          <span>Python</span>
-          <span>88%</span>
-        </div>
-        <div class="skill-bar-progress">
-          <div class="skill-bar-fill" style="width: 88%"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar-title">
-          <span>C/C++</span>
-          <span>82%</span>
-        </div>
-        <div class="skill-bar-progress">
-          <div class="skill-bar-fill" style="width: 82%"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar-title">
-          <span>SQL</span>
-          <span>80%</span>
-        </div>
-        <div class="skill-bar-progress">
-          <div class="skill-bar-fill" style="width: 80%"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Blog Preview Section -->
-<section id="blog" class="fade-in" style="--delay: 0.8s;">
-  <h2 class="section-title">Latest Blog Posts</h2>
-  <div class="blog-grid">
-    <article class="blog-card">
-      <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg" alt="Web Development" class="blog-image">
-      <div class="blog-content">
-        <span class="blog-date">March 15, 2024</span>
-        <h3 class="blog-title">Modern Web Development Practices</h3>
-        <p class="blog-excerpt">Exploring the latest trends and best practices in modern web development...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </article>
-    
-    <article class="blog-card">
-      <img src="https://emeritus.org/in/wp-content/uploads/sites/3/2023/01/What-is-machine-learning-Definition-types.jpg.optimal.jpg" alt="Machine Learning" class="blog-image">
-      <div class="blog-content">
-        <span class="blog-date">May 22, 2025</span>
-        <h3 class="blog-title">Getting Started with Machine Learning</h3>
-        <p class="blog-excerpt">A beginner's guide to understanding machine learning concepts...</p>
-        <a href="https://medium.com/@youngcoder45/getting-started-with-machine-learning-be3eead8ae6b" class="read-more">Read More</a>
-      </div>
-    </article>
-    
-    <article class="blog-card">
-      <img src="https://images.pexels.com/photos/11035482/pexels-photo-11035482.jpeg" alt="Coding Tips" class="blog-image">
-      <div class="blog-content">
-        <span class="blog-date">March 5, 2024</span>
-        <h3 class="blog-title">Essential Coding Tips for Developers</h3>
-        <p class="blog-excerpt">Improve your coding skills with these essential tips and tricks...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </article>
-  </div>
-</section>
-    <section id="testimonials" class="fade-in" style="--delay: 0.85s;">
+    </section>
+    <section id="testimonials" class="fade-in" style="--delay: 0.9s;">
       <h2 class="section-title">Testimonials</h2>
-      <div class="testimonials-slider" style="max-width:600px;margin:0 auto;position:relative;">
+      <div class="testimonials-slider" role="region" aria-label="Testimonials">
         <div class="testimonial active" style="background:#23272f;padding:32px 28px;border-radius:14px;box-shadow:0 2px 12px #00bcd4aa;text-align:center;transition:opacity 0.5s;">
           <p style="font-size:1.1rem;color:#c7c7c7;">"He helped me fix a major issue on my website and explained everything so clearly. His support was quick and professional!"</p>
           <div style="margin-top:18px;">
@@ -355,15 +263,13 @@
             <span style="font-size:0.95rem;color:#bbb;">Manager, Mc error</span>
           </div>
         </div>
-        <button id="prev-testimonial" aria-label="Previous testimonial" style="position:absolute;left:-40px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:2rem;color:#00bcd4;cursor:pointer;">&#8592;</button>
-        <button id="next-testimonial" aria-label="Next testimonial" style="position:absolute;right:-40px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:2rem;color:#00bcd4;cursor:pointer;">&#8594;</button>
+        <button id="prev-testimonial" aria-label="Previous testimonial">&#8592;</button>
+        <button id="next-testimonial" aria-label="Next testimonial">&#8594;</button>
       </div>
     </section>
-<!-- Place this section just above your #footer section -->
-
-    <section id="contact" class="fade-in" style="--delay: 0.7s;">
+    <section id="contact" class="fade-in" style="--delay: 1.0s;">
       <h2 class="section-title">Contact</h2>
-      <p class="contact-info" style="text-align: center; font-size: 1.1rem; color: #bbb; margin-bottom: 24px;">Feel free to reach out to me through the social links below or send me a message directly.</p>
+      <p class="contact-info">Feel free to reach out to me through the social links below or send me a message directly.</p>
       <div class="social-links" aria-label="Social media links">
         <a href="https://github.com/youngcoder45" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub link">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="28" width="28" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.755-1.333-1.755-1.086-.744.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.335-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 013.003-.404c1.02.005 2.046.137 3.003.403 2.29-1.552 3.295-1.23 3.295-1.23.653 1.653.243 2.873.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .319.192.694.8.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/></svg>
@@ -392,62 +298,26 @@
           </svg>
         </a>
       </div>
-    <form id="contact-form" class="contact-form" novalidate>
-      <label for="name">Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required
-        placeholder="Your full name"
-        autocomplete="name"
-        minlength="2"
-        aria-describedby="name-desc"
-      />
-      <small id="name-desc" style="color:#888; font-size:0.8rem; margin-bottom:12px; display:block;">Minimum 2 characters</small>
-
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="your.email@example.com"
-        autocomplete="email"
-        aria-describedby="email-desc"
-      />
-      <small id="email-desc" style="color:#888; font-size:0.8rem; margin-bottom:12px; display:block;">Your valid email address</small>
-
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="5"
-        required
-        placeholder="Write your message here..."
-        aria-describedby="message-desc"
-        minlength="10"
-      ></textarea>
-      <small id="message-desc" style="color:#888; font-size:0.8rem; margin-bottom:12px; display:block;">Minimum 10 characters</small>
-
-      <button type="submit" class="submit-btn" aria-live="polite" aria-busy="false">Send Message</button>
-    </form>
-    <p id="form-response" role="alert" aria-live="assertive" style="margin-top:15px; text-align:center;"></p>
-  </section>
-
-<!-- Clean Linktree Section -->
-<section class="fade-in" style="--delay: 0.85s; text-align: center; padding: 10px 0;">
-  <a href="https://linktr.ee/youngcoder45" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #00bcd4; color: #121212; padding: 12px 28px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">
-    🌴My Linktree Page
-  </a>
-</section>
-
-<section id="footer" class="fade-in" style="--delay: 0.9s;">
-  <p style="text-align:center; color:#bbb;">&copy; 2025 Aditya Verma. All rights reserved.</p>
-</section>
+      <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" minlength="2" aria-describedby="name-desc" />
+        <small id="name-desc">Minimum 2 characters</small>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email" aria-describedby="email-desc" />
+        <small id="email-desc">Your valid email address</small>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..." aria-describedby="message-desc" minlength="10"></textarea>
+        <small id="message-desc">Minimum 10 characters</small>
+        <button type="submit" class="submit-btn" aria-live="polite" aria-busy="false">Send Message</button>
+      </form>
+      <p id="form-response" role="alert" aria-live="assertive"></p>
+    </section>
   </main>
-
-<script src="main.js"></script>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2025 Aditya Verma. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>

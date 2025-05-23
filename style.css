@@ -1065,3 +1065,200 @@ body.light-mode #theme-toggle:hover {
     max-width: 100%;
   }
 }
+
+/* --- Highlights Section --- */
+.highlights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 15px;
+}
+.highlight-card {
+  background: #23272f;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #00bcd4aa;
+  padding: 28px 22px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.highlight-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px #00bcd4cc;
+}
+.highlight-card i {
+  font-size: 2.2rem;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+.highlight-card h3 {
+  color: #00bcd4;
+  margin: 14px 0 8px;
+  font-size: 1.2rem;
+}
+.highlight-card p {
+  color: #c7c7c7;
+  font-size: 1rem;
+}
+
+/* --- Timeline Date --- */
+.timeline-date {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* --- Accessibility Focus States --- */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid #00bcd4;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #00bcd4;
+}
+
+/* --- Remove inline style dependencies for testimonials nav --- */
+#prev-testimonial, #next-testimonial {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #00bcd4;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.2s;
+}
+#prev-testimonial { left: -40px; }
+#next-testimonial { right: -40px; }
+#prev-testimonial:focus, #next-testimonial:focus {
+  color: #0097a7;
+}
+@media (max-width: 700px) {
+  #prev-testimonial, #next-testimonial {
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    bottom: -40px !important;
+    transform: none !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+/* --- Contact Info --- */
+.contact-info {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 24px;
+}
+
+/* --- Small improvements for form feedback --- */
+#form-response {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* --- Footer --- */
+footer#footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #bbb;
+  background: transparent;
+}
+
+/* --- Ensure all sections have even vertical rhythm --- */
+section {
+  margin-bottom: 40px;
+}
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Responsive for highlights --- */
+@media (max-width: 900px) {
+  .highlights-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .highlight-card {
+    min-width: 0;
+  }
+}
+
+/* --- Hero Section (About) --- */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 100px 0 60px 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1100px;
+}
+.hero-section .profile-img {
+  flex: 0 0 220px;
+  max-width: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 24px #00bcd4aa;
+  border: 3px solid #00bcd4;
+  aspect-ratio: 1 / 1;
+  background: #23272f;
+}
+.hero-section .profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-text {
+  flex: 1 1 350px;
+  text-align: left;
+  max-width: 600px;
+}
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00bcd4;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #00bcd4cc;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.hero-text .intro-description {
+  font-size: 1.15rem;
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
