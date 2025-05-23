@@ -19,27 +19,47 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Contact form validation and submission simulation
+// Contact form validation and Formspree AJAX submission
 const form = document.getElementById('contact-form');
 const responseMsg = document.getElementById('form-response');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   responseMsg.textContent = '';
-  if(!form.checkValidity()) {
+  if (!form.checkValidity()) {
     responseMsg.style.color = '#ff5555';
     responseMsg.textContent = 'Please fill out all fields correctly.';
     return;
   }
-  // Simulate form submission delay
   responseMsg.style.color = '#00e0ff';
   responseMsg.textContent = 'Sending message...';
 
-  setTimeout(() => {
-    responseMsg.style.color = '#55ff55';
-    responseMsg.textContent = 'Thank you for contacting me, I will get back to you soon!';
-    form.reset();
-  }, 1500);
+  const formData = new FormData(form);
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    if (res.ok) {
+      responseMsg.style.color = '#55ff55';
+      responseMsg.textContent = 'Thank you for contacting me, I will get back to you soon!';
+      form.reset();
+    } else {
+      const data = await res.json();
+      responseMsg.style.color = '#ff5555';
+      if (data.errors && data.errors.length > 0) {
+        responseMsg.textContent = data.errors.map(e => e.message).join(', ');
+      } else {
+        responseMsg.textContent = 'Oops! Something went wrong. Please try again later.';
+      }
+    }
+  } catch (error) {
+    responseMsg.style.color = '#ff5555';
+    responseMsg.textContent = 'Network error. Please try again later.';
+  }
 });
 
 // Add this to your existing JavaScript
