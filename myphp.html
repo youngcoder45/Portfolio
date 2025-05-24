@@ -1,510 +1,1064 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Meta tags for character set, viewport, and SEO -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- SEO: Page title -->
-  <title>Aditya Verma | Portfolio | Web Developer & Tech Enthusiast</title>
-  <!-- SEO: Description for search engines -->
-  <meta name="description" content="Aditya Verma's personal portfolio. Web developer, coder, and tech enthusiast. Explore projects, skills, experience, and contact info." />
-  <!-- SEO: Keywords for search engines -->
-  <meta name="keywords" content="Aditya Verma, Portfolio, Web Developer, Programmer, Projects, Blog, Tech Stack, Experience, Contact, India, AI, Coding, JavaScript, Python, HTML, CSS" />
-  <!-- SEO: Author -->
-  <meta name="author" content="Aditya Verma" />
-  <!-- SEO: Robots (allow indexing) -->
-  <meta name="robots" content="index, follow" />
-  <!-- Open Graph for social sharing (Facebook, LinkedIn, etc.) -->
-  <meta property="og:title" content="Aditya Verma | Portfolio" />
-  <meta property="og:description" content="Web developer, coder, and tech enthusiast. Explore my projects, skills, and experience." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://youngcoder45.netlify.app/" /> <!-- Update with your real URL if needed -->
-  <meta property="og:image" content="coder.png" /> <!-- Logo or preview image for social sharing -->
-  <!-- Twitter Card for social sharing -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Aditya Verma | Portfolio" />
-  <meta name="twitter:description" content="Web developer, coder, and tech enthusiast. Explore my projects, skills, and experience." />
-  <meta name="twitter:image" content="coder.png" />
-  <!-- Favicon: Logo in browser tab -->
-  <link rel="icon" type="image/png" href="coder.png" />
-  <!-- Google Fonts for modern typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <!-- Main CSS file for all styles -->
-  <link href="style.css" rel="stylesheet" />
-</head>
-<body>
-  <!-- Animated background with gradient and particles -->
-  <div class="background-animation">
-    <div class="gradient-overlay"></div>
-    <div class="particles"></div>
-  </div>
-
-  <!-- Header with site title and navigation menu -->
-  <header>
-    <div class="container">
-      <h1>Aditya Verma</h1>
-      <nav>
-        <ul>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+  <head>
+    <!-- Meta tags for character set, viewport, and SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO: Page title -->
+    <title>Aditya Verma | Portfolio | Web Developer & Tech Enthusiast</title>
+    <!-- SEO: Description for search engines -->
+    <meta
+      name="description"
+      content="Aditya Verma's personal portfolio. Web developer, coder, and tech enthusiast. Explore projects, skills, experience, and contact info."
+    />
+    <!-- SEO: Keywords for search engines -->
+    <meta
+      name="keywords"
+      content="Aditya Verma, Portfolio, Web Developer, Programmer, Projects, Blog, Tech Stack, Experience, Contact, India, AI, Coding, JavaScript, Python, HTML, CSS"
+    />
+    <!-- SEO: Author -->
+    <meta name="author" content="Aditya Verma" />
+    <!-- SEO: Robots (allow indexing) -->
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph for social sharing (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Aditya Verma | Portfolio" />
+    <meta
+      property="og:description"
+      content="Web developer, coder, and tech enthusiast. Explore my projects, skills, and experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://youngcoder45.netlify.app/" />
+    <!-- Update with your real URL if needed -->
+    <meta property="og:image" content="coder.png" />
+    <!-- Logo or preview image for social sharing -->
+    <!-- Twitter Card for social sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aditya Verma | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Web developer, coder, and tech enthusiast. Explore my projects, skills, and experience."
+    />
+    <meta name="twitter:image" content="coder.png" />
+    <!-- Favicon: Logo in browser tab -->
+    <link rel="icon" type="image/png" href="coder.png" />
+    <!-- Google Fonts for modern typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS file for all styles -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Animated background with gradient and particles -->
+    <div class="background-animation">
+      <div class="gradient-overlay"></div>
+      <div class="particles"></div>
     </div>
-  </header>
 
-  <!-- Main content container -->
-  <main class="container">
-    <!-- About Section: Profile image and introduction -->
-    <section id="about" class="fade-in" style="--delay: 0.1s;">
-      <div class="about-card" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; background: rgba(35,39,47,0.92); border-radius: 24px; box-shadow: 0 8px 32px 0 rgba(0,188,212,0.13); padding: 40px 32px; max-width: 900px; margin: 0 auto;">
-        <!-- Profile Image -->
-        <div class="profile-img" style="flex: 0 0 180px; max-width: 180px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 18px #00bcd4aa; border: 4px solid #00bcd4; background: #181c24; display: flex; align-items: center; justify-content: center;">
-          <img src="coder.png" alt="Aditya Verma Profile Photo" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-        <!-- Main About Content -->
-        <div class="about-content" style="flex: 1 1 320px; min-width: 260px;">
-          <!-- Name and Title -->
-          <h2 style="font-size: 2.2rem; color: #ff0364; font-weight: 700; margin-bottom: 8px; letter-spacing: 1px;">Aditya Verma</h2>
-          <h3 style="font-size: 1.2rem; color: #05ff11; font-weight: 500; margin-bottom: 18px;">Web Developer &amp; Tech Enthusiast</h3>
-          <!-- Animated Intro (typing effect) -->
-          <p id="typed-intro" style="font-size: 1.08rem; color: #e0e0e0; margin-bottom: 22px; min-height: 48px;">Hi, I'm Aditya Verma...</p>
-          <!-- Quick Info Badges -->
-          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px;">
-            <span style="background: #223c3f; color: #00ccff; border-radius: 16px; padding: 6px 16px; font-size: 0.98rem; font-weight: 600; display: flex; align-items: center; gap: 6px;">
-              <svg width="18" height="18" fill="currentColor" style="vertical-align: middle;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              India
-            </span>
-            <span style="background: #23272f; color: #00bcd4; border-radius: 16px; padding: 6px 16px; font-size: 0.98rem; font-weight: 600; display: flex; align-items: center; gap: 6px;">
-              <svg width="18" height="18" fill="currentColor" style="vertical-align: middle;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-              Student
-            </span>
-            <span style="background: #23272f; color: #00bcd4; border-radius: 16px; padding: 6px 16px; font-size: 0.98rem; font-weight: 600; display: flex; align-items: center; gap: 6px;">
-              <svg width="18" height="18" fill="currentColor" style="vertical-align: middle;"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-              Exploring AI &amp; Web
-            </span>
-            <span style="background: #23272f; color: #00bcd4; border-radius: 16px; padding: 6px 16px; font-size: 0.98rem; font-weight: 600; display: flex; align-items: center; gap: 6px;">
-              <svg width="18" height="18" fill="currentColor" style="vertical-align: middle;"><path d="M19 3H5c-1.1 0-2 .9-2 2v14l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
-              Loves Open Source
-            </span>
-          </div>
-          <!-- Short Description -->
-          <p style="color: #b0b0b0; font-size: 1rem; line-height: 1.6;">
-          </p>
-        </div>
+    <!-- Header with site title and navigation menu -->
+    <header>
+      <div class="container">
+        <h1>Aditya Verma</h1>
+        <nav>
+          <ul>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- Statistics Section: Quick stats about your journey -->
-    <section id="statistics" class="fade-in" style="--delay: 0.8s;">
-      <h2 class="section-title">My Journey in Numbers</h2>
-      <div class="stats-container">
-        <div class="stat-card">
-          <div class="stat-number" data-count="50">161</div>
-          <div class="stat-label">Projects Completed</div>
+    <!-- Main content container -->
+    <main class="container">
+      <!-- About Section: Profile image and introduction -->
+      <section id="about" class="fade-in" style="--delay: 0.1s">
+        <div
+          class="about-card"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            background: rgba(35, 39, 47, 0.92);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(0, 188, 212, 0.13);
+            padding: 40px 32px;
+            max-width: 900px;
+            margin: 0 auto;
+          "
+        >
+          <!-- Profile Image -->
+          <div
+            class="profile-img"
+            style="
+              flex: 0 0 180px;
+              max-width: 180px;
+              border-radius: 50%;
+              overflow: hidden;
+              box-shadow: 0 0 18px #00bcd4aa;
+              border: 4px solid #00bcd4;
+              background: #181c24;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <img
+              src="coder.png"
+              alt="Aditya Verma Profile Photo"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+              "
+            />
+          </div>
+          <!-- Main About Content -->
+          <div class="about-content" style="flex: 1 1 320px; min-width: 260px">
+            <!-- Name and Title -->
+            <h2
+              style="
+                font-size: 2.2rem;
+                color: #ff0364;
+                font-weight: 700;
+                margin-bottom: 8px;
+                letter-spacing: 1px;
+              "
+            >
+              Aditya Verma
+            </h2>
+            <h3
+              style="
+                font-size: 1.2rem;
+                color: #05ff11;
+                font-weight: 500;
+                margin-bottom: 18px;
+              "
+            >
+              Web Developer &amp; Tech Enthusiast
+            </h3>
+            <!-- Animated Intro (typing effect) -->
+            <p
+              id="typed-intro"
+              style="
+                font-size: 1.08rem;
+                color: #e0e0e0;
+                margin-bottom: 22px;
+                min-height: 48px;
+              "
+            >
+              Hi, I'm Aditya Verma...
+            </p>
+            <!-- Quick Info Badges -->
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-bottom: 18px;
+              "
+            >
+              <span
+                style="
+                  background: #223c3f;
+                  color: #00ccff;
+                  border-radius: 16px;
+                  padding: 6px 16px;
+                  font-size: 0.98rem;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  gap: 6px;
+                "
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                India
+              </span>
+              <span
+                style="
+                  background: #23272f;
+                  color: #00bcd4;
+                  border-radius: 16px;
+                  padding: 6px 16px;
+                  font-size: 0.98rem;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  gap: 6px;
+                "
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+                Student
+              </span>
+              <span
+                style="
+                  background: #23272f;
+                  color: #00bcd4;
+                  border-radius: 16px;
+                  padding: 6px 16px;
+                  font-size: 0.98rem;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  gap: 6px;
+                "
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+                  />
+                </svg>
+                Exploring AI &amp; Web
+              </span>
+              <span
+                style="
+                  background: #23272f;
+                  color: #00bcd4;
+                  border-radius: 16px;
+                  padding: 6px 16px;
+                  font-size: 0.98rem;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  gap: 6px;
+                "
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                Loves Open Source
+              </span>
+            </div>
+            <!-- Short Description -->
+            <p style="color: #b0b0b0; font-size: 1rem; line-height: 1.6"></p>
+          </div>
         </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="1000">985</div>
-          <div class="stat-label">Coding Hours</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="1000">4+ Years</div>
-          <div class="stat-label">Coding Experience</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="1000">7+</div>
-          <div class="stat-label">Programming Languages</div>
-        </div>
-        <!-- You can add more statistics here if needed -->
-      </div>
-    </section>
+      </section>
 
-    <!-- Highlights Section: Achievements and highlights -->
-    <section id="highlights" class="fade-in" style="--delay: 0.2s;">
-      <h2 class="section-title">Highlights</h2>
-      <div style="display: flex; flex-wrap: wrap; padding-left: 15px; padding-right: 15px; gap: 32px; justify-content: center; align-items: stretch;">
-        <!-- Highlight Card 1 -->
-        <div style="background:#23272f; border-radius:14px; box-shadow:0 2px 12px #00bcd4aa; padding:28px 22px; min-width:220px; flex:1 1 220px; text-align:center;">
-          <i class="devicon-github-original colored" style="font-size:2.2rem;"></i>
-          <h3 style="color:#00bcd4; margin:14px 0 8px; font-size:1.2rem;"> Passionate Developer</h3>
-          <p style="color:#c7c7c7; font-size:1rem;">Started coding at the age of 13, and since then, I've built multiple websites and software projects using many languages.</p>
+      <!-- Statistics Section: Quick stats about your journey -->
+      <section id="statistics" class="fade-in" style="--delay: 0.8s">
+        <h2 class="section-title">My Journey in Numbers</h2>
+        <div class="stats-container">
+          <div class="stat-card">
+            <div class="stat-number" data-count="50">161</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="1000">985</div>
+            <div class="stat-label">Coding Hours</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="1000">4+ Years</div>
+            <div class="stat-label">Coding Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="1000">7+</div>
+            <div class="stat-label">Programming Languages</div>
+          </div>
+          <!-- You can add more statistics here if needed -->
         </div>
-        <!-- Highlight Card 2 -->
-        <div style="background:#23272f; border-radius:14px; box-shadow:0 2px 12px #00bcd4aa; padding:28px 22px; min-width:220px; flex:1 1 220px; text-align:center;">
-          <i class="devicon-python-plain colored" style="font-size:2.2rem;"></i>
-          <h3 style="color:#00bcd4; margin:14px 0 8px; font-size:1.2rem;">Real Projects, Real Learning</h3>
-          <p style="color:#c7c7c7; font-size:1rem;">Created and deployed several personal and academic web projects, exploring everything from front-end design to back-end logic.</p>
-        </div>
-        <!-- Highlight Card 3 -->
-        <div style="background:#23272f; border-radius:14px; box-shadow:0 2px 12px #00bcd4aa; padding:28px 22px; min-width:220px; flex:1 1 220px; text-align:center;">
-          <i class="devicon-javascript-plain colored" style="font-size:2.2rem;"></i>
-          <h3 style="color:#00bcd4; margin:14px 0 8px; font-size:1.2rem;">1000+ Coding Hours</h3>
-          <p style="color:#c7c7c7; font-size:1rem;">Spent over 1000 hours building, debugging, and deploying real-world web and software projects.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section: List of programming and tech skills -->
-    <section id="skills" class="fade-in" style="--delay: 0.3s;">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <!-- Each skill card represents a technology or language -->
-        <div class="skill-card" title="HTML5">
-          <i class="devicon-html5-plain colored"></i>
-          <strong>HTML5</strong>
+      <!-- Highlights Section: Achievements and highlights -->
+      <section id="highlights" class="fade-in" style="--delay: 0.2s">
+        <h2 class="section-title">Highlights</h2>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 15px;
+            padding-right: 15px;
+            gap: 32px;
+            justify-content: center;
+            align-items: stretch;
+          "
+        >
+          <!-- Highlight Card 1 -->
+          <div
+            style="
+              background: #23272f;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #00bcd4aa;
+              padding: 28px 22px;
+              min-width: 220px;
+              flex: 1 1 220px;
+              text-align: center;
+            "
+          >
+            <i
+              class="devicon-github-original colored"
+              style="font-size: 2.2rem"
+            ></i>
+            <h3 style="color: #00bcd4; margin: 14px 0 8px; font-size: 1.2rem">
+              Passionate Developer
+            </h3>
+            <p style="color: #c7c7c7; font-size: 1rem">
+              Started coding at the age of 13, and since then, I've built
+              multiple websites and software projects using many languages.
+            </p>
+          </div>
+          <!-- Highlight Card 2 -->
+          <div
+            style="
+              background: #23272f;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #00bcd4aa;
+              padding: 28px 22px;
+              min-width: 220px;
+              flex: 1 1 220px;
+              text-align: center;
+            "
+          >
+            <i
+              class="devicon-python-plain colored"
+              style="font-size: 2.2rem"
+            ></i>
+            <h3 style="color: #00bcd4; margin: 14px 0 8px; font-size: 1.2rem">
+              Real Projects, Real Learning
+            </h3>
+            <p style="color: #c7c7c7; font-size: 1rem">
+              Created and deployed several personal and academic web projects,
+              exploring everything from front-end design to back-end logic.
+            </p>
+          </div>
+          <!-- Highlight Card 3 -->
+          <div
+            style="
+              background: #23272f;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #00bcd4aa;
+              padding: 28px 22px;
+              min-width: 220px;
+              flex: 1 1 220px;
+              text-align: center;
+            "
+          >
+            <i
+              class="devicon-javascript-plain colored"
+              style="font-size: 2.2rem"
+            ></i>
+            <h3 style="color: #00bcd4; margin: 14px 0 8px; font-size: 1.2rem">
+              1000+ Coding Hours
+            </h3>
+            <p style="color: #c7c7c7; font-size: 1rem">
+              Spent over 1000 hours building, debugging, and deploying
+              real-world web and software projects.
+            </p>
+          </div>
         </div>
-        <div class="skill-card" title="CSS3">
-          <i class="devicon-css3-plain colored"></i>
-          <strong>CSS3</strong>
-        </div>
-        <div class="skill-card" title="JavaScript">
-          <i class="devicon-javascript-plain colored"></i>
-          <strong>JavaScript</strong>
-        </div>
-        <div class="skill-card" title="Python">
-          <i class="devicon-python-plain colored"></i>
-          <strong>Python</strong>
-        </div>
-        <div class="skill-card" title="C++">
-          <i class="devicon-cplusplus-plain colored"></i>
-          <strong>C++</strong>
-        </div>
-        <div class="skill-card" title="C">
-          <i class="devicon-c-plain colored"></i>
-          <strong>C</strong>
-        </div>
-        <div class="skill-card" title="Java">
-          <i class="devicon-java-plain colored"></i>
-          <strong>Java</strong>
-        </div>
-        <div class="skill-card" title="AI/ML (Python)">
-          <i class="devicon-python-plain colored"></i>
-          <strong>AI/ML</strong>
-        </div>
-        <div class="skill-card" title="Git">
-          <i class="devicon-git-plain colored"></i>
-          <strong>Git</strong>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects Section: Showcase of your projects -->
-    <section id="projects" class="fade-in" style="--delay: 0.5s; padding-left: 18px; padding-right: 18px;">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <!-- Each project card represents a project -->
-        <article class="project-card" tabindex="0" aria-label="Project: Music Website">
-          <img class="project-img" src="https://moises.ai/_next/image/?url=https%3A%2F%2Fstorage.googleapis.com%2Fmoises-cms%2Fhow_to_reading_sheet_music_image_338d99b137%2Fhow_to_reading_sheet_music_image_338d99b137.jpg&w=1920&q=75" alt="Music Website Screenshot" />
-          <div class="project-content">
-            <h3 class="project-title">Music Website</h3>
-            <p class="project-description">A music website showcasing various artists and their works.</p>
-            <div class="project-links">
-              <a href="https://github.com/youngcoder45/MC_Error.me" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+      <!-- Skills Section: List of programming and tech skills -->
+      <section id="skills" class="fade-in" style="--delay: 0.3s">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <!-- Each skill card represents a technology or language -->
+          <div class="skill-card" title="HTML5">
+            <i class="devicon-html5-plain colored"></i>
+            <strong>HTML5</strong>
           </div>
-        </article>
-        <!-- Add more project cards below as needed -->
-        <article class="project-card" tabindex="0" aria-label="Project: ATM Simulator Game">
-          <img class="project-img" src="https://images.pexels.com/photos/5699385/pexels-photo-5699385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ATM Simulator Game Screenshot" />
-          <div class="project-content">
-            <h3 class="project-title">ATM Simulator Game</h3>
-            <p class="project-description">A simple ATM simulator game built in Python.</p>
-            <div class="project-links">
-              <a href="https://github.com/youngcoder45/Atm-Simulator-Game" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+          <div class="skill-card" title="CSS3">
+            <i class="devicon-css3-plain colored"></i>
+            <strong>CSS3</strong>
           </div>
-        </article>
-        <article class="project-card" tabindex="0" aria-label="Project: Flappy Bird">
-          <img class="project-img" src="https://i.ytimg.com/vi/HzvpOtyJYGs/maxresdefault.jpg" alt="Flappy Bird Screenshot" />
-          <div class="project-content">
-            <h3 class="project-title">Flappy Bird</h3>
-            <p class="project-description">A clone of the popular Flappy Bird game.</p>
-            <div class="project-links">
-              <a href="https://github.com/youngcoder45/Flapp-Bird-by-Youngcoder45" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+          <div class="skill-card" title="JavaScript">
+            <i class="devicon-javascript-plain colored"></i>
+            <strong>JavaScript</strong>
           </div>
-        </article>
-        <article class="project-card" tabindex="0" aria-label="Project: Piano Tiles Game">
-          <img class="project-img" src="https://images.pexels.com/photos/17190964/pexels-photo-17190964/free-photo-of-woman-hand-on-piano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Piano Tiles Game Screenshot" />
-          <div class="project-content">
-            <h3 class="project-title">Piano Tiles Game</h3>
-            <p class="project-description">A fun piano tiles game built in Python.</p>
-            <div class="project-links">
-              <a href="https://github.com/youngcoder45/PianoTilesGameInPython" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+          <div class="skill-card" title="Python">
+            <i class="devicon-python-plain colored"></i>
+            <strong>Python</strong>
           </div>
-        </article>
-        <article class="project-card" tabindex="0" aria-label="Project: Super Mario Game">
-          <img class="project-img" src="https://images.pexels.com/photos/163077/mario-yoschi-figures-funny-163077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Super Mario Game Screenshot" />
-          <div class="project-content">
-            <h3 class="project-title">Super Mario Game</h3>
-            <p class="project-description">A classic Super Mario Bros game built in Python.</p>
-            <div class="project-links">
-              <a href="https://github.com/youngcoder45/Super-Mario-Game" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+          <div class="skill-card" title="C++">
+            <i class="devicon-cplusplus-plain colored"></i>
+            <strong>C++</strong>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Experience Timeline Section: Your journey and roles -->
-    <section id="experience" class="fade-in" style="--delay: 0.6s;">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
-        <!-- Each timeline item is a role or period -->
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3 style="color: #00bcd4;">Web Development Enthusiast</h3>
-            <p style="color: #888;">2021 - Present</p>
-            <p>Started self-learning web development during school. Built multiple personal projects using HTML, CSS, JavaScript, and Python. Continuously exploring modern technologies and frameworks.</p>
+          <div class="skill-card" title="C">
+            <i class="devicon-c-plain colored"></i>
+            <strong>C</strong>
+          </div>
+          <div class="skill-card" title="Java">
+            <i class="devicon-java-plain colored"></i>
+            <strong>Java</strong>
+          </div>
+          <div class="skill-card" title="AI/ML (Python)">
+            <i class="devicon-python-plain colored"></i>
+            <strong>AI/ML</strong>
+          </div>
+          <div class="skill-card" title="Git">
+            <i class="devicon-git-plain colored"></i>
+            <strong>Git</strong>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3 style="color: #00bcd4;">Project Creator & Learner</h3>
-            <p style="color: #888;">2022 - Present</p>
-            <p>Created various websites and applications for learning and fun. Focused on making responsive, user-friendly, and real-world web apps. Always experimenting and improving through hands-on work.</p>
+      </section>
+
+      <!-- Projects Section: Showcase of your projects -->
+      <section
+        id="projects"
+        class="fade-in"
+        style="--delay: 0.5s; padding-left: 18px; padding-right: 18px"
+      >
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <!-- Each project card represents a project -->
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-label="Project: Music Website"
+          >
+            <img
+              class="project-img"
+              src="https://moises.ai/_next/image/?url=https%3A%2F%2Fstorage.googleapis.com%2Fmoises-cms%2Fhow_to_reading_sheet_music_image_338d99b137%2Fhow_to_reading_sheet_music_image_338d99b137.jpg&w=1920&q=75"
+              alt="Music Website Screenshot"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Music Website</h3>
+              <p class="project-description">
+                A music website showcasing various artists and their works.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/youngcoder45/MC_Error.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- Add more project cards below as needed -->
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-label="Project: ATM Simulator Game"
+          >
+            <img
+              class="project-img"
+              src="https://images.pexels.com/photos/5699385/pexels-photo-5699385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="ATM Simulator Game Screenshot"
+            />
+            <div class="project-content">
+              <h3 class="project-title">ATM Simulator Game</h3>
+              <p class="project-description">
+                A simple ATM simulator game built in Python.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/youngcoder45/Atm-Simulator-Game"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-label="Project: Flappy Bird"
+          >
+            <img
+              class="project-img"
+              src="https://i.ytimg.com/vi/HzvpOtyJYGs/maxresdefault.jpg"
+              alt="Flappy Bird Screenshot"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Flappy Bird</h3>
+              <p class="project-description">
+                A clone of the popular Flappy Bird game.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/youngcoder45/Flapp-Bird-by-Youngcoder45"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-label="Project: Piano Tiles Game"
+          >
+            <img
+              class="project-img"
+              src="https://images.pexels.com/photos/17190964/pexels-photo-17190964/free-photo-of-woman-hand-on-piano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Piano Tiles Game Screenshot"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Piano Tiles Game</h3>
+              <p class="project-description">
+                A fun piano tiles game built in Python.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/youngcoder45/PianoTilesGameInPython"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-label="Project: Super Mario Game"
+          >
+            <img
+              class="project-img"
+              src="https://images.pexels.com/photos/163077/mario-yoschi-figures-funny-163077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Super Mario Game Screenshot"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Super Mario Game</h3>
+              <p class="project-description">
+                A classic Super Mario Bros game built in Python.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/youngcoder45/Super-Mario-Game"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience Timeline Section: Your journey and roles -->
+      <section id="experience" class="fade-in" style="--delay: 0.6s">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <!-- Each timeline item is a role or period -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3 style="color: #00bcd4">Web Development Enthusiast</h3>
+              <p style="color: #888">2021 - Present</p>
+              <p>
+                Started self-learning web development during school. Built
+                multiple personal projects using HTML, CSS, JavaScript, and
+                Python. Continuously exploring modern technologies and
+                frameworks.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3 style="color: #00bcd4">Project Creator & Learner</h3>
+              <p style="color: #888">2022 - Present</p>
+              <p>
+                Created various websites and applications for learning and fun.
+                Focused on making responsive, user-friendly, and real-world web
+                apps. Always experimenting and improving through hands-on work.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3 style="color: #00bcd4">High School Student (Science + CS)</h3>
+              <p style="color: #888">2024 - 2026</p>
+              <p>
+                Currently studying Physics, Chemistry, Maths, and Computer
+                Science 12th grade. Passionate about both coding and space
+                science, with a goal to pursue a future in tech and AI.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3 style="color: #00bcd4;">High School Student (Science + CS)</h3>
-            <p style="color: #888;">2024 - 2026</p>
-            <p>Currently studying Physics, Chemistry, Maths, and Computer Science 12th grade. Passionate about both coding and space science, with a goal to pursue a future in tech and AI.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Tech Stack Section: Visual skill bars for technologies -->
-    <section id="tech-stack" class="fade-in" style="--delay: 0.7s;">
-      <h2 class="section-title">Tech Stack</h2>
-      <div class="tech-stack-container">
-        <!-- Frontend skills -->
-        <div class="tech-category">
-          <h3>Frontend</h3>
-          <div class="skill-bar">
-            <div class="skill-bar-title">
-              <span>HTML/CSS</span>
-              <span>95%</span>
+      <!-- Tech Stack Section: Visual skill bars for technologies -->
+      <section id="tech-stack" class="fade-in" style="--delay: 0.7s">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="tech-stack-container">
+          <!-- Frontend skills -->
+          <div class="tech-category">
+            <h3>Frontend</h3>
+            <div class="skill-bar">
+              <div class="skill-bar-title">
+                <span>HTML/CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar-progress">
+                <div class="skill-bar-fill" style="width: 95%"></div>
+              </div>
             </div>
-            <div class="skill-bar-progress">
-              <div class="skill-bar-fill" style="width: 95%"></div>
+            <div class="skill-bar">
+              <div class="skill-bar-title">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-progress">
+                <div class="skill-bar-fill" style="width: 90%"></div>
+              </div>
             </div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-title">
-              <span>JavaScript</span>
-              <span>90%</span>
-            </div>
-            <div class="skill-bar-progress">
-              <div class="skill-bar-fill" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-title">
-              <span>Java</span>
-              <span>52%</span>
-            </div>
-            <div class="skill-bar-progress">
-              <div class="skill-bar-fill" style="width: 52%"></div>
-            </div>
-          </div>
-        </div>
-        <!-- Backend skills -->
-        <div class="tech-category">
-          <h3>Backend</h3>
-          <div class="skill-bar">
-            <div class="skill-bar-title">
-              <span>Python</span>
-              <span>88%</span>
-            </div>
-            <div class="skill-bar-progress">
-              <div class="skill-bar-fill" style="width: 88%"></div>
+            <div class="skill-bar">
+              <div class="skill-bar-title">
+                <span>Java</span>
+                <span>52%</span>
+              </div>
+              <div class="skill-bar-progress">
+                <div class="skill-bar-fill" style="width: 52%"></div>
+              </div>
             </div>
           </div>
-          <div class="skill-bar">
-            <div class="skill-bar-title">
-              <span>C/C++</span>
-              <span>82%</span>
+          <!-- Backend skills -->
+          <div class="tech-category">
+            <h3>Backend</h3>
+            <div class="skill-bar">
+              <div class="skill-bar-title">
+                <span>Python</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar-progress">
+                <div class="skill-bar-fill" style="width: 88%"></div>
+              </div>
             </div>
-            <div class="skill-bar-progress">
-              <div class="skill-bar-fill" style="width: 82%"></div>
+            <div class="skill-bar">
+              <div class="skill-bar-title">
+                <span>C/C++</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-bar-progress">
+                <div class="skill-bar-fill" style="width: 82%"></div>
+              </div>
             </div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-title">
-              <span>SQL</span>
-              <span>80%</span>
-            </div>
-            <div class="skill-bar-progress">
-              <div class="skill-bar-fill" style="width: 80%"></div>
+            <div class="skill-bar">
+              <div class="skill-bar-title">
+                <span>SQL</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-progress">
+                <div class="skill-bar-fill" style="width: 80%"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Blog Preview Section: Latest blog posts -->
-    <section id="blog" class="fade-in" style="--delay: 0.8s;">
-      <h2 class="section-title">Latest Blog Posts</h2>
-      <div class="blog-grid">
-        <!-- Each blog card is a preview of a blog post -->
-        <article class="blog-card">
-          <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg" alt="Web Development" class="blog-image">
-          <div class="blog-content">
-            <span class="blog-date">March 15, 2024</span>
-            <h3 class="blog-title">Modern Web Development Practices</h3>
-            <p class="blog-excerpt">Exploring the latest trends and best practices in modern web development...</p>
-            <a href="#" class="read-more">Read More</a>
-          </div>
-        </article>
-        <article class="blog-card">
-          <img src="https://emeritus.org/in/wp-content/uploads/sites/3/2023/01/What-is-machine-learning-Definition-types.jpg.optimal.jpg" alt="Machine Learning" class="blog-image">
-          <div class="blog-content">
-            <span class="blog-date">May 22, 2025</span>
-            <h3 class="blog-title">Getting Started with Machine Learning</h3>
-            <p class="blog-excerpt">A beginner's guide to understanding machine learning concepts...</p>
-            <a href="https://medium.com/@youngcoder45/getting-started-with-machine-learning-be3eead8ae6b" class="read-more">Read More</a>
-          </div>
-        </article>
-        <article class="blog-card">
-          <img src="https://images.pexels.com/photos/11035482/pexels-photo-11035482.jpeg" alt="Coding Tips" class="blog-image">
-          <div class="blog-content">
-            <span class="blog-date">March 5, 2024</span>
-            <h3 class="blog-title">Essential Coding Tips for Developers</h3>
-            <p class="blog-excerpt">Improve your coding skills with these essential tips and tricks...</p>
-            <a href="#" class="read-more">Read More</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Testimonials Section: Feedback from others -->
-    <section id="testimonials" class="fade-in" style="--delay: 0.85s;">
-      <h2 class="section-title">Testimonials</h2>
-      <div class="testimonials-slider" style="max-width:600px;margin:0 auto;position:relative;">
-        <!-- Each testimonial is a review from a person -->
-        <div class="testimonial active" style="background:#23272f;padding:32px 28px;border-radius:14px;box-shadow:0 2px 12px #00bcd4aa;text-align:center;transition:opacity 0.5s;">
-          <p style="font-size:1.1rem;color:#c7c7c7;">"He helped me fix a major issue on my website and explained everything so clearly. His support was quick and professional!"</p>
-          <div style="margin-top:18px;">
-            <strong style="color:#00bcd4;">Ritesh Vanivdekar</strong><br>
-            <span style="font-size:0.95rem;color:#bbb;">Developer, Freelancer</span>
-          </div>
+      <!-- Blog Preview Section: Latest blog posts -->
+      <section id="blog" class="fade-in" style="--delay: 0.8s">
+        <h2 class="section-title">Latest Blog Posts</h2>
+        <div class="blog-grid">
+          <!-- Each blog card is a preview of a blog post -->
+          <article class="blog-card">
+            <img
+              src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg"
+              alt="Web Development"
+              class="blog-image"
+            />
+            <div class="blog-content">
+              <span class="blog-date">March 15, 2024</span>
+              <h3 class="blog-title">Modern Web Development Practices</h3>
+              <p class="blog-excerpt">
+                Exploring the latest trends and best practices in modern web
+                development...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              src="https://emeritus.org/in/wp-content/uploads/sites/3/2023/01/What-is-machine-learning-Definition-types.jpg.optimal.jpg"
+              alt="Machine Learning"
+              class="blog-image"
+            />
+            <div class="blog-content">
+              <span class="blog-date">May 22, 2025</span>
+              <h3 class="blog-title">Getting Started with Machine Learning</h3>
+              <p class="blog-excerpt">
+                A beginner's guide to understanding machine learning concepts...
+              </p>
+              <a
+                href="https://medium.com/@youngcoder45/getting-started-with-machine-learning-be3eead8ae6b"
+                class="read-more"
+                >Read More</a
+              >
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              src="https://images.pexels.com/photos/11035482/pexels-photo-11035482.jpeg"
+              alt="Coding Tips"
+              class="blog-image"
+            />
+            <div class="blog-content">
+              <span class="blog-date">March 5, 2024</span>
+              <h3 class="blog-title">Essential Coding Tips for Developers</h3>
+              <p class="blog-excerpt">
+                Improve your coding skills with these essential tips and
+                tricks...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
         </div>
-        <div class="testimonial" style="background:#23272f;padding:32px 28px;border-radius:14px;box-shadow:0 2px 12px #00bcd4aa;text-align:center;position:absolute;top:0;left:0;width:100%;opacity:0;pointer-events:none;transition:opacity 0.5s;">
-          <p style="font-size:1.1rem;color:#c7c7c7;">"Aditya's projects are always creative, well-built, and user-friendly. You can see the passion he puts into every detail."</p>
-          <div style="margin-top:18px;">
-            <strong style="color:#00bcd4;">Vibha Gupta</strong><br>
-            <span style="font-size:0.95rem;color:#bbb;">Tech Enthusiast</span>
+      </section>
+
+      <!-- Testimonials Section: Feedback from others -->
+      <section id="testimonials" class="fade-in" style="--delay: 0.85s">
+        <h2 class="section-title">Testimonials</h2>
+        <div
+          class="testimonials-slider"
+          style="max-width: 600px; margin: 0 auto; position: relative"
+        >
+          <!-- Each testimonial is a review from a person -->
+          <div
+            class="testimonial active"
+            style="
+              background: #23272f;
+              padding: 32px 28px;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #00bcd4aa;
+              text-align: center;
+              transition: opacity 0.5s;
+            "
+          >
+            <p style="font-size: 1.1rem; color: #c7c7c7">
+              "He helped me fix a major issue on my website and explained
+              everything so clearly. His support was quick and professional!"
+            </p>
+            <div style="margin-top: 18px">
+              <strong style="color: #00bcd4">Ritesh Vanivdekar</strong><br />
+              <span style="font-size: 0.95rem; color: #bbb"
+                >Developer, Freelancer</span
+              >
+            </div>
           </div>
-        </div>
-        <div class="testimonial" style="background:#23272f;padding:32px 28px;border-radius:14px;box-shadow:0 2px 12px #00bcd4aa;text-align:center;position:absolute;top:0;left:0;width:100%;opacity:0;pointer-events:none;transition:opacity 0.5s;">
-          <p style="font-size:1.1rem;color:#c7c7c7;">"Aditya built our website in 2022 — it's still running strong. Clean, smooth, and exactly what we needed."</p>
-          <div style="margin-top:18px;">
-            <strong style="color:#00bcd4;">Ishant</strong><br>
-            <span style="font-size:0.95rem;color:#bbb;">Singer, Mc error</span>
+          <div
+            class="testimonial"
+            style="
+              background: #23272f;
+              padding: 32px 28px;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #00bcd4aa;
+              text-align: center;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              opacity: 0;
+              pointer-events: none;
+              transition: opacity 0.5s;
+            "
+          >
+            <p style="font-size: 1.1rem; color: #c7c7c7">
+              "Aditya's projects are always creative, well-built, and
+              user-friendly. You can see the passion he puts into every detail."
+            </p>
+            <div style="margin-top: 18px">
+              <strong style="color: #00bcd4">Vibha Gupta</strong><br />
+              <span style="font-size: 0.95rem; color: #bbb"
+                >Tech Enthusiast</span
+              >
+            </div>
           </div>
-        </div>
-        <div class="testimonial" style="background:#23272f;padding:32px 28px;border-radius:14px;box-shadow:0 2px 12px #00bcd4aa;text-align:center;position:absolute;top:0;left:0;width:100%;opacity:0;pointer-events:none;transition:opacity 0.5s;">
-          <p style="font-size:1.1rem;color:#c7c7c7;">"Great design, smooth performance. Aditya delivered more than expected for our music platform."</p>
-          <div style="margin-top:18px;">
-            <strong style="color:#00bcd4;">Pratik Mane</strong><br>
-            <span style="font-size:0.95rem;color:#bbb;">Manager, Mc error</span>
+          <div
+            class="testimonial"
+            style="
+              background: #23272f;
+              padding: 32px 28px;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #00bcd4aa;
+              text-align: center;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              opacity: 0;
+              pointer-events: none;
+              transition: opacity 0.5s;
+            "
+          >
+            <p style="font-size: 1.1rem; color: #c7c7c7">
+              "Aditya built our website in 2022 — it's still running strong.
+              Clean, smooth, and exactly what we needed."
+            </p>
+            <div style="margin-top: 18px">
+              <strong style="color: #00bcd4">Ishant</strong><br />
+              <span style="font-size: 0.95rem; color: #bbb"
+                >Singer, Mc error</span
+              >
+            </div>
           </div>
+          <div
+            class="testimonial"
+            style="
+              background: #23272f;
+              padding: 32px 28px;
+              border-radius: 14px;
+              box-shadow: 0 2px 12px #00bcd4aa;
+              text-align: center;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              opacity: 0;
+              pointer-events: none;
+              transition: opacity 0.5s;
+            "
+          >
+            <p style="font-size: 1.1rem; color: #c7c7c7">
+              "Great design, smooth performance. Aditya delivered more than
+              expected for our music platform."
+            </p>
+            <div style="margin-top: 18px">
+              <strong style="color: #00bcd4">Pratik Mane</strong><br />
+              <span style="font-size: 0.95rem; color: #bbb"
+                >Manager, Mc error</span
+              >
+            </div>
+          </div>
+          <!-- Testimonial navigation buttons -->
+          <button
+            id="prev-testimonial"
+            aria-label="Previous testimonial"
+            style="
+              position: absolute;
+              left: -40px;
+              top: 50%;
+              transform: translateY(-50%);
+              background: none;
+              border: none;
+              font-size: 2rem;
+              color: #00bcd4;
+              cursor: pointer;
+            "
+          >
+            &#8592;
+          </button>
+          <button
+            id="next-testimonial"
+            aria-label="Next testimonial"
+            style="
+              position: absolute;
+              right: -40px;
+              top: 50%;
+              transform: translateY(-50%);
+              background: none;
+              border: none;
+              font-size: 2rem;
+              color: #00bcd4;
+              cursor: pointer;
+            "
+          >
+            &#8594;
+          </button>
         </div>
-        <!-- Testimonial navigation buttons -->
-        <button id="prev-testimonial" aria-label="Previous testimonial" style="position:absolute;left:-40px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:2rem;color:#00bcd4;cursor:pointer;">&#8592;</button>
-        <button id="next-testimonial" aria-label="Next testimonial" style="position:absolute;right:-40px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:2rem;color:#00bcd4;cursor:pointer;">&#8594;</button>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section: Social links and contact form -->
-    <section id="contact" class="fade-in" style="--delay: 0.7s;">
-      <h2 class="section-title">Contact</h2>
-      <p class="contact-info" style="text-align: center; font-size: 1.1rem; color: #bbb; margin-bottom: 24px;">Feel free to reach out to me through the social links below or send me a message directly.</p>
-      <!-- Social media links for easy contact -->
-      <div class="social-links" aria-label="Social media links">
-        <!-- ... existing social links ... -->
-        <!-- (GitHub, LinkedIn, Instagram, Twitter, Reddit, Medium, Linktree, etc.) -->
-        <!-- These are SVG icons with links to your profiles -->
-        <!-- ... (icons code unchanged for brevity) ... -->
-      </div>
-      <!-- Contact form powered by Formspree for direct email -->
-      <form id="contact-form" class="contact-form" action="https://formspree.io/f/moqopjar" method="POST" novalidate>
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          placeholder="Your full name"
-          autocomplete="name"
-          minlength="2"
-          aria-describedby="name-desc"
-        />
-        <small id="name-desc" style="color:#888; font-size:0.8rem; margin-bottom:12px; display:block;">Minimum 2 characters</small>
+      <!-- Contact Section: Social links and contact form -->
+      <section id="contact" class="fade-in" style="--delay: 0.7s">
+        <h2 class="section-title">Contact</h2>
+        <p
+          class="contact-info"
+          style="
+            text-align: center;
+            font-size: 1.1rem;
+            color: #bbb;
+            margin-bottom: 24px;
+          "
+        >
+          Feel free to reach out to me through the social links below or send me
+          a message directly.
+        </p>
+        <!-- Social media links for easy contact -->
+        <div class="social-links" aria-label="Social media links">
+          <!-- ... existing social links ... -->
+          <!-- (GitHub, LinkedIn, Instagram, Twitter, Reddit, Medium, Linktree, etc.) -->
+          <!-- These are SVG icons with links to your profiles -->
+          <!-- ... (icons code unchanged for brevity) ... -->
+        </div>
+        <!-- Contact form powered by Formspree for direct email -->
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formspree.io/f/moqopjar"
+          method="POST"
+          novalidate
+        >
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your full name"
+            autocomplete="name"
+            minlength="2"
+            aria-describedby="name-desc"
+          />
+          <small
+            id="name-desc"
+            style="
+              color: #888;
+              font-size: 0.8rem;
+              margin-bottom: 12px;
+              display: block;
+            "
+            >Minimum 2 characters</small
+          >
 
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="your.email@example.com"
-          autocomplete="email"
-          aria-describedby="email-desc"
-        />
-        <small id="email-desc" style="color:#888; font-size:0.8rem; margin-bottom:12px; display:block;">Your valid email address</small>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="your.email@example.com"
+            autocomplete="email"
+            aria-describedby="email-desc"
+          />
+          <small
+            id="email-desc"
+            style="
+              color: #888;
+              font-size: 0.8rem;
+              margin-bottom: 12px;
+              display: block;
+            "
+            >Your valid email address</small
+          >
 
-        <label for="subject">Subject</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          required
-          placeholder="Subject"
-          aria-describedby="subject-desc"
-        />
-        <small id="subject-desc" style="color:#888; font-size:0.8rem; margin-bottom:12px; display:block;">What is your message about?</small>
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="Subject"
+            aria-describedby="subject-desc"
+          />
+          <small
+            id="subject-desc"
+            style="
+              color: #888;
+              font-size: 0.8rem;
+              margin-bottom: 12px;
+              display: block;
+            "
+            >What is your message about?</small
+          >
 
-        <label for="message">Elaborate Your Concern</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          required
-          placeholder="Write your message here..."
-          aria-describedby="message-desc"
-          minlength="10"
-        ></textarea>
-        <small id="message-desc" style="color:#888; font-size:0.8rem; margin-bottom:12px; display:block;">Minimum 10 characters</small>
+          <label for="message">Elaborate Your Concern</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Write your message here..."
+            aria-describedby="message-desc"
+            minlength="10"
+          ></textarea>
+          <small
+            id="message-desc"
+            style="
+              color: #888;
+              font-size: 0.8rem;
+              margin-bottom: 12px;
+              display: block;
+            "
+            >Minimum 10 characters</small
+          >
 
-        <button type="submit" class="submit-btn" aria-live="polite" aria-busy="false">Send Email</button>
-      </form>
-      <!-- This paragraph will show the form response message -->
-      <p id="form-response" role="alert" aria-live="assertive" style="margin-top:15px; text-align:center;"></p>
-    </section>
+          <button
+            type="submit"
+            class="submit-btn"
+            aria-live="polite"
+            aria-busy="false"
+          >
+            Send Email
+          </button>
+        </form>
+        <!-- This paragraph will show the form response message -->
+        <p
+          id="form-response"
+          role="alert"
+          aria-live="assertive"
+          style="margin-top: 15px; text-align: center"
+        ></p>
+      </section>
 
-    <!-- Prominent Linktree button above the footer -->
-    <section class="fade-in" style="--delay: 0.85s; text-align: center; padding: 10px 0;">
-      <a href="https://linktr.ee/youngcoder45" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #00bcd4; color: #121212; padding: 12px 28px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">
-        🌴My Linktree Page
-      </a>
-    </section>
+      <!-- Prominent Linktree button above the footer -->
+      <section
+        class="fade-in"
+        style="--delay: 0.85s; text-align: center; padding: 10px 0"
+      >
+        <a
+          href="https://linktr.ee/youngcoder45"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="
+            display: inline-block;
+            background: #00bcd4;
+            color: #121212;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+          "
+        >
+          🌴My Linktree Page
+        </a>
+      </section>
 
-    <!-- Footer Section: Copyright -->
-    <section id="footer" class="fade-in" style="--delay: 0.9s;">
-      <p style="text-align:center; color:#bbb;">&copy; 2025 Aditya Verma. All rights reserved.</p>
-    </section>
-  </main>
+      <!-- Footer Section: Copyright -->
+      <section id="footer" class="fade-in" style="--delay: 0.9s">
+        <p style="text-align: center; color: #bbb">
+          &copy; 2025 Aditya Verma. All rights reserved.
+        </p>
+      </section>
+    </main>
 
-  <!-- Main JavaScript file for interactivity and effects -->
-  <script src="main.js"></script>
-  <!-- Devicon icons for skill logos -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
-</body>
+    <!-- Main JavaScript file for interactivity and effects -->
+    <script src="main.js"></script>
+    <!-- Devicon icons for skill logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+    />
+  </body>
 </html>
