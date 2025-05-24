@@ -43,11 +43,27 @@
     <link rel="icon" type="image/png" href="coder.png" />
     <!-- Google Fonts for modern typography -->
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <!-- Main CSS file for all styles -->
     <link href="style.css" rel="stylesheet" />
+    <!-- Google Analytics (replace UA-XXXXXXX-X with your ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXX-X');
+    </script>
   </head>
   <body>
     <!-- Animated background with gradient and particles -->
@@ -439,6 +455,7 @@
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
           <!-- Each project card represents a project -->
+          <!-- Optimize images before publishing for best performance -->
           <article
             class="project-card"
             tabindex="0"
@@ -697,7 +714,7 @@
                 Exploring the latest trends and best practices in modern web
                 development...
               </p>
-              <a href="#" class="read-more">Read More</a>
+              <!-- No real post yet -->
             </div>
           </article>
           <article class="blog-card">
@@ -732,7 +749,7 @@
                 Improve your coding skills with these essential tips and
                 tricks...
               </p>
-              <a href="#" class="read-more">Read More</a>
+              <!-- No real post yet -->
             </div>
           </article>
         </div>
@@ -903,7 +920,7 @@
           "
         >
           Feel free to reach out to me through the social links below or send me
-          a message directly.
+          a message directly. You can also <a href="resume.pdf" download>download my resume</a>.
         </p>
         <!-- Social media links for easy contact -->
         <div class="social-links" aria-label="Social media links">
@@ -1049,7 +1066,7 @@
       <!-- Footer Section: Copyright -->
       <section id="footer" class="fade-in" style="--delay: 0.9s">
         <p style="text-align: center; color: #bbb">
-          &copy; 2025 Aditya Verma. All rights reserved.
+          &copy; 2025 Aditya Verma. All rights reserved. | <a href="#" id="privacy-link">Privacy Notice</a>
         </p>
       </section>
     </main>
@@ -1061,5 +1078,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
     />
+    <!-- Privacy Notice Modal -->
+    <div id="privacy-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center;">
+      <div style="background:#23272f;padding:32px 24px;border-radius:16px;max-width:400px;margin:auto;color:#fff;position:relative;">
+        <button onclick="document.getElementById('privacy-modal').style.display='none'" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.5rem;color:#00bcd4;cursor:pointer;">&times;</button>
+        <h3 style="color:#00bcd4;margin-bottom:12px;">Privacy Notice</h3>
+        <p style="font-size:1rem;line-height:1.6;">This site uses a contact form to collect your name, email, and message for the sole purpose of responding to your inquiry. No data is shared with third parties. Analytics are used to understand site usage. By using this site, you consent to this policy.</p>
+      </div>
+    </div>
+    <script>
+    document.getElementById('privacy-link').onclick = function(e) {
+      e.preventDefault();
+      document.getElementById('privacy-modal').style.display = 'flex';
+    };
+    </script>
   </body>
 </html>
