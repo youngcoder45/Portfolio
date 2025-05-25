@@ -1,3 +1,14 @@
+// Loading Screen Handler
+window.addEventListener('load', () => {
+  const loaderWrapper = document.querySelector('.loader-wrapper');
+  setTimeout(() => {
+    loaderWrapper.classList.add('loader-hidden');
+    setTimeout(() => {
+      loaderWrapper.style.display = 'none';
+    }, 500);
+  }, 1500); // Show loader for 1.5 seconds
+});
+
 // Burger Menu Functionality
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('nav');
