@@ -1,3 +1,34 @@
+// Burger Menu Functionality
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('nav');
+const navOverlay = document.querySelector('.nav-overlay');
+const body = document.body;
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  nav.classList.toggle('active');
+  navOverlay.classList.toggle('active');
+  body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+});
+
+// Close menu when clicking overlay
+navOverlay.addEventListener('click', () => {
+  burger.classList.remove('active');
+  nav.classList.remove('active');
+  navOverlay.classList.remove('active');
+  body.style.overflow = '';
+});
+
+// Close menu when clicking a nav link
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('active');
+    nav.classList.remove('active');
+    navOverlay.classList.remove('active');
+    body.style.overflow = '';
+  });
+});
+
 // Change active nav link based on scroll position
 const sections = document.querySelectorAll('main section');
 const navLinks = document.querySelectorAll('nav ul li a');
