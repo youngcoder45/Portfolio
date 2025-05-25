@@ -30,28 +30,26 @@
     /* Modern Background Styling */
     .background-animation {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
+      inset: 0;
       z-index: -1;
-      overflow: hidden;
       background: #0f1624;
     }
 
     .gradient-overlay {
       position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, rgba(15, 22, 36, 0.95), rgba(0, 188, 212, 0.05), rgba(15, 22, 36, 0.95));
+      inset: 0;
+      background: linear-gradient(45deg, 
+        rgba(15, 22, 36, 0.95),
+        rgba(0, 188, 212, 0.05),
+        rgba(15, 22, 36, 0.95)
+      );
       animation: gradientMove 15s ease infinite;
       background-size: 400% 400%;
     }
 
     @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
+      0%, 100% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
 
     .particles {
@@ -69,16 +67,14 @@
       backdrop-filter: blur(10px);
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px 0 rgba(0, 188, 212, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 188, 212, 0.1);
       margin: 30px 0;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
       padding: 80px 0;
-      margin-bottom: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     section:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 40px 0 rgba(0, 188, 212, 0.2);
+      box-shadow: 0 12px 40px rgba(0, 188, 212, 0.2);
     }
     section:last-child {
       margin-bottom: 0;
@@ -92,13 +88,13 @@
       text-align: center;
       font-size: 2.4rem;
       color: #00bcd4;
-      position: relative;
       padding: 20px 0;
       margin: 0 auto 60px;
       max-width: 800px;
       font-weight: 700;
       letter-spacing: 1.5px;
       text-transform: uppercase;
+      position: relative;
     }
     .section-title::after {
       content: '';
@@ -126,7 +122,9 @@
       background: rgba(18, 18, 18, 0.95);
       padding: 15px 0;
       box-shadow: 0 2px 8px rgba(0,0,0,0.8);
-      transition: all 0.3s ease;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header .container {
       display: flex;
@@ -156,16 +154,16 @@
       font-size: 1rem;
     }
     nav ul li a {
+      color: #00bcd4;
+      text-decoration: none;
       padding: 8px 12px;
       border-radius: 4px;
-      display: inline-block;
-      transition: background 0.3s, color 0.3s;
+      transition: all 0.3s ease;
     }
     nav ul li a:hover,
     nav ul li a.active {
       background: #00bcd4;
       color: #121212;
-      font-weight: 700;
     }
 
     /* Burger Menu */
@@ -735,12 +733,10 @@
     }
     @media (max-width: 768px) {
       section {
-        padding: 3rem 1rem;
-        margin: 1rem 0;
+        padding: 40px 20px;
       }
       .section-title {
         font-size: 2rem;
-        margin-bottom: 2rem;
       }
       section > *:not(.section-title) {
         margin-top: 40px;
@@ -1464,4 +1460,387 @@
     .loader-hidden {
       opacity: 0;
       pointer-events: none;
+    }
+
+    /* Fun Effects and Easter Eggs */
+    .easter-egg-emoji {
+      position: fixed;
+      z-index: 9999;
+      pointer-events: none;
+      font-size: 24px;
+      animation: floatUp 5s ease-in forwards;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Secret text effect */
+    .secret-text {
+      background-image: linear-gradient(
+        90deg,
+        #ff0000 0%,
+        #00ff00 20%,
+        #00bcd4 40%,
+        #ff00ff 60%,
+        #ffff00 80%,
+        #ff0000 100%
+      );
+      background-size: 200% auto;
+      color: transparent !important;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: rainbow 2s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-position: 0% center;
+      }
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    /* Fun hover effects for cards */
+    .project-card, .blog-card, .skill-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .project-card:hover, .blog-card:hover, .skill-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(0, 188, 212, 0.3);
+    }
+
+    /* Glitch effect for name on hover */
+    h1:hover {
+      animation: glitch 0.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes glitch {
+      0% {
+        text-shadow: 2px 2px #ff0364, -2px -2px #00bcd4;
+        transform: translate(0);
+      }
+      25% {
+        text-shadow: -2px 2px #ff0364, 2px -2px #00bcd4;
+        transform: translate(1px);
+      }
+      50% {
+        text-shadow: 2px -2px #ff0364, -2px 2px #00bcd4;
+        transform: translate(0);
+      }
+      75% {
+        text-shadow: -2px -2px #ff0364, 2px 2px #00bcd4;
+        transform: translate(-1px);
+      }
+      100% {
+        text-shadow: 2px 2px #ff0364, -2px -2px #00bcd4;
+        transform: translate(0);
+      }
+    }
+
+    /* Hidden message reveal */
+    .hidden-message {
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .hidden-message::after {
+      content: '🎉';
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%) scale(0);
+      transition: transform 0.3s;
+    }
+
+    .hidden-message.revealed::after {
+      transform: translateX(-50%) scale(1);
+    }
+
+    /* Fun loading animation */
+    .loader {
+      position: relative;
+    }
+
+    .loader::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      animation: loading-shine 1.5s infinite;
+    }
+
+    @keyframes loading-shine {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    /* Clickable Elements Hover */
+    .project-title,
+    header h1,
+    .skill-card {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .project-title:hover,
+    header h1:hover {
+      text-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+    }
+
+    /* Secret Popup Animation */
+    .secret-popup {
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Emoji Animation */
+    .easter-egg-emoji {
+      position: fixed;
+      z-index: 9999;
+      pointer-events: none;
+      font-size: 24px;
+      will-change: transform;
+    }
+
+    /* Skill Card Click Effect */
+    .skill-card {
+      transform-origin: center;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .skill-card:active {
+      transform: scale(0.95);
+    }
+
+    /* Enhanced Rocket Launch Animation */
+    .flying-rocket {
+      position: fixed;
+      font-size: 40px;
+      z-index: 9999;
+      pointer-events: none;
+      will-change: transform, opacity;
+      transform-origin: center;
+    }
+
+    .flying-rocket::before {
+      content: '🚀';
+      display: block;
+      transform-origin: center;
+    }
+
+    .flying-rocket::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 20px;
+      height: 40px;
+      transform: translateX(-50%);
+      background: radial-gradient(
+        circle at top,
+        rgba(255, 68, 68, 0.9) 0%,
+        rgba(255, 165, 0, 0.8) 30%,
+        rgba(255, 215, 0, 0.6) 60%,
+        transparent 100%
+      );
+      filter: blur(4px);
+      opacity: 0;
+    }
+
+    /* Launch sequence animations */
+    .flying-rocket.pre-launch {
+      animation: preLaunch 1s ease-in-out;
+    }
+
+    .flying-rocket.ignition::after {
+      opacity: 1;
+      animation: flameGrow 0.5s ease-in forwards;
+    }
+
+    .flying-rocket.liftoff {
+      animation: 
+        rocketLiftoff 3s cubic-bezier(0.33, 1, 0.68, 1) forwards,
+        rocketShake 0.05s ease-in-out infinite;
+    }
+
+    .flying-rocket.liftoff::after {
+      animation: 
+        flameIntensify 0.1s ease-out infinite,
+        flameLiftoff 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    }
+
+    /* Pre-launch animation */
+    @keyframes preLaunch {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(2px) rotate(-1deg); }
+      75% { transform: translateY(-2px) rotate(1deg); }
+    }
+
+    /* Flame growth during ignition */
+    @keyframes flameGrow {
+      0% {
+        height: 20px;
+        opacity: 0;
+      }
+      100% {
+        height: 60px;
+        opacity: 1;
+      }
+    }
+
+    /* Enhanced liftoff animation with path */
+    @keyframes rocketLiftoff {
+      0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+        opacity: 1;
+      }
+      15% {
+        transform: translate(100px, -150px) rotate(15deg) scale(0.9);
+        opacity: 1;
+      }
+      30% {
+        transform: translate(200px, -400px) rotate(25deg) scale(0.8);
+        opacity: 1;
+      }
+      45% {
+        transform: translate(300px, -700px) rotate(35deg) scale(0.7);
+        opacity: 0.9;
+      }
+      60% {
+        transform: translate(400px, -1000px) rotate(45deg) scale(0.6);
+        opacity: 0.8;
+      }
+      75% {
+        transform: translate(500px, -1300px) rotate(55deg) scale(0.5);
+        opacity: 0.6;
+      }
+      90% {
+        transform: translate(600px, -1600px) rotate(65deg) scale(0.4);
+        opacity: 0.3;
+      }
+      100% {
+        transform: translate(700px, -2000px) rotate(75deg) scale(0.2);
+        opacity: 0;
+      }
+    }
+
+    /* Enhanced flame animation during liftoff */
+    @keyframes flameIntensify {
+      0% {
+        height: 60px;
+        width: 20px;
+        transform: translateX(-50%) rotate(-2deg);
+      }
+      50% {
+        height: 80px;
+        width: 25px;
+        transform: translateX(-50%) rotate(2deg);
+      }
+      100% {
+        height: 60px;
+        width: 20px;
+        transform: translateX(-50%) rotate(-2deg);
+      }
+    }
+
+    @keyframes flameLiftoff {
+      0% {
+        transform: translateX(-50%) scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(-50%) scale(2) rotate(75deg);
+        opacity: 0;
+      }
+    }
+
+    /* Enhanced smoke trail */
+    .smoke-particle {
+      position: fixed;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      mix-blend-mode: screen;
+    }
+
+    @keyframes smokeRise {
+      0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+        opacity: 0.8;
+        filter: blur(0);
+      }
+      100% {
+        transform: translate(var(--dx), var(--dy)) scale(3) rotate(var(--rotate));
+        opacity: 0;
+        filter: blur(4px);
+      }
+    }
+
+    /* Ground particles during liftoff */
+    .ground-particle {
+      position: fixed;
+      background: #ffd700;
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: 9997;
+      box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+
+    @keyframes groundParticle {
+      0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--dx), var(--dy)) scale(0) rotate(var(--rotate));
+        opacity: 0;
+      }
+    }
+
+    /* Enhanced trigger styling */
+    [data-space-trigger] {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      transition: all 0.3s ease;
+      padding: 0 2px;
+    }
+
+    [data-space-trigger]:hover {
+      color: #00bcd4;
+      text-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+      transform: translateY(-1px);
+    }
+
+    [data-space-trigger]:active {
+      transform: translateY(1px);
     }
