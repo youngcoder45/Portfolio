@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       loaderWrapper.style.display = 'none';
     }, 500);
-  }, 1500); // Show loader for 1.5 seconds
+  }, 2000); // Show loader for 2 seconds to see the full animation
 });
 
 // Burger Menu Functionality
