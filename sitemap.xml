@@ -3,9 +3,14 @@
   <url>
     <loc>https://youngcoder45.netlify.app/</loc>
     <lastmod>2025-06-10</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://youngcoder45.netlify.app/myphp.html</loc>
+    <loc>https://youngcoder45.netlify.app/index.html</loc>
     <lastmod>2025-06-10</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
+  <!-- Add more URLs for blog posts, projects, etc. -->
 </urlset>

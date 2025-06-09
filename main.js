@@ -314,3 +314,25 @@ document.querySelectorAll(".section-title").forEach(a => {
       }, 1e3))
   }
 });
+// ...existing code...
+const newsletterForm = document.getElementById('newsletter-form');
+const newsletterResponse = document.getElementById('newsletter-response');
+if(newsletterForm) {
+  newsletterForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('newsletter-email').value.trim();
+    if(!email || !/\S+@\S+\.\S+/.test(email)) {
+      newsletterResponse.style.color = '#ff5555';
+      newsletterResponse.textContent = 'Please enter a valid email address.';
+      return;
+    }
+    newsletterResponse.style.color = '#00e0ff';
+    newsletterResponse.textContent = 'Subscribing...';
+    setTimeout(() => {
+      newsletterResponse.style.color = '#55ff55';
+      newsletterResponse.textContent = 'Thank you for subscribing!';
+      newsletterForm.reset();
+    }, 1200);
+  });
+}
+// ...existing code...

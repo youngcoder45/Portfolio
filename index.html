@@ -77,6 +77,26 @@
       gtag("js", new Date());
       gtag("config", "UA-XXXXXXX-X");
     </script>
+    <!-- Structured Data for Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aditya Verma",
+  "url": "https://youngcoder45.netlify.app/",
+  "image": "https://youngcoder45.netlify.app/pic1.png",
+  "sameAs": [
+    "https://github.com/youngcoder45",
+    "https://linkedin.com/in/aditya-verma-45a8b3250",
+    "https://twitter.com/youngcoder45"
+  ],
+  "jobTitle": "Web Developer & Tech Enthusiast",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance"
+  }
+}
+</script>
   </head>
   <body>
     <!-- Loading Screen -->
@@ -1230,6 +1250,33 @@
           aria-live="assertive"
           style="margin-top: 15px; text-align: center"
         ></p>
+      </section>
+
+      <!-- Newsletter Subscription Section -->
+      <section id="newsletter" class="fade-in" style="--delay: 0.88s;">
+        <h2 class="section-title">Subscribe to My Newsletter</h2>
+        <p style="text-align:center; color:#bbb; margin-bottom:22px;">
+          Get the latest updates on my projects, blogs, and coding tips!
+        </p>
+        <form
+          id="newsletter-form"
+          style="max-width:400px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;"
+        >
+          <input
+            type="email"
+            id="newsletter-email"
+            name="newsletter-email"
+            required
+            placeholder="Your email address"
+            style="flex:1 1 200px;padding:12px 14px;border-radius:8px;border:none;background:#23272f;color:#f0f0f0;font-size:1rem;"
+            autocomplete="email"
+          />
+          <button
+            type="submit"
+            style="background:#00bcd4;color:#121212;border:none;border-radius:8px;padding:12px 22px;font-weight:700;font-size:1rem;cursor:pointer;transition:background 0.3s;"
+          >Subscribe</button>
+        </form>
+        <p id="newsletter-response" style="text-align:center;margin-top:14px;font-size:1rem;"></p>
       </section>
 
       <!-- Prominent Linktree button above the footer -->
