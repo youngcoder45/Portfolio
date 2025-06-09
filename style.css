@@ -24,7 +24,7 @@ nav ul li a {
 }
 
 .loader,
-body {
+    body {
   font-family: Poppins, sans-serif;
 }
 
@@ -33,10 +33,10 @@ body {
 .loader,
 .project-card {
   overflow: hidden;
-}
+    }
 
-a {
-  color: #00bcd4;
+    a {
+      color: #00bcd4;
   transition: color 0.3s;
 }
 
@@ -56,10 +56,10 @@ a:hover {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    45deg,
-    rgba(15, 22, 36, 0.95),
-    rgba(0, 188, 212, 0.05),
-    rgba(15, 22, 36, 0.95)
+      45deg,
+      rgba(15, 22, 36, 0.95),
+      rgba(0, 188, 212, 0.05),
+      rgba(15, 22, 36, 0.95)
   );
   animation: 15s infinite gradientMove;
   background-size: 400% 400%;
@@ -145,50 +145,50 @@ section > :not(.section-title) {
   box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
 }
 
-header {
+    header {
   background: rgba(18, 18, 18, 0.95);
   padding: 15px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
   position: sticky;
   top: 0;
   z-index: 1000;
-}
+    }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-header h1 {
-  font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: 2px;
+    header h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      color: #00bcd4;
+      user-select: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    nav ul li a {
   color: #00bcd4;
-  user-select: none;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-nav ul li {
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-nav ul li a {
-  color: #00bcd4;
-  padding: 8px 12px;
-  border-radius: 4px;
-}
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #00bcd4;
-  color: #121212;
+      background: #00bcd4;
+      color: #121212;
 }
 
 .burger {
@@ -231,27 +231,27 @@ nav ul li a:hover {
 .burger.active span:nth-child(3) {
   transform: rotate(-45deg);
   top: 9px;
-}
+    }
 
-#about .profile-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    #about .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
 #projects,
-#skills {
-  padding: 60px 0 40px;
-}
+    #skills {
+      padding: 60px 0 40px;
+    }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
-  max-width: 900px;
-  margin: 0 auto;
-}
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
 #contact .social-links,
 .timeline {
@@ -259,14 +259,14 @@ nav ul li a:hover {
   max-width: 800px;
 }
 
-.skill-card {
-  background: #2a2a2a;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px #00bcd4aa;
-  text-align: center;
-  user-select: none;
-}
+    .skill-card {
+      background: #2a2a2a;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px #00bcd4aa;
+      text-align: center;
+      user-select: none;
+    }
 
 .tech-category,
 .timeline-content {
@@ -274,23 +274,23 @@ nav ul li a:hover {
   box-shadow: 0 2px 12px #00bcd4aa;
 }
 
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px #00bcd4aa;
-}
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px #00bcd4aa;
+    }
 
-.skill-card i {
-  font-size: 36px;
-  margin-bottom: 12px;
-  color: #00bcd4;
-}
+    .skill-card i {
+      font-size: 36px;
+      margin-bottom: 12px;
+      color: #00bcd4;
+    }
 
-.skill-card strong {
-  display: block;
-  font-size: 1.1rem;
-  margin-top: 5px;
-  color: #e0e0e0;
-}
+    .skill-card strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-top: 5px;
+      color: #e0e0e0;
+    }
 
 .timeline {
   padding: 20px;
@@ -504,91 +504,91 @@ form.contact-form {
   transition: background 0.3s;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
 
-.project-card {
-  box-shadow: 0 2px 15px #00bcd4aa;
-  display: flex;
-  flex-direction: column;
-}
+    .project-card {
+      box-shadow: 0 2px 15px #00bcd4aa;
+      display: flex;
+      flex-direction: column;
+    }
 
-.project-card:hover {
-  box-shadow: 0 8px 30px #00bcd4aa;
-}
+    .project-card:hover {
+      box-shadow: 0 8px 30px #00bcd4aa;
+    }
 
-.project-img {
-  width: 100%;
+    .project-img {
+      width: 100%;
   aspect-ratio: 16/9;
-  object-fit: cover;
-  filter: brightness(0.85);
+      object-fit: cover;
+      filter: brightness(0.85);
   transition: filter 0.3s;
-}
+    }
 
-.project-card:hover .project-img {
-  filter: brightness(1);
-}
+    .project-card:hover .project-img {
+      filter: brightness(1);
+    }
 
-.project-content {
-  padding: 18px 20px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+    .project-content {
+      padding: 18px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-.project-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #00bcd4;
-  margin-bottom: 8px;
-  user-select: text;
-}
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #00bcd4;
+      margin-bottom: 8px;
+      user-select: text;
+    }
 
-.project-description {
-  font-size: 1rem;
-  color: #c7c7c7;
-  flex-grow: 1;
-  user-select: text;
-}
+    .project-description {
+      font-size: 1rem;
+      color: #c7c7c7;
+      flex-grow: 1;
+      user-select: text;
+    }
 
-.project-links {
-  margin-top: 15px;
-  display: flex;
-  gap: 12px;
-}
+    .project-links {
+      margin-top: 15px;
+      display: flex;
+      gap: 12px;
+    }
 
-.project-links a {
-  padding: 8px 14px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: center;
-  flex: 1;
+    .project-links a {
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      flex: 1;
   transition: background-color 0.3s;
-}
+    }
 
-.testimonials-slider {
-  position: relative;
-  min-height: 220px;
-}
+    .testimonials-slider {
+      position: relative;
+      min-height: 220px;
+    }
 
-.testimonial {
-  opacity: 0;
-  position: absolute;
+    .testimonial {
+      opacity: 0;
+      position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  transition: opacity 0.5s;
-}
+      transition: opacity 0.5s;
+    }
 
-.testimonial.active {
-  opacity: 1;
-  pointer-events: auto;
-  position: relative;
-}
+    .testimonial.active {
+      opacity: 1;
+      pointer-events: auto;
+      position: relative;
+    }
 
 #contact {
   padding: 60px 0 80px;
@@ -630,7 +630,7 @@ form.contact-form label {
 
 form.contact-form input,
 form.contact-form textarea {
-  width: 100%;
+    width: 100%;
   padding: 12px 15px;
   margin-bottom: 18px;
   border: none;
@@ -1102,7 +1102,7 @@ body {
 
 #about {
   display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   gap: 40px;
   align-items: center;
   padding-bottom: 40px;
@@ -1358,13 +1358,13 @@ section {
   nav ul li a.active,
   nav ul li a:hover {
     background: #00bcd4;
-    color: #121212;
+      color: #121212;
   }
 
   section {
     background: rgba(35, 39, 47, 0.95);
     backdrop-filter: none;
-    border: none;
+      border: none;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     margin: 1rem 0.5rem;
     padding: 2rem 1rem;
@@ -1398,7 +1398,7 @@ section {
 
 .loader {
   font-size: 3.5rem;
-  font-weight: 700;
+      font-weight: 700;
   letter-spacing: 3px;
   background: linear-gradient(90deg, #1e1e1e, #00bcd4, #ff0364, #1e1e1e);
   background-repeat: no-repeat;
@@ -1565,7 +1565,7 @@ h1:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+      width: 100%;
   height: 100%;
   background: linear-gradient(
     90deg,
@@ -1589,7 +1589,7 @@ h1:hover {
 .project-title,
 .skill-card,
 header h1 {
-  cursor: pointer;
+      cursor: pointer;
   transition: 0.3s;
 }
 
@@ -1652,7 +1652,7 @@ header h1:hover {
     transparent 100%
   );
   filter: blur(4px);
-  opacity: 0;
+      opacity: 0;
 }
 
 .flying-rocket.pre-launch {
@@ -1660,7 +1660,7 @@ header h1:hover {
 }
 
 .flying-rocket.ignition::after {
-  opacity: 1;
+        opacity: 1;
   animation: 0.5s ease-in forwards flameGrow;
 }
 
