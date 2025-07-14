@@ -1,7 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <!-- Meta tags for character set, viewport, and SEO -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>YC45 - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of YC45 - Full Stack Developer specializing in modern web technologies, AI/ML, and creative solutions.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.jpg" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- DevIcons for Technology Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Structured Data for Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aditya Verma",
+  "url": "https://youngcoder45.netlify.app/",
+  "image": "https://youngcoder45.netlify.app/coder.png",
+  "sameAs": [
+    "https://github.com/youngcoder45",
+    "https://linkedin.com/in/aditya-verma-45a8b3250",
+    "https://twitter.com/youngcoder45"
+  ],
+  "jobTitle": "Web Developer & Tech Enthusiast",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance"
+  }
+}
+</script>
+     <!-- Meta tags for character set, viewport, and SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Canonical URL -->
@@ -49,9 +92,6 @@
     <meta name="twitter:description" content="Passionate web developer and programmer specializing in Python, JavaScript, and game development. View my projects, skills, and experience." />
     <meta name="twitter:image" content="https://youngcoder45.netlify.app/coder.png" />
     
-    <!-- Favicon: Use the interactive site's favicon -->
-    <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg" />
-    <link rel="apple-touch-icon" href="assets/img/favicon.jpg" />
     <!-- Google Fonts for modern typography (load only once) -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -78,812 +118,579 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <!-- Custom Style from first site (for content) -->
     <link href="style.css" rel="stylesheet" />
-    <!-- Structured Data for Person -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Aditya Verma",
-  "url": "https://youngcoder45.netlify.app/",
-  "image": "https://youngcoder45.netlify.app/coder.png",
-  "sameAs": [
-    "https://github.com/youngcoder45",
-    "https://linkedin.com/in/aditya-verma-45a8b3250",
-    "https://twitter.com/youngcoder45"
-  ],
-  "jobTitle": "Web Developer & Tech Enthusiast",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Freelance"
-  }
-}
-</script>
-  </head>
-  <body>
-    <!-- LOADING SCREEN (Preloader) -->
-    <div class="loader-wrapper">
-      <div class="loader">YC45</div>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="loader-wrapper" id="preloader">
+        <div class="loader">YC45</div>
     </div>
-    <!-- Animated background with gradient and particles (absolute, not pushing content) -->
-    <div class="background-animation" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;"><div class="gradient-overlay"></div><div class="particles"></div></div>
-    <!-- Navbar flush to top -->
-    <nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded site-navigation dark_bg_menu" style="margin:0;padding:0;top:0;">
-      <div class="container" style="margin:0;padding:0;">
-        <a class="navbar-brand" href="#home" style="margin:0;padding:0;font-weight:700;font-size:1.7rem;letter-spacing:-1px;color:#00bcd4;">Aditya Verma</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#statistics">Statistics</a></li>
-            <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-    </div>
-    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span style="color: #00bcd4; font-size: 2rem;">YC45</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <!-- Main content container, hero section flush to navbar -->
-    <main style="padding:0;margin:0;">
-      <!-- HERO SECTION -->
-      <section id="home" class="hero-section">
-        <div id="hero-particles"></div>
-        <div class="hero-container">
-          <div class="hero-image">
-            <img src="assets/img/sas.jpg" alt="Aditya Verma" class="profile-img" />
-              </div>
-          <div class="hero-content">
-            <h1 class="hero-name">Aditya Verma</h1>
-            <div class="hero-roles">
-              <span class="typing-text" id="typed-roles"></span>
-              </div>
-            <div class="hero-badges">
-              <span class="badge"><i class="fa fa-map-marker"></i> India</span>
-              <span class="badge"><i class="fa fa-graduation-cap"></i> Student</span>
-              <span class="badge"><i class="fa fa-brain"></i> Exploring AI & Web</span>
-              <span class="badge"><i class="fa fa-github"></i> Loves Open Source</span>
-            </div>
-            <p class="hero-description">I'm a passionate web developer and programmer from India. I love building modern, interactive websites and apps. My expertise includes Python, JavaScript, HTML/CSS, and game development.</p>
-            <p class="hero-mission">Mission: To create beautiful, useful, and impactful digital experiences.</p>
-            <div class="hero-signature">— Aditya</div>
-            <div class="hero-buttons">
-              <a href="#contact" class="btn btn-primary">Contact Me</a>
-              <a href="#projects" class="btn btn-secondary">See My Work</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- SVG WAVE DIVIDER -->
-      <div class="hero-about-divider custom-divider">
-        <svg viewBox="0 0 1440 120" width="100%" height="80" preserveAspectRatio="none" style="display:block;"><path d="M0,80 C360,160 1080,0 1440,80 L1440,120 L0,120 Z" fill="#23272f" fill-opacity="1"></path></svg>
-      </div>
-      <!-- STATS SECTION (Pro) -->
-      <section id="statistics" class="section-padding pro-stats fade-in">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg-gradient"></div>
         <div class="container">
-          <h2 class="section-title mb-5">My Journey in Numbers</h2>
-          <div class="row justify-content-center text-center g-4">
-            <div class="col-md-3 col-6 mb-4">
-              <div class="stat-card pro-stat p-4 rounded-4 shadow-lg bg-white fade-in">
-                <i class="fa fa-code fa-2x mb-2" style="color: #00bcd4;"></i>
-                <div class="stat-number counter" data-count="161">161</div>
-            <div class="stat-label">Projects Completed</div>
-          </div>
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 order-lg-2 text-center mb-5 mb-lg-0">
+                    <div class="hero-img-float">
+                        <img src="assets/img/sas.jpg" alt="YC45 Profile" class="hero-img-glow-lg hero-img-animated">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="hero-content">
+                        <h1 class="hero-title hero-text-animate">
+                            Hi, I'm <span class="gradient-text">YC45</span>
+                        </h1>
+                        <div class="hero-roles">
+                            <span class="role-text active">Full Stack Developer</span>
+                            <span class="role-text">AI/ML Enthusiast</span>
+                            <span class="role-text">Problem Solver</span>
+                            <span class="role-text">Creative Innovator</span>
+                        </div>
+                        <p class="hero-lead hero-text-animate">
+                            Passionate developer with 4+ years of experience creating modern web applications and exploring cutting-edge technologies. I specialize in turning complex problems into elegant digital solutions.
+                        </p>
+                        <div class="hero-badges mb-4">
+                            <span class="badge-pill"><i class="fas fa-code"></i> Full Stack</span>
+                            <span class="badge-pill"><i class="fas fa-robot"></i> AI/ML</span>
+                            <span class="badge-pill"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                            <span class="badge-pill"><i class="fas fa-rocket"></i> Modern Tech</span>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary hero-cta">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light hero-cta-outline">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 col-6 mb-4">
-              <div class="stat-card pro-stat p-4 rounded-4 shadow-lg bg-white fade-in">
-                <i class="fa fa-clock-o fa-2x mb-2" style="color: #00bcd4;"></i>
-                <div class="stat-number counter" data-count="985">985</div>
-            <div class="stat-label">Coding Hours</div>
-          </div>
-            </div>
-            <div class="col-md-3 col-6 mb-4">
-              <div class="stat-card pro-stat p-4 rounded-4 shadow-lg bg-white fade-in">
-                <i class="fa fa-calendar fa-2x mb-2" style="color: #00bcd4;"></i>
-                <div class="stat-number counter" data-count="4+ Years">4+ Years</div>
-            <div class="stat-label">Coding Experience</div>
-          </div>
-            </div>
-            <div class="col-md-3 col-6 mb-4">
-              <div class="stat-card pro-stat p-4 rounded-4 shadow-lg bg-white fade-in">
-                <i class="fa fa-cogs fa-2x mb-2" style="color: #00bcd4;"></i>
-                <div class="stat-number counter" data-count="7+">7+</div>
-            <div class="stat-label">Programming Languages</div>
-          </div>
-            </div>
-          </div>
         </div>
-      </section>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-      <!-- After Statistics Section: Add Highlights Section -->
-      <section id="highlights" class="section-padding fade-in">
+    <!-- About Section -->
+    <section id="about" class="section-padding">
         <div class="container">
-          <h2 class="section-title mb-4">Highlights</h2>
-          <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-              <div class="card p-4 shadow-lg border-0 text-center h-100 fade-in" style="background:#23272f; color:#fff; border-radius:18px;">
-                <i class="devicon-github-original colored" style="font-size:2.2rem;"></i>
-                <h3 class="fw-bold mt-3 mb-2" style="color:#00bcd4; font-size:1.2rem;">Passionate Developer</h3>
-                <p style="color:#c7c7c7;">Started coding at the age of 13, and since then, I've built multiple websites and software projects using many languages.</p>
-          </div>
-          </div>
-            <div class="col-md-4">
-              <div class="card p-4 shadow-lg border-0 text-center h-100 fade-in" style="background:#23272f; color:#fff; border-radius:18px;">
-                <i class="devicon-python-plain colored" style="font-size:2.2rem;"></i>
-                <h3 class="fw-bold mt-3 mb-2" style="color:#00bcd4; font-size:1.2rem;">Real Projects, Real Learning</h3>
-                <p style="color:#c7c7c7;">Created and deployed several personal and academic web projects, exploring everything from front-end design to back-end logic.</p>
-              </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about-glass-card">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                <div class="about-profile-img-glow">
+                                    <img src="assets/img/sas.jpg" alt="YC45" class="img-fluid rounded-circle">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <h2 class="section-title mb-4">About Me</h2>
+                                <p class="about-mission mb-3">
+                                    "Crafting digital experiences that make a difference"
+                                </p>
+                                <p class="lead mb-4">
+                                    I'm a passionate full-stack developer who started coding at age 13. Over the years, I've built numerous web applications, explored AI/ML technologies, and continuously pushed the boundaries of what's possible with code.
+                                </p>
+                                <div class="about-badges-animated mb-4">
+                                    <span class="about-badge"><i class="fas fa-graduation-cap"></i> Self-Taught</span>
+                                    <span class="about-badge"><i class="fas fa-clock"></i> 1000+ Hours</span>
+                                    <span class="about-badge"><i class="fas fa-project-diagram"></i> 20+ Projects</span>
+                                    <span class="about-badge"><i class="fas fa-users"></i> Team Player</span>
+                                </div>
+                                <ul class="about-list mb-4">
+                                    <li><i class="fas fa-check-circle"></i> 4+ years of web development experience</li>
+                                    <li><i class="fas fa-check-circle"></i> Expertise in modern JavaScript frameworks</li>
+                                    <li><i class="fas fa-check-circle"></i> Strong background in responsive design</li>
+                                    <li><i class="fas fa-check-circle"></i> Passionate about clean, maintainable code</li>
+                                </ul>
+                                <div class="about-signature">~ YC45</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-              <div class="card p-4 shadow-lg border-0 text-center h-100 fade-in" style="background:#23272f; color:#fff; border-radius:18px;">
-                <i class="devicon-javascript-plain colored" style="font-size:2.2rem;"></i>
-                <h3 class="fw-bold mt-3 mb-2" style="color:#00bcd4; font-size:1.2rem;">1000+ Coding Hours</h3>
-                <p style="color:#c7c7c7;">Spent over 1000 hours building, debugging, and deploying real-world web and software projects.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Skills Section: Interactive skill showcase with progress bars -->
-      <section id="skills" class="section-padding dark_bg fade-in">
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
         <div class="container">
-          <h2 class="section-title text-center mb-5">Skills & Expertise</h2>
-          <div class="skills-categories">
-            <div class="skill-category">
-              <h3 class="category-title">Frontend Development</h3>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-html5-plain colored"></i>
-                  <span class="skill-name">HTML5</span>
-                  <span class="skill-percentage">95%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="95%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-css3-plain colored"></i>
-                  <span class="skill-name">CSS3</span>
-                  <span class="skill-percentage">92%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="92%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-javascript-plain colored"></i>
-                  <span class="skill-name">JavaScript</span>
-                  <span class="skill-percentage">88%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="88%"></div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="skill-category">
-              <h3 class="category-title">Backend Development</h3>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-python-plain colored"></i>
-                  <span class="skill-name">Python</span>
-                  <span class="skill-percentage">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-cplusplus-plain colored"></i>
-                  <span class="skill-name">C++</span>
-                  <span class="skill-percentage">82%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="82%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-java-plain colored"></i>
-                  <span class="skill-name">Java</span>
-                  <span class="skill-percentage">75%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="75%"></div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="skill-category">
-              <h3 class="category-title">Tools & Technologies</h3>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-git-plain colored"></i>
-                  <span class="skill-name">Git & GitHub</span>
-                  <span class="skill-percentage">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-mysql-plain colored"></i>
-                  <span class="skill-name">SQL</span>
-                  <span class="skill-percentage">78%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="78%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <i class="devicon-python-plain colored"></i>
-                  <span class="skill-name">AI/ML</span>
-                  <span class="skill-percentage">70%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="70%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Interactive Skills Grid -->
-          <div class="interactive-skills-grid mt-5">
-            <div class="row justify-content-center g-3">
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white interactive-skill" title="HTML5: 4+ years experience" data-skill="HTML5" data-experience="4+ years">
-                <i class="devicon-html5-plain colored display-4"></i>
-                <div class="mt-2"><strong>HTML5</strong></div>
-                <div class="skill-tooltip">4+ years experience</div>
-          </div>
-          </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="CSS3: 4+ years experience">
-                <i class="devicon-css3-plain colored display-4"></i>
-                <div class="mt-2"><strong>CSS3</strong></div>
-          </div>
-          </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="JavaScript: 3+ years experience">
-                <i class="devicon-javascript-plain colored display-4"></i>
-                <div class="mt-2"><strong>JavaScript</strong></div>
-          </div>
-          </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="Python: 4+ years experience">
-                <i class="devicon-python-plain colored display-4"></i>
-                <div class="mt-2"><strong>Python</strong></div>
-          </div>
-          </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="C++: 2+ years experience">
-                <i class="devicon-cplusplus-plain colored display-4"></i>
-                <div class="mt-2"><strong>C++</strong></div>
-          </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="C: 2+ years experience">
-                <i class="devicon-c-plain colored display-4"></i>
-                <div class="mt-2"><strong>C</strong></div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="Java: 2+ years experience">
-                <i class="devicon-java-plain colored display-4"></i>
-                <div class="mt-2"><strong>Java</strong></div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="SQL: 2+ years experience">
-                <i class="devicon-mysql-plain colored display-4"></i>
-                <div class="mt-2"><strong>SQL</strong></div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="AI/ML: 1+ years experience">
-                <i class="devicon-python-plain colored display-4"></i>
-                <div class="mt-2"><strong>AI/ML</strong></div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="Git: 3+ years experience">
-                <i class="devicon-git-plain colored display-4"></i>
-                <div class="mt-2"><strong>Git</strong></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <h2 class="section-title text-center mb-5">Skills & Technologies</h2>
 
-      <!-- Achievement Showcase Section -->
-      <section id="achievements" class="section-padding fade-in achievement-section">
+            <!-- Skills Categories -->
+            <div class="skills-categories mb-5">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span class="skill-name">CSS3/SCSS</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-react-original colored"></i>
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-python-plain colored"></i>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span class="skill-name">SQL/Databases</span>
+                            <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-brain"></i>
+                            <span class="skill-name">AI/ML</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Platforms</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-git-plain colored"></i>
+                            <span class="skill-name">Git/GitHub</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-cloud"></i>
+                            <span class="skill-name">Cloud Services</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
         <div class="container">
-          <h2 class="section-title mb-5">Achievements & Milestones</h2>
-          <div class="achievements-timeline">
-            <div class="achievement-item" data-aos="fade-up">
-              <div class="achievement-icon">
-                <i class="fa fa-trophy"></i>
-              </div>
-              <div class="achievement-content">
-                <h4>Started Coding Journey</h4>
-                <p class="achievement-date">2020</p>
-                <p>Began programming at age 13 with a passion for web development</p>
-              </div>
-            </div>
-            <div class="achievement-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="achievement-icon">
-                <i class="fa fa-rocket"></i>
-              </div>
-              <div class="achievement-content">
-                <h4>First Website Launch</h4>
-                <p class="achievement-date">2021</p>
-                <p>Successfully deployed my first portfolio website</p>
-              </div>
-            </div>
-            <div class="achievement-item" data-aos="fade-up" data-aos-delay="400">
-              <div class="achievement-icon">
-                <i class="fa fa-code"></i>
-              </div>
-              <div class="achievement-content">
-                <h4>161+ Projects Completed</h4>
-                <p class="achievement-date">2024</p>
-                <p>Built diverse projects ranging from games to web applications</p>
-              </div>
-            </div>
-            <div class="achievement-item" data-aos="fade-up" data-aos-delay="600">
-              <div class="achievement-icon">
-                <i class="fa fa-graduation-cap"></i>
-              </div>
-              <div class="achievement-content">
-                <h4>Continuous Learning</h4>
-                <p class="achievement-date">Ongoing</p>
-                <p>Always exploring new technologies and expanding skillset</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <h2 class="section-title text-center mb-5">Featured Projects</h2>
 
-      <!-- After Skills Section: Add Tech Stack Section -->
-      <section id="tech-stack" class="section-padding fade-in">
-        <div class="container">
-          <h2 class="section-title mb-4">Tech Stack</h2>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <h4 class="fw-bold mb-3">Frontend</h4>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>HTML/CSS</span><span>95%</span></div>
-                <div class="progress" style="height:10px;"><div class="progress-bar" style="width:95%;background:linear-gradient(90deg,#00bcd4 60%,#ff0364 100%);"></div></div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>JavaScript</span><span>90%</span></div>
-                <div class="progress" style="height:10px;"><div class="progress-bar" style="width:90%;background:linear-gradient(90deg,#00bcd4 60%,#ff0364 100%);"></div></div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>Java</span><span>52%</span></div>
-                <div class="progress" style="height:10px;"><div class="progress-bar" style="width:52%;background:linear-gradient(90deg,#00bcd4 60%,#ff0364 100%);"></div></div>
-              </div>
+            <!-- Project Filters -->
+            <div class="project-filters mb-5">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
             </div>
-            <div class="col-md-6">
-              <h4 class="fw-bold mb-3">Backend</h4>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>Python</span><span>88%</span></div>
-                <div class="progress" style="height:10px;"><div class="progress-bar" style="width:88%;background:linear-gradient(90deg,#00bcd4 60%,#ff0364 100%);"></div></div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>C/C++</span><span>82%</span></div>
-                <div class="progress" style="height:10px;"><div class="progress-bar" style="width:82%;background:linear-gradient(90deg,#00bcd4 60%,#ff0364 100%);"></div></div>
-              </div>
-              <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>SQL</span><span>80%</span></div>
-                <div class="progress" style="height:10px;"><div class="progress-bar" style="width:80%;background:linear-gradient(90deg,#00bcd4 60%,#ff0364 100%);"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- PROJECTS SECTION (Enhanced with filters and animations) -->
-      <section id="projects" class="section-padding fade-in">
-        <h2 class="section-title mb-5">Featured Projects</h2>
-        
-        <!-- Project Filters -->
-        <div class="project-filters mb-4">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="web">Web Development</button>
-          <button class="filter-btn" data-filter="game">Game Development</button>
-          <button class="filter-btn" data-filter="python">Python Projects</button>
-        </div>
-        
-        <div class="projects-grid" id="projects-container">
-          <article class="project-card enhanced-card" data-category="web" tabindex="0" aria-label="Project: Portfolio Website">
-            <div class="project-image-wrapper">
-              <img class="project-img" src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Website Screenshot" />
-              <div class="project-overlay">
-                <div class="project-tech-stack">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <div class="enhanced-card" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="assets/img/b1.jpg" alt="E-commerce Platform" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">
+                            Full-featured e-commerce platform with user authentication, payment processing, and admin dashboard.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.8/5</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>2.5K</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="btn-live">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Portfolio Website</h3>
-              <p class="project-description">A modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth animations and interactive elements.</p>
-              <div class="project-stats">
-                <span class="stat-item"><i class="fa fa-star"></i> Featured</span>
-                <span class="stat-item"><i class="fa fa-eye"></i> Live</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/youngcoder45/Portfolio" target="_blank" rel="noopener noreferrer" class="btn-github">
-                  <i class="fa fa-github"></i> Code
-                </a>
-                <a href="https://youngcoder45.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-live">
-                  <i class="fa fa-external-link"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card enhanced-card" data-category="web" tabindex="0" aria-label="Project: Music Website">
-            <div class="project-image-wrapper">
-              <img class="project-img" src="https://moises.ai/_next/image/?url=https%3A%2F%2Fstorage.googleapis.com%2Fmoises-cms%2Fhow_to_reading_sheet_music_image_338d99b137%2Fhow_to_reading_sheet_music_image_338d99b137.jpg&w=1920&q=75" alt="Music Website Screenshot" />
-              <div class="project-overlay">
-                <div class="project-tech-stack">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
+
+                <div class="enhanced-card" data-category="ai">
+                    <div class="project-image-wrapper">
+                        <img src="assets/img/b2.png" alt="AI Chat Bot" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Chat Bot</h3>
+                        <p class="project-description">
+                            Intelligent chatbot using natural language processing and machine learning for customer support.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9/5</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>1.2K</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="btn-live">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">MC Error Music Platform</h3>
-              <p class="project-description">A comprehensive music platform showcasing artists and their works with interactive features.</p>
-              <div class="project-stats">
-                <span class="stat-item"><i class="fa fa-music"></i> Music</span>
-                <span class="stat-item"><i class="fa fa-eye"></i> Live</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/youngcoder45/MC_Error.me" target="_blank" rel="noopener noreferrer" class="btn-github">
-                  <i class="fa fa-github"></i> Code
-                </a>
-                <a href="https://mcerror.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-live">
-                  <i class="fa fa-external-link"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </article>
-          
-          <article class="project-card enhanced-card" data-category="python" tabindex="0" aria-label="Project: ATM Simulator Game">
-            <div class="project-image-wrapper">
-              <img class="project-img" src="https://images.pexels.com/photos/5699385/pexels-photo-5699385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ATM Simulator Game Screenshot" />
-              <div class="project-overlay">
-                <div class="project-tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">OOP</span>
+
+                <div class="enhanced-card" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="assets/img/b3.png" alt="Task Management App" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">PWA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            Progressive web app for team collaboration and project management with real-time updates.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.7/5</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>3.1K</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="btn-live">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="project-content">
-              <h3 class="project-title">ATM Simulator</h3>
-              <p class="project-description">A comprehensive ATM simulator with user authentication, balance management, and transaction history.</p>
-              <div class="project-stats">
-                <span class="stat-item"><i class="fa fa-code"></i> Python</span>
-                <span class="stat-item"><i class="fa fa-gamepad"></i> Simulation</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/youngcoder45/Atm-Simulator-Game" target="_blank" rel="noopener noreferrer" class="btn-github">
-                  <i class="fa fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </article>
-          
-          <article class="project-card enhanced-card" data-category="game" tabindex="0" aria-label="Project: Flappy Bird">
-            <div class="project-image-wrapper">
-              <img class="project-img" src="https://i.ytimg.com/vi/HzvpOtyJYGs/maxresdefault.jpg" alt="Flappy Bird Screenshot" />
-              <div class="project-overlay">
-                <div class="project-tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Pygame</span>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Experience & Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - Present</div>
+                        <h4>Freelance Full Stack Developer</h4>
+                        <p>Working with clients worldwide to build modern, responsive websites and web applications. Specialized in front-end and full-stack development using cutting-edge technologies.</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Flappy Bird Clone</h3>
-              <p class="project-description">A pixel-perfect recreation of the popular Flappy Bird game with smooth physics and animations.</p>
-              <div class="project-stats">
-                <span class="stat-item"><i class="fa fa-gamepad"></i> Game</span>
-                <span class="stat-item"><i class="fa fa-trophy"></i> Classic</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/youngcoder45/Flapp-Bird-by-Youngcoder45" target="_blank" rel="noopener noreferrer" class="btn-github">
-                  <i class="fa fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </article>
-          
-          <article class="project-card enhanced-card" data-category="game" tabindex="0" aria-label="Project: Piano Tiles Game">
-            <div class="project-image-wrapper">
-              <img class="project-img" src="https://images.pexels.com/photos/17190964/pexels-photo-17190964/free-photo-of-woman-hand-on-piano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Piano Tiles Game Screenshot" />
-              <div class="project-overlay">
-                <div class="project-tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Pygame</span>
-                  <span class="tech-tag">Audio</span>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2022</div>
+                        <h4>Self-Taught Developer Journey</h4>
+                        <p>Dedicated over 1000+ hours to learning programming languages, frameworks, and development best practices through online courses, documentation, and hands-on projects.</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Piano Tiles</h3>
-              <p class="project-description">An engaging rhythm game with multiple difficulty levels and soundtrack integration.</p>
-              <div class="project-stats">
-                <span class="stat-item"><i class="fa fa-music"></i> Music</span>
-                <span class="stat-item"><i class="fa fa-gamepad"></i> Rhythm</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/youngcoder45/PianoTilesGameInPython" target="_blank" rel="noopener noreferrer" class="btn-github">
-                  <i class="fa fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </article>
-          
-          <article class="project-card enhanced-card" data-category="game" tabindex="0" aria-label="Project: Super Mario Game">
-            <div class="project-image-wrapper">
-              <img class="project-img" src="https://images.pexels.com/photos/163077/mario-yoschi-figures-funny-163077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Super Mario Game Screenshot" />
-              <div class="project-overlay">
-                <div class="project-tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Pygame</span>
-                  <span class="tech-tag">2D Graphics</span>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016</div>
+                        <h4>First Line of Code</h4>
+                        <p>Started my programming journey at age 13 with HTML and CSS, creating simple websites and gradually progressing to more complex web applications.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="project-content">
-              <h3 class="project-title">Super Mario Bros</h3>
-              <p class="project-description">A faithful recreation of the classic platformer with authentic gameplay mechanics and level design.</p>
-              <div class="project-stats">
-                <span class="stat-item"><i class="fa fa-gamepad"></i> Platformer</span>
-                <span class="stat-item"><i class="fa fa-star"></i> Classic</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/youngcoder45/Super-Mario-Game" target="_blank" rel="noopener noreferrer" class="btn-github">
-                  <i class="fa fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </article>
         </div>
-      </section>
+    </section>
 
-      <!-- BLOG SECTION -->
-      <section id="blog" class="section-padding fade-in">
+    <!-- Stats Section -->
+    <section id="statistics" class="section-padding">
         <div class="container">
-          <h2 class="section-title mb-5">Latest Blog Posts</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card p-4 shadow-lg border-0 h-100">
-                <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg" class="card-img-top rounded-3 mb-3" alt="Web Development">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold mb-2">Modern Web Development Practices</h5>
-                  <p class="card-text">Exploring the latest trends and best practices in modern web development...</p>
-                  <span class="blog-date">Coming Soon</span>
+            <h2 class="section-title text-center mb-5">By the Numbers</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <div class="stat-number counter" data-count="25">25+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="stat-number counter" data-count="1000">1000+</div>
+                    <div class="stat-label">Hours of Coding</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number counter" data-count="15">15+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <div class="stat-number counter" data-count="7">7+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
             </div>
-          </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card p-4 shadow-lg border-0 h-100">
-                <img src="https://emeritus.org/in/wp-content/uploads/sites/3/2023/01/What-is-machine-learning-Definition-types.jpg.optimal.jpg" class="card-img-top rounded-3 mb-3" alt="Machine Learning">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold mb-2">Getting Started with Machine Learning</h5>
-                  <p class="card-text">A beginner's guide to understanding machine learning concepts...</p>
-                  <span class="blog-date">May 22, 2025</span>
-                  <a href="https://medium.com/@youngcoder45/getting-started-with-machine-learning-be3eead8ae6b" class="btn btn-outline-primary mt-2" target="_blank" rel="noopener">Read More</a>
-          </div>
-            </div>
-          </div>
-            <div class="col-md-4">
-              <div class="card p-4 shadow-lg border-0 h-100">
-                <img src="https://images.pexels.com/photos/11035482/pexels-photo-11035482.jpeg" class="card-img-top rounded-3 mb-3" alt="Coding Tips">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold mb-2">Essential Coding Tips for Developers</h5>
-                  <p class="card-text">Improve your coding skills with these essential tips and tricks...</p>
-                  <span class="blog-date">Coming Soon</span>
         </div>
-              </div>
-              </div>
-            </div>
-              </div>
-      </section>
+    </section>
 
-      <!-- Testimonials Section (MergedPortfolio style) -->
-      <section id="testimonials" class="fade-in section-padding">
-        <h2 class="section-title">Testimonials</h2>
-        <div class="testimonials-slider">
-          <div class="testimonial active">
-            <p class="testimonial-text">"He helped me fix a major issue on my website and explained everything so clearly. His support was quick and professional!"</p>
-            <div class="testimonial-author">
-              <strong>Ritesh Vanivdekar</strong><br />
-              <span>Developer, Freelancer</span>
-            </div>
-          </div>
-          <div class="testimonial">
-            <p class="testimonial-text">"Aditya's projects are always creative, well-built, and user-friendly. You can see the passion he puts into every detail."</p>
-            <div class="testimonial-author">
-              <strong>Vibha Gupta</strong><br />
-              <span>Tech Enthusiast</span>
-            </div>
-          </div>
-          <div class="testimonial">
-            <p class="testimonial-text">"Aditya built our website in 2022 — it's still running strong. Clean, smooth, and exactly what we needed."</p>
-            <div class="testimonial-author">
-              <strong>Ishant</strong><br />
-              <span>Singer, Mc error</span>
-            </div>
-          </div>
-          <div class="testimonial">
-            <p class="testimonial-text">"Great design, smooth performance. Aditya delivered more than expected for our music platform."</p>
-            <div class="testimonial-author">
-              <strong>Pratik Mane</strong><br />
-              <span>Manager, Mc error</span>
-            </div>
-          </div>
-          <button id="prev-testimonial" aria-label="Previous testimonial" class="testimonial-nav">&#8592;</button>
-          <button id="next-testimonial" aria-label="Next testimonial" class="testimonial-nav">&#8594;</button>
-              </div>
-      </section>
-
-      <!-- SERVICES SECTION -->
-      <section id="services" class="section-padding fade-in">
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
         <div class="container">
-          <h2 class="section-title mb-5">What I Offer</h2>
-          <div class="row g-4">
-            <div class="col-md-3 col-6">
-              <div class="card p-4 shadow-lg border-0 text-center h-100">
-                <img src="assets/img/service/icon-responsive.svg" alt="Responsive" class="mb-3" style="height: 48px;">
-                <h5 class="fw-bold mb-2">Responsive Design</h5>
-                <p class="card-text">Websites that look great on any device, from desktop to mobile.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="card p-4 shadow-lg border-0 text-center h-100">
-                <img src="assets/img/service/icon-lock.svg" alt="Secure" class="mb-3" style="height: 48px;">
-                <h5 class="fw-bold mb-2">Secure Code</h5>
-                <p class="card-text">Best practices for security and privacy in every project.</p>
-              </div>
-              </div>
-            <div class="col-md-3 col-6">
-              <div class="card p-4 shadow-lg border-0 text-center h-100">
-                <img src="assets/img/service/icon-easy.svg" alt="Easy to Use" class="mb-3" style="height: 48px;">
-                <h5 class="fw-bold mb-2">Easy to Use</h5>
-                <p class="card-text">Intuitive interfaces and smooth user experiences.</p>
-            </div>
-          </div>
-            <div class="col-md-3 col-6">
-              <div class="card p-4 shadow-lg border-0 text-center h-100">
-                <img src="assets/img/service/icon-email.svg" alt="Support" class="mb-3" style="height: 48px;">
-                <h5 class="fw-bold mb-2">Ongoing Support</h5>
-                <p class="card-text">Reliable support and updates for your projects.</p>
-              </div>
-              </div>
-            </div>
-              </div>
-      </section>
+            <h2 class="section-title text-center mb-5">Let's Work Together</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <!-- Contact Info -->
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div class="contact-card h-100">
+                                <h3 class="contact-title mb-4">Get In Touch</h3>
+                                <p class="contact-desc mb-4">
+                                    Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+                                </p>
+                                <div class="contact-social-links mb-4">
+                                    <a href="https://github.com/youngcoder45" class="contact-social" aria-label="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/aditya-verma-45a8b3250" class="contact-social" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://twitter.com/youngcoder45" class="contact-social" aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://discord.com/users/AdiCoder#4444" class="contact-social" aria-label="Discord">
+                                        <i class="fab fa-discord"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-email">
+                                    <i class="fas fa-envelope me-2"></i>
+                                    <span>youngcoder45@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
 
-      <!-- EXPERIENCE SECTION (Restored) -->
-      <section id="experience" class="section-padding fade-in">
+                        <!-- Contact Form -->
+                        <div class="col-lg-6">
+                            <div class="contact-form-card h-100">
+                                <form id="contact-form" action="https://formspree.io/f/moqopjar" method="POST" autocomplete="on" novalidate>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required aria-required="true" aria-label="Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required aria-required="true" aria-label="Email">
+                                    </div>
+                                     <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required aria-required="true" aria-label="Subject">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required aria-required="true" aria-label="Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="contact-submit-btn">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        Send Message
+                                    </button>
+                                </form>
+                                <div class="form-response" id="formResponse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
         <div class="container">
-          <h2 class="section-title mb-5">Experience</h2>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="card p-4 shadow-lg border-0 h-100">
-                <h5 class="fw-bold mb-2">Freelance Web Developer</h5>
-                <p class="mb-1"><b>2019 - Present</b></p>
-                <p class="card-text">Worked with clients worldwide to build modern, responsive websites and web apps. Specialized in front-end and full-stack development.</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card p-4 shadow-lg border-0 h-100">
-                <h5 class="fw-bold mb-2">Open Source Contributor</h5>
-                <p class="mb-1"><b>2020 - Present</b></p>
-                <p class="card-text">Contributed to open source projects in Python, JavaScript, and web development. Focused on code quality, documentation, and community support.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT SECTION -->
-      <section id="contact" class="section-padding fade-in">
-        <div class="container">
-          <div class="row justify-content-center align-items-center g-5">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <div class="glass-card p-5 shadow-lg border-0 text-center contact-card">
-                <h2 class="fw-bold mb-3 contact-title">Contact Me</h2>
-                <p class="mb-4 contact-desc">Let's connect! Reach out via social or send a message directly.</p>
-                <div class="contact-social-links d-flex flex-wrap justify-content-center gap-3 mb-4">
-                  <a href="https://github.com/youngcoder45" target="_blank" class="contact-social" aria-label="GitHub" title="GitHub"><i class="fa fa-github"></i></a>
-                  <a href="https://linkedin.com/in/aditya-verma-45a8b3250" target="_blank" class="contact-social" aria-label="LinkedIn" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                  <a href="https://instagram.com/youngcoder45" target="_blank" class="contact-social" aria-label="Instagram" title="Instagram"><i class="fa fa-instagram"></i></a>
-                  <a href="https://twitter.com/youngcoder45" target="_blank" class="contact-social" aria-label="Twitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="https://www.reddit.com/user/youngcoder45" target="_blank" class="contact-social" aria-label="Reddit" title="Reddit"><i class="fa fa-reddit"></i></a>
-                  <a href="https://medium.com/@youngcoder45" target="_blank" class="contact-social" aria-label="Medium" title="Medium"><i class="fa fa-medium"></i></a>
-                  <a href="https://linktr.ee/youngcoder45" target="_blank" class="contact-social" aria-label="Linktree" title="Linktree"><i class="fa fa-link"></i></a>
-            </div>
-                <div class="contact-email"><i class="fa fa-envelope me-2" aria-hidden="true"></i> <span>youngcoder45@gmail.com</span></div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 YC45. All rights reserved. | Built with passion and code</p>
+                    <div class="footer-links">
+                        <a href="#" id="privacy-link">Privacy Policy</a>
+                        <span class="mx-2">|</span>
+                        <a href="#" class="text-muted">Terms of Service</a>
+                    </div>
+                </div>
             </div>
         </div>
-            <div class="col-lg-7">
-              <div class="glass-card p-5 shadow-lg border-0 contact-form-card">
-                <form id="contact-form" action="https://formspree.io/f/moqopjar" method="POST" autocomplete="on" novalidate>
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required aria-required="true" aria-label="Name">
-            </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required aria-required="true" aria-label="Email">
-          </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required aria-required="true" aria-label="Message"></textarea>
-            </div>
-                  <button type="submit" class="btn contact-submit-btn" aria-label="Send Message">Send Message</button>
-                  <div id="form-response" class="form-response" role="alert" aria-live="polite" style="margin-top:12px;"></div>
-                </form>
-          </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </footer>
 
-      <!-- NEWSLETTER SECTION -->
-      <section id="newsletter" class="fade-in section-padding" style="text-align:center;">
-        <h2 class="section-title">Subscribe to My Newsletter</h2>
-        <p style="color:#bbb; margin-bottom:22px;">Get the latest updates on my projects, blogs, and coding tips!</p>
-        <form id="newsletter-form" style="max-width:400px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;">
-          <input type="email" id="newsletter-email" name="newsletter-email" required placeholder="Your email address" style="flex:1 1 200px;padding:12px 14px;border-radius:8px;border:none;background:#23272f;color:#f0f0f0;font-size:1rem;" autocomplete="email" />
-          <button type="submit" style="background:#00bcd4;color:#121212;border:none;border-radius:8px;padding:12px 22px;font-weight:700;font-size:1rem;cursor:pointer;transition:background 0.3s;">Subscribe</button>
-        </form>
-        <p id="newsletter-response" style="text-align:center;margin-top:14px;font-size:1rem;"></p>
-      </section>
-
-      <!-- LINKTREE BUTTON -->
-      <section class="fade-in" style="text-align: center; padding: 10px 0">
-        <a href="https://linktr.ee/youngcoder45" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #00bcd4; color: #121212; padding: 12px 28px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">🌴My Linktree Page</a>
-      </section>
-
-      <!-- FOOTER -->
-      <footer class="py-4" style="background: #23272f; color: #fff; text-align: center;">
-        <div class="container">
-          <div class="mb-2">
-            <a href="https://github.com/youngcoder45" target="_blank" class="mx-2" aria-label="GitHub"><i class="fa fa-github"></i></a>
-            <a href="https://linkedin.com/in/aditya-verma-45a8b3250" target="_blank" class="mx-2" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-            <a href="https://instagram.com/youngcoder45" target="_blank" class="mx-2" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/youngcoder45" target="_blank" class="mx-2" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.reddit.com/user/youngcoder45" target="_blank" class="mx-2" aria-label="Reddit"><i class="fa fa-reddit"></i></a>
-            <a href="https://medium.com/@youngcoder45" target="_blank" class="mx-2" aria-label="Medium"><i class="fa fa-medium"></i></a>
-            <a href="https://linktr.ee/youngcoder45" target="_blank" class="mx-2" aria-label="Linktree"><i class="fa fa-link"></i></a>
-          </div>
-          <div>&copy; 2024 Aditya Verma. All rights reserved. | <a href="#" id="privacy-link" style="color:#00bcd4; text-decoration:underline;">Privacy Policy</a></div>
-        </div>
-      </footer>
-    </main>
-
-    <!-- Main JavaScript file for interactivity and effects -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/animated-headline.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-contact.js"></script>
     <script src="main.js"></script>
-    <!-- Devicon icons for skill logos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
     <!-- Privacy Notice Modal -->
     <div
       id="privacy-modal"
@@ -942,24 +749,5 @@
     </script>
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:9999;background:var(--accent);color:#fff;padding:12px 18px;border-radius:50%;font-size:1.5rem;box-shadow:0 2px 8px rgba(0,188,212,0.10);transition:opacity 0.3s;cursor:pointer;"><i class="fa fa-arrow-up"></i></a>
-    <!-- JS SCRIPTS: All required for interactivity and effects -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/modernizr-2.8.3.min.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/smooth-scroll.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/animated-headline.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/form-contact.js"></script>
-    <!-- If you want to use PHP contact form, see contact.php in the assets or root directory. -->
-  </body>
+</body>
 </html>
