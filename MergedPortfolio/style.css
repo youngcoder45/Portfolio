@@ -1551,32 +1551,9 @@ section:hover {
   box-shadow: 0 4px 24px rgba(0, 188, 212, 0.10);
   background: rgba(255,255,255,0.10);
 }
-.card:hover, .project-card:hover, .stat-card:hover, .blog-card:hover, .skill-card:hover, .services-item:hover, .timeline-content:hover, .row:hover {
-  background: rgba(0,188,212,0.10) !important;
-  color: #23272f !important;
-}
-.card:hover h1, .card:hover h2, .card:hover h3, .card:hover h4, .card:hover h5, .card:hover h6,
-.project-card:hover h1, .project-card:hover h2, .project-card:hover h3, .project-card:hover h4, .project-card:hover h5, .project-card:hover h6,
-.stat-card:hover .stat-number, .stat-card:hover .stat-label,
-.blog-card:hover .card-title, .blog-card:hover .card-text,
-.services-item:hover h5, .timeline-content:hover h5 {
-  color: #00bcd4 !important;
-}
-.card:hover *,
-.project-card:hover *,
-.stat-card:hover *,
-.blog-card:hover *,
-.services-item:hover *,
-.timeline-content:hover * {
-  color: #23272f !important;
-}
-.card:hover .card-title, .card:hover .card-text, .card:hover .text-muted, .card:hover .text-secondary,
-.project-card:hover .card-title, .project-card:hover .card-text, .project-card:hover .text-muted, .project-card:hover .text-secondary,
-.stat-card:hover .card-title, .stat-card:hover .card-text, .stat-card:hover .text-muted, .stat-card:hover .text-secondary,
-.blog-card:hover .card-title, .blog-card:hover .card-text, .blog-card:hover .text-muted, .blog-card:hover .text-secondary,
-.services-item:hover .card-title, .services-item:hover .card-text, .services-item:hover .text-muted, .services-item:hover .text-secondary,
-.timeline-content:hover .card-title, .timeline-content:hover .card-text, .timeline-content:hover .text-muted, .timeline-content:hover .text-secondary {
-  color: #23272f !important;
+.card:hover, .project-card:hover, .stat-card:hover, .blog-card:hover, .skill-card:hover, .services-item:hover, .timeline-content:hover {
+  transform: translateY(-4px) scale(1.025);
+  box-shadow: 0 12px 40px rgba(0, 188, 212, 0.18);
 }
 .contact-card:hover, .contact-form-card:hover {
   box-shadow: 0 6px 24px rgba(0, 188, 212, 0.12);
@@ -3138,15 +3115,4 @@ body.overflow-hidden {
   box-shadow: none !important;
   border: none !important;
   cursor: default !important;
-}
-
-/* === CARD HOVER: ALL TEXT WHITE === */
-.card:hover *,
-.project-card:hover *,
-.stat-card:hover *,
-.blog-card:hover *,
-.services-item:hover *,
-.timeline-content:hover *,
-.skill-card:hover * {
-  color: #fff !important;
 }
