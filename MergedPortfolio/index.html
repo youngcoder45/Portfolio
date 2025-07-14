@@ -139,10 +139,7 @@
           <div class="hero-content">
             <h1 class="hero-name">Aditya Verma</h1>
             <div class="hero-roles">
-              <span class="role active">Web Developer</span>
-              <span class="role">Programmer</span>
-              <span class="role">Tech Enthusiast</span>
-              <span class="role">Creative Coder</span>
+              <span class="typing-text" id="typed-roles"></span>
               </div>
             <div class="hero-badges">
               <span class="badge"><i class="fa fa-map-marker"></i> India</span>
@@ -231,15 +228,122 @@
         </div>
       </section>
 
-      <!-- Skills Section: List of programming and tech skills -->
+      <!-- Skills Section: Interactive skill showcase with progress bars -->
       <section id="skills" class="section-padding dark_bg fade-in">
         <div class="container">
-          <h2 class="section-title text-center mb-5">Skills</h2>
-          <div class="row justify-content-center g-3">
+          <h2 class="section-title text-center mb-5">Skills & Expertise</h2>
+          <div class="skills-categories">
+            <div class="skill-category">
+              <h3 class="category-title">Frontend Development</h3>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-html5-plain colored"></i>
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-css3-plain colored"></i>
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3 class="category-title">Backend Development</h3>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-python-plain colored"></i>
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-cplusplus-plain colored"></i>
+                  <span class="skill-name">C++</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-java-plain colored"></i>
+                  <span class="skill-name">Java</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3 class="category-title">Tools & Technologies</h3>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-git-plain colored"></i>
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-mysql-plain colored"></i>
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-percentage">78%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="78%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <i class="devicon-python-plain colored"></i>
+                  <span class="skill-name">AI/ML</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Interactive Skills Grid -->
+          <div class="interactive-skills-grid mt-5">
+            <div class="row justify-content-center g-3">
             <div class="col-6 col-sm-4 col-md-2 mb-4">
-              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white" title="HTML5: 4+ years experience">
+              <div class="skill-card skill-animate text-center p-3 shadow rounded bg-white interactive-skill" title="HTML5: 4+ years experience" data-skill="HTML5" data-experience="4+ years">
                 <i class="devicon-html5-plain colored display-4"></i>
                 <div class="mt-2"><strong>HTML5</strong></div>
+                <div class="skill-tooltip">4+ years experience</div>
           </div>
           </div>
             <div class="col-6 col-sm-4 col-md-2 mb-4">
@@ -300,6 +404,55 @@
         </div>
       </section>
 
+      <!-- Achievement Showcase Section -->
+      <section id="achievements" class="section-padding fade-in achievement-section">
+        <div class="container">
+          <h2 class="section-title mb-5">Achievements & Milestones</h2>
+          <div class="achievements-timeline">
+            <div class="achievement-item" data-aos="fade-up">
+              <div class="achievement-icon">
+                <i class="fa fa-trophy"></i>
+              </div>
+              <div class="achievement-content">
+                <h4>Started Coding Journey</h4>
+                <p class="achievement-date">2020</p>
+                <p>Began programming at age 13 with a passion for web development</p>
+              </div>
+            </div>
+            <div class="achievement-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="achievement-icon">
+                <i class="fa fa-rocket"></i>
+              </div>
+              <div class="achievement-content">
+                <h4>First Website Launch</h4>
+                <p class="achievement-date">2021</p>
+                <p>Successfully deployed my first portfolio website</p>
+              </div>
+            </div>
+            <div class="achievement-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="achievement-icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <div class="achievement-content">
+                <h4>161+ Projects Completed</h4>
+                <p class="achievement-date">2024</p>
+                <p>Built diverse projects ranging from games to web applications</p>
+              </div>
+            </div>
+            <div class="achievement-item" data-aos="fade-up" data-aos-delay="600">
+              <div class="achievement-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <div class="achievement-content">
+                <h4>Continuous Learning</h4>
+                <p class="achievement-date">Ongoing</p>
+                <p>Always exploring new technologies and expanding skillset</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- After Skills Section: Add Tech Stack Section -->
       <section id="tech-stack" class="section-padding fade-in">
         <div class="container">
@@ -339,69 +492,174 @@
         </div>
       </section>
 
-      <!-- PROJECTS SECTION (Inspired by MYPORTFOLIO) -->
+      <!-- PROJECTS SECTION (Enhanced with filters and animations) -->
       <section id="projects" class="section-padding fade-in">
-        <h2 class="section-title mb-5">Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card" tabindex="0" aria-label="Project: Portfolio Website">
-            <img class="project-img" src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Website Screenshot" />
+        <h2 class="section-title mb-5">Featured Projects</h2>
+        
+        <!-- Project Filters -->
+        <div class="project-filters mb-4">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="game">Game Development</button>
+          <button class="filter-btn" data-filter="python">Python Projects</button>
+        </div>
+        
+        <div class="projects-grid" id="projects-container">
+          <article class="project-card enhanced-card" data-category="web" tabindex="0" aria-label="Project: Portfolio Website">
+            <div class="project-image-wrapper">
+              <img class="project-img" src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Website Screenshot" />
+              <div class="project-overlay">
+                <div class="project-tech-stack">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
             <div class="project-content">
               <h3 class="project-title">Portfolio Website</h3>
-              <p class="project-description">A modern, responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+              <p class="project-description">A modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth animations and interactive elements.</p>
+              <div class="project-stats">
+                <span class="stat-item"><i class="fa fa-star"></i> Featured</span>
+                <span class="stat-item"><i class="fa fa-eye"></i> Live</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/youngcoder45/Portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://youngcoder45.netlify.app" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                <a href="https://github.com/youngcoder45/Portfolio" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <i class="fa fa-github"></i> Code
+                </a>
+                <a href="https://youngcoder45.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-live">
+                  <i class="fa fa-external-link"></i> Live Demo
+                </a>
               </div>
             </div>
           </article>
-          <article class="project-card" tabindex="0" aria-label="Project: Music Website">
-            <img class="project-img" src="https://moises.ai/_next/image/?url=https%3A%2F%2Fstorage.googleapis.com%2Fmoises-cms%2Fhow_to_reading_sheet_music_image_338d99b137%2Fhow_to_reading_sheet_music_image_338d99b137.jpg&w=1920&q=75" alt="Music Website Screenshot" />
+          <article class="project-card enhanced-card" data-category="web" tabindex="0" aria-label="Project: Music Website">
+            <div class="project-image-wrapper">
+              <img class="project-img" src="https://moises.ai/_next/image/?url=https%3A%2F%2Fstorage.googleapis.com%2Fmoises-cms%2Fhow_to_reading_sheet_music_image_338d99b137%2Fhow_to_reading_sheet_music_image_338d99b137.jpg&w=1920&q=75" alt="Music Website Screenshot" />
+              <div class="project-overlay">
+                <div class="project-tech-stack">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
             <div class="project-content">
-              <h3 class="project-title">Music Website</h3>
-              <p class="project-description">A music website showcasing various artists and their works.</p>
+              <h3 class="project-title">MC Error Music Platform</h3>
+              <p class="project-description">A comprehensive music platform showcasing artists and their works with interactive features.</p>
+              <div class="project-stats">
+                <span class="stat-item"><i class="fa fa-music"></i> Music</span>
+                <span class="stat-item"><i class="fa fa-eye"></i> Live</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/youngcoder45/MC_Error.me" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://mcerror.netlify.app" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                <a href="https://github.com/youngcoder45/MC_Error.me" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <i class="fa fa-github"></i> Code
+                </a>
+                <a href="https://mcerror.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-live">
+                  <i class="fa fa-external-link"></i> Live Demo
+                </a>
               </div>
             </div>
           </article>
-          <article class="project-card" tabindex="0" aria-label="Project: ATM Simulator Game">
-            <img class="project-img" src="https://images.pexels.com/photos/5699385/pexels-photo-5699385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ATM Simulator Game Screenshot" />
+          
+          <article class="project-card enhanced-card" data-category="python" tabindex="0" aria-label="Project: ATM Simulator Game">
+            <div class="project-image-wrapper">
+              <img class="project-img" src="https://images.pexels.com/photos/5699385/pexels-photo-5699385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ATM Simulator Game Screenshot" />
+              <div class="project-overlay">
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">OOP</span>
+                </div>
+              </div>
+            </div>
             <div class="project-content">
-              <h3 class="project-title">ATM Simulator Game</h3>
-              <p class="project-description">A simple ATM simulator game built in Python.</p>
+              <h3 class="project-title">ATM Simulator</h3>
+              <p class="project-description">A comprehensive ATM simulator with user authentication, balance management, and transaction history.</p>
+              <div class="project-stats">
+                <span class="stat-item"><i class="fa fa-code"></i> Python</span>
+                <span class="stat-item"><i class="fa fa-gamepad"></i> Simulation</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/youngcoder45/Atm-Simulator-Game" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/youngcoder45/Atm-Simulator-Game" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <i class="fa fa-github"></i> Code
+                </a>
               </div>
             </div>
           </article>
-          <article class="project-card" tabindex="0" aria-label="Project: Flappy Bird">
-            <img class="project-img" src="https://i.ytimg.com/vi/HzvpOtyJYGs/maxresdefault.jpg" alt="Flappy Bird Screenshot" />
+          
+          <article class="project-card enhanced-card" data-category="game" tabindex="0" aria-label="Project: Flappy Bird">
+            <div class="project-image-wrapper">
+              <img class="project-img" src="https://i.ytimg.com/vi/HzvpOtyJYGs/maxresdefault.jpg" alt="Flappy Bird Screenshot" />
+              <div class="project-overlay">
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pygame</span>
+                </div>
+              </div>
+            </div>
             <div class="project-content">
-              <h3 class="project-title">Flappy Bird</h3>
-              <p class="project-description">A clone of the popular Flappy Bird game.</p>
+              <h3 class="project-title">Flappy Bird Clone</h3>
+              <p class="project-description">A pixel-perfect recreation of the popular Flappy Bird game with smooth physics and animations.</p>
+              <div class="project-stats">
+                <span class="stat-item"><i class="fa fa-gamepad"></i> Game</span>
+                <span class="stat-item"><i class="fa fa-trophy"></i> Classic</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/youngcoder45/Flapp-Bird-by-Youngcoder45" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/youngcoder45/Flapp-Bird-by-Youngcoder45" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <i class="fa fa-github"></i> Code
+                </a>
               </div>
             </div>
           </article>
-          <article class="project-card" tabindex="0" aria-label="Project: Piano Tiles Game">
-            <img class="project-img" src="https://images.pexels.com/photos/17190964/pexels-photo-17190964/free-photo-of-woman-hand-on-piano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Piano Tiles Game Screenshot" />
+          
+          <article class="project-card enhanced-card" data-category="game" tabindex="0" aria-label="Project: Piano Tiles Game">
+            <div class="project-image-wrapper">
+              <img class="project-img" src="https://images.pexels.com/photos/17190964/pexels-photo-17190964/free-photo-of-woman-hand-on-piano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Piano Tiles Game Screenshot" />
+              <div class="project-overlay">
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pygame</span>
+                  <span class="tech-tag">Audio</span>
+                </div>
+              </div>
+            </div>
             <div class="project-content">
-              <h3 class="project-title">Piano Tiles Game</h3>
-              <p class="project-description">A fun piano tiles game built in Python.</p>
+              <h3 class="project-title">Piano Tiles</h3>
+              <p class="project-description">An engaging rhythm game with multiple difficulty levels and soundtrack integration.</p>
+              <div class="project-stats">
+                <span class="stat-item"><i class="fa fa-music"></i> Music</span>
+                <span class="stat-item"><i class="fa fa-gamepad"></i> Rhythm</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/youngcoder45/PianoTilesGameInPython" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/youngcoder45/PianoTilesGameInPython" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <i class="fa fa-github"></i> Code
+                </a>
               </div>
             </div>
           </article>
-          <article class="project-card" tabindex="0" aria-label="Project: Super Mario Game">
-            <img class="project-img" src="https://images.pexels.com/photos/163077/mario-yoschi-figures-funny-163077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Super Mario Game Screenshot" />
+          
+          <article class="project-card enhanced-card" data-category="game" tabindex="0" aria-label="Project: Super Mario Game">
+            <div class="project-image-wrapper">
+              <img class="project-img" src="https://images.pexels.com/photos/163077/mario-yoschi-figures-funny-163077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Super Mario Game Screenshot" />
+              <div class="project-overlay">
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pygame</span>
+                  <span class="tech-tag">2D Graphics</span>
+                </div>
+              </div>
+            </div>
             <div class="project-content">
-              <h3 class="project-title">Super Mario Game</h3>
-              <p class="project-description">A classic Super Mario Bros game built in Python.</p>
+              <h3 class="project-title">Super Mario Bros</h3>
+              <p class="project-description">A faithful recreation of the classic platformer with authentic gameplay mechanics and level design.</p>
+              <div class="project-stats">
+                <span class="stat-item"><i class="fa fa-gamepad"></i> Platformer</span>
+                <span class="stat-item"><i class="fa fa-star"></i> Classic</span>
+              </div>
               <div class="project-links">
-                <a href="https://github.com/youngcoder45/Super-Mario-Game" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/youngcoder45/Super-Mario-Game" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <i class="fa fa-github"></i> Code
+                </a>
               </div>
             </div>
           </article>
