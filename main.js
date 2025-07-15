@@ -2,9 +2,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('YC45 Portfolio - Professional JavaScript Loaded Successfully! 🚀');
 
-    // Hide preloader
-    hidePreloader();
-
     // Initialize all components
     initContactForm();
     initCounters();
@@ -13,19 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initNewsletterForm();
     initBackToTop();
 });
-
-// ===== PRELOADER =====
-function hidePreloader() {
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        setTimeout(() => {
-            preloader.classList.add('loader-hidden');
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 500);
-        }, 1000);
-    }
-}
 
 // ===== CONTACT FORM =====
 function initContactForm() {
