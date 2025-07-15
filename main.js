@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // ===== CONTACT FORM =====
 function initContactForm() {
     const contactForm = document.getElementById('contact-form');
-    const formResponse = document.getElementById('form-response');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -354,11 +353,11 @@ type(), document.addEventListener("DOMContentLoaded", () => {
   function a() {
       i.clearRect(0, 0, c.width, c.height), d.forEach(e => {
           e.x += e.speedX, e.y += e.speedY, (0 > e.x || e.x > c.width) && (e.speedX *= -1), (0 > e.y || e.y > c.height) && (e.speedY *= -1), i.beginPath(), i.arc(e.x, e.y, e.size, 0, 2 * Math.PI), i.fillStyle = `rgba(0, 188, 212, ${e.opacity})`, i.fill(), d.forEach(a => {
-              const b = e.x - a.x,
-                  c = e.y - a.y,
-                  d = Math.sqrt(b * b + c * c);
-              120 > d && (i.beginPath(), i.strokeStyle = `rgba(0, 188, 212, ${.1*(1-d/120)})`, i.lineWidth = 1, i.moveTo(e.x, e.y), i.lineTo(a.x, a.y), i.stroke())
-          })
+          const b = e.x - a.x,
+              c = e.y - a.y,
+              d = Math.sqrt(b * b + c * c);
+          120 > d && (i.beginPath(), i.strokeStyle = `rgba(0, 188, 212, ${.1*(1-d/120)})`, i.lineWidth = 1, i.moveTo(e.x, e.y), i.lineTo(a.x, a.y), i.stroke())
+      })
       }), requestAnimationFrame(a)
   }
   const b = document.querySelector(".particles");
@@ -410,11 +409,11 @@ function createEmojiShower() {
           c = 2 + 2 * Math.random(),
           d = .4 + .6 * Math.random();
       a.style.cssText = `
-    left: ${b}px;
-    top: ${window.innerHeight}px;
-    animation: floatUp ${c}s ease-in forwards;
-    opacity: ${d};
-  `, a.textContent = f[Math.floor(Math.random() * f.length)], document.body.appendChild(a), setTimeout(() => a.remove(), 1e3 * c)
+  left: ${b}px;
+  top: ${window.innerHeight}px;
+  animation: floatUp ${c}s ease-in forwards;
+  opacity: ${d};
+`, a.textContent = f[Math.floor(Math.random() * f.length)], document.body.appendChild(a), setTimeout(() => a.remove(), 1e3 * c)
   }
 }
 
@@ -422,20 +421,20 @@ function showHiddenMessage() {
   const c = hiddenMessages[Math.floor(Math.random() * hiddenMessages.length)],
       a = document.createElement("div");
   a.className = "secret-popup", a.textContent = c, a.style.cssText = `
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 188, 212, 0.9);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  z-index: 9999;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: rgba(0, 188, 212, 0.9);
+color: white;
+padding: 20px;
+border-radius: 10px;
+font-size: 1.2rem;
+font-weight: bold;
+z-index: 9999;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+opacity: 0;
+transition: opacity 0.3s ease;
 `, document.body.appendChild(a), requestAnimationFrame(() => {
       a.style.opacity = "1"
   }), setTimeout(() => {
