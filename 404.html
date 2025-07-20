@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Debug Information | YC45 Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #1a1d23;
+            --bg-secondary: #23272f;
+            --accent: #00bcd4;
+            --text-light: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border-color: #333740;
+            --error-color: #ff4757;
+            --warning-color: #ffa502;
+            --success-color: #2ed573;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-secondary) 100%);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .debug-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+        }
+
+        .error-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            color: var(--error-color);
+            text-shadow: 0 0 20px rgba(255, 71, 87, 0.3);
+            margin: 0;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            color: var(--accent);
+            margin: 10px 0;
+            font-weight: 600;
+        }
+
+        .debug-section {
+            background: var(--bg-dark);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .debug-section h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .debug-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .debug-card {
+            background: var(--bg-dark);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+        }
+
+        .debug-card h4 {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .debug-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .debug-item:last-child {
+            border-bottom: none;
+        }
+
+        .debug-label {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .debug-value {
+            color: var(--text-light);
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 188, 212, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .console-output {
+            background: #0d1117;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #58a6ff;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+        }
+
+        .console-line {
+            margin: 5px 0;
+            padding: 2px 0;
+        }
+
+        .console-error {
+            color: var(--error-color);
+        }
+
+        .console-warning {
+            color: var(--warning-color);
+        }
+
+        .console-info {
+            color: var(--success-color);
+        }
+
+        .stack-trace {
+            background: #1c1c1c;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #ff6b6b;
+            max-height: 250px;
+            overflow-y: auto;
+            border: 1px solid var(--error-color);
+        }
+
+        .btn-debug {
+            background: linear-gradient(45deg, var(--accent), #00acc1);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px;
+        }
+
+        .btn-debug:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
+            color: white;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-error {
+            background: var(--error-color);
+            box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+        }
+
+        .status-warning {
+            background: var(--warning-color);
+        }
+
+        .status-success {
+            background: var(--success-color);
+        }
+
+        .timeline {
+            border-left: 2px solid var(--accent);
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .resource-monitor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .resource-item {
+            background: var(--bg-dark);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .resource-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .resource-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .debug-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .debug-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-container">
+        <div class="error-header">
+            <div class="error-code animate-pulse">404</div>
+            <h1 class="error-title">Page Not Found - Debug Mode</h1>
+            <p class="text-muted">Detailed debugging information about the error</p>
+        </div>
+
+        <div class="debug-section">
+            <h3><i class="fas fa-exclamation-triangle"></i> Error Summary</h3>
+            <div class="debug-grid">
+                <div class="debug-card">
+                    <h4><span class="status-indicator status-error"></span>HTTP Status</h4>
+                    <div class="debug-item">
+                        <span class="debug-label">Status Code:</span>
+                        <span class="debug-value">404</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">Status Text:</span>
+                        <span class="debug-value">Not Found</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">Error Type:</span>
+                        <span class="debug-value">HTTP_NOT_FOUND</span>
+                    </div>
+                </div>
+
+                <div class="debug-card">
+                    <h4><span class="status-indicator status-warning"></span>Request Details</h4>
+                    <div class="debug-item">
+                        <span class="debug-label">URL:</span>
+                        <span class="debug-value" id="current-url">Loading...</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">Method:</span>
+                        <span class="debug-value">GET</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">Referrer:</span>
+                        <span class="debug-value" id="referrer-url">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h3><i class="fas fa-clock"></i> Request Timeline</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <strong>DNS Lookup:</strong> <span id="dns-time">2ms</span>
+                </div>
+                <div class="timeline-item">
+                    <strong>TCP Connection:</strong> <span id="tcp-time">15ms</span>
+                </div>
+                <div class="timeline-item">
+                    <strong>SSL Handshake:</strong> <span id="ssl-time">45ms</span>
+                </div>
+                <div class="timeline-item">
+                    <strong>Server Response:</strong> <span id="server-time">123ms</span>
+                </div>
+                <div class="timeline-item">
+                    <strong>Content Download:</strong> <span id="download-time">8ms</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h3><i class="fas fa-server"></i> Server Information</h3>
+            <div class="debug-grid">
+                <div class="debug-card">
+                    <h4>Server Details</h4>
+                    <div class="debug-item">
+                        <span class="debug-label">Server:</span>
+                        <span class="debug-value">Replit Static Server</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">Environment:</span>
+                        <span class="debug-value">Production</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">Region:</span>
+                        <span class="debug-value" id="server-region">us-east-1</span>
+                    </div>
+                </div>
+
+                <div class="debug-card">
+                    <h4>Client Information</h4>
+                    <div class="debug-item">
+                        <span class="debug-label">User Agent:</span>
+                        <span class="debug-value" id="user-agent">Loading...</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">IP Address:</span>
+                        <span class="debug-value" id="client-ip">Loading...</span>
+                    </div>
+                    <div class="debug-item">
+                        <span class="debug-label">Language:</span>
+                        <span class="debug-value" id="client-lang">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h3><i class="fas fa-chart-line"></i> Performance Metrics</h3>
+            <div class="resource-monitor">
+                <div class="resource-item">
+                    <div class="resource-value" id="load-time">--</div>
+                    <div class="resource-label">Page Load Time</div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-value" id="memory-usage">--</div>
+                    <div class="resource-label">Memory Usage</div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-value" id="connection-type">--</div>
+                    <div class="resource-label">Connection</div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-value" id="screen-res">--</div>
+                    <div class="resource-label">Screen Resolution</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h3><i class="fas fa-terminal"></i> Console Output</h3>
+            <div class="console-output">
+                <div class="console-line console-error">[ERROR] 404 - Resource not found</div>
+                <div class="console-line console-warning">[WARN] Attempted to access: <span id="console-url">unknown</span></div>
+                <div class="console-line console-info">[INFO] Server response time: <span id="console-response-time">123ms</span></div>
+                <div class="console-line console-info">[INFO] Client IP: <span id="console-client-ip">loading...</span></div>
+                <div class="console-line console-error">[ERROR] File system check: FAILED</div>
+                <div class="console-line console-warning">[WARN] Route not found in routing table</div>
+                <div class="console-line console-info">[INFO] Fallback to 404.html successful</div>
+                <div class="console-line console-info">[INFO] Debug mode: ENABLED</div>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h3><i class="fas fa-code"></i> Stack Trace</h3>
+            <div class="stack-trace">
+HTTPError: 404 Not Found
+    at StaticFileHandler.get() line 127
+    at Router.resolve() line 45
+    at Server.handleRequest() line 89
+    at IncomingMessage.&lt;anonymous&gt; line 156
+    at IncomingMessage.emit() line 22
+    at HTTPParser.parserOnIncomingClient() line 615
+    at HTTPParser.parserOnHeadersComplete() line 203
+    at Socket.socketOnData() line 534
+
+Possible causes:
+- File does not exist at the requested path
+- Incorrect routing configuration
+- Missing index file in directory
+- Permission denied to access resource
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h3><i class="fas fa-tools"></i> Debugging Actions</h3>
+            <div class="text-center">
+                <a href="/MergedPortfolio/" class="btn-debug">
+                    <i class="fas fa-home"></i> Return Home
+                </a>
+                <button class="btn-debug" onclick="window.history.back()">
+                    <i class="fas fa-arrow-left"></i> Go Back
+                </button>
+                <button class="btn-debug" onclick="window.location.reload()">
+                    <i class="fas fa-sync-alt"></i> Reload Page
+                </button>
+                <button class="btn-debug" onclick="copyDebugInfo()">
+                    <i class="fas fa-copy"></i> Copy Debug Info
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Populate debug information
+        document.addEventListener('DOMContentLoaded', function() {
+            // Basic page info
+            document.getElementById('current-url').textContent = window.location.href;
+            document.getElementById('console-url').textContent = window.location.href;
+            document.getElementById('referrer-url').textContent = document.referrer || 'Direct access';
+            document.getElementById('user-agent').textContent = navigator.userAgent.substring(0, 50) + '...';
+            document.getElementById('client-lang').textContent = navigator.language;
+            
+            // Performance info
+            document.getElementById('load-time').textContent = Math.round(performance.now()) + 'ms';
+            document.getElementById('console-response-time').textContent = Math.round(performance.now()) + 'ms';
+            
+            // Screen info
+            document.getElementById('screen-res').textContent = screen.width + 'x' + screen.height;
+            
+            // Connection info
+            if (navigator.connection) {
+                document.getElementById('connection-type').textContent = navigator.connection.effectiveType || 'Unknown';
+            } else {
+                document.getElementById('connection-type').textContent = 'Unknown';
+            }
+            
+            // Memory info (if available)
+            if (performance.memory) {
+                const memUsed = Math.round(performance.memory.usedJSHeapSize / 1024 / 1024);
+                document.getElementById('memory-usage').textContent = memUsed + 'MB';
+            } else {
+                document.getElementById('memory-usage').textContent = 'N/A';
+            }
+            
+            // Simulate getting client IP (would need backend in real scenario)
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('client-ip').textContent = data.ip;
+                    document.getElementById('console-client-ip').textContent = data.ip;
+                })
+                .catch(() => {
+                    document.getElementById('client-ip').textContent = 'Unknown';
+                    document.getElementById('console-client-ip').textContent = 'Unknown';
+                });
+            
+            // Add random timing variations for realism
+            const timings = ['dns-time', 'tcp-time', 'ssl-time', 'server-time', 'download-time'];
+            timings.forEach(id => {
+                const baseTime = parseInt(document.getElementById(id).textContent);
+                const variance = Math.floor(Math.random() * 20) - 10;
+                document.getElementById(id).textContent = Math.max(1, baseTime + variance) + 'ms';
+            });
+        });
+        
+        function copyDebugInfo() {
+            const debugInfo = `
+404 Debug Information
+=====================
+URL: ${window.location.href}
+Referrer: ${document.referrer || 'Direct access'}
+User Agent: ${navigator.userAgent}
+Language: ${navigator.language}
+Screen Resolution: ${screen.width}x${screen.height}
+Load Time: ${document.getElementById('load-time').textContent}
+Timestamp: ${new Date().toISOString()}
+            `;
+            
+            navigator.clipboard.writeText(debugInfo).then(() => {
+                alert('Debug information copied to clipboard!');
+            }).catch(() => {
+                alert('Failed to copy debug information');
+            });
+        }
+        
+        // Add some interactive debugging features
+        console.log('404 Debug Page Loaded');
+        console.log('Current URL:', window.location.href);
+        console.log('Referrer:', document.referrer);
+        console.log('User Agent:', navigator.userAgent);
+    </script>
+</body>
+</html>

@@ -192,6 +192,7 @@ a:hover {
   .hero-section {
     padding-top: 90px;
   }
+<<<<<<< HEAD
   .hero-section {
     padding-top: 60px;
     min-height: 80vh;
@@ -273,6 +274,8 @@ a:hover {
     padding: 8px 12px;
     font-size: 1.2rem;
   }
+=======
+>>>>>>> 4bf6e27e2b6c5b400a9d04bc95e96d371936609e
 }
 
 .hero-bg-gradient {
@@ -1716,4 +1719,8 @@ a:hover {
     background: white !important;
     color: black !important;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4bf6e27e2b6c5b400a9d04bc95e96d371936609e

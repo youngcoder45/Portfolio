@@ -877,4 +877,8 @@ function initSectionRevealAnimations() {
             observer.observe(el);
         });
     });
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4bf6e27e2b6c5b400a9d04bc95e96d371936609e

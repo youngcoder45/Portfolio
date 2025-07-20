@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://youngcoder45.netlify.app/sitemap.xml 
