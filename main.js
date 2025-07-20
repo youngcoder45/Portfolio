@@ -12,23 +12,32 @@ document.addEventListener('DOMContentLoaded', function() {
     initParallaxEffects();
     initResponsiveFeatures();
     initEasterEggs();
+    initTimelineAnimations();
+    initSectionRevealAnimations();
 });
 
-// ===== PRELOADER =====
+// ===== PRELOADER (VISIBLE MINIMUM DURATION) =====
 function initPreloader() {
     const preloader = document.getElementById('preloader');
     if (!preloader) return;
-
-    window.addEventListener('load', function() {
+    document.body.classList.add('overflow-hidden');
+    const minDuration = 1500; // ms
+    const start = Date.now();
+    function hidePreloader() {
+        const elapsed = Date.now() - start;
+        const wait = Math.max(0, minDuration - elapsed);
         setTimeout(() => {
             preloader.classList.add('loader-hidden');
             document.body.classList.remove('overflow-hidden');
-
             setTimeout(() => {
                 preloader.remove();
-            }, 500);
-        }, 1500);
-    });
+            }, 700);
+        }, wait);
+    }
+    Promise.all([
+        new Promise(res => window.addEventListener('load', res)),
+        document.fonts ? document.fonts.ready : Promise.resolve()
+    ]).then(hidePreloader);
 }
 
 // ===== NAVIGATION =====
@@ -124,40 +133,55 @@ function initHeroAnimations() {
     }, 500);
 }
 
-// ===== SKILL BARS ANIMATION =====
+// ===== SKILL BARS ANIMATION (IMPROVED) =====
 function initSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
+    const skillPercents = document.querySelectorAll('.skill-percentage');
     if (skillBars.length === 0) return;
 
-    let skillsAnimated = false;
-
     function animateSkillBars() {
-        if (skillsAnimated) return;
-
         skillBars.forEach((bar, index) => {
             const targetWidth = bar.getAttribute('data-width');
             if (targetWidth) {
                 setTimeout(() => {
                     bar.style.width = targetWidth + '%';
                     bar.classList.add('animated');
-                }, index * 100);
+                }, index * 150);
             }
         });
-
-        skillsAnimated = true;
+        // Animate numbers
+        skillPercents.forEach((percent, index) => {
+            const value = parseInt(percent.textContent);
+            if (!isNaN(value)) {
+                percent.textContent = '0%';
+                let current = 0;
+                const step = Math.ceil(value / 40);
+                function animateNum() {
+                    current += step;
+                    if (current >= value) {
+                        percent.textContent = value + '%';
+                    } else {
+                        percent.textContent = current + '%';
+                        requestAnimationFrame(animateNum);
+                    }
+                }
+                setTimeout(animateNum, index * 150);
+            }
+        });
     }
 
-    // Animate when skills section is in view
+    // Animate every time section enters view
     const skillsSection = document.getElementById('skills');
     if (skillsSection) {
+        let lastTrigger = 0;
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if (entry.isIntersecting && Date.now() - lastTrigger > 1000) {
                     animateSkillBars();
+                    lastTrigger = Date.now();
                 }
             });
         }, { threshold: 0.3 });
-
         observer.observe(skillsSection);
     }
 }
@@ -617,8 +641,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-console.log('YC45 Portfolio - Professional JavaScript Loaded Successfully! 🚀');
-
 // === TESTIMONIALS SLIDER ===
 (function() {
   const testimonials = document.querySelectorAll('.testimonial');
@@ -758,69 +780,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // WOW.js for reveal animations
-  if (typeof WOW === 'function') {
-    new WOW().init();
-  }
-
-  // Particles.js background
-  if (typeof particlesJS === 'function' && document.getElementById('particles-js')) {
-    particlesJS.load('particles-js', 'assets/js/particles.json', function () {
-      // callback
-    });
-  }
-
-  // Owl Carousel for testimonials or blog (if present)
-  if ($('.owl-carousel').length && typeof $.fn.owlCarousel === 'function') {
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: true,
-      dots: true,
-      responsive: {
-        0: { items: 1 },
-        600: { items: 2 },
-        1000: { items: 3 }
-      }
-    });
-  }
-
-  // Nivo Lightbox for project images (if present)
-  if ($('.project-img, .blog-image').length && typeof $.fn.nivoLightbox === 'function') {
-    $('.project-img, .blog-image').nivoLightbox();
-  }
-
-  // CounterUp for fun facts (if present)
-  if ($('.counterUp').length && typeof $.fn.counterUp === 'function') {
-    $('.counterUp').counterUp({
-      delay: 10,
-      time: 1000
-    });
-  }
-
-  // Animated headline (if present)
-  if ($('.cd-headline').length && typeof $.fn.animatedHeadline === 'function') {
-    $('.cd-headline').animatedHeadline({
-      animationType: 'clip'
-    });
-  }
-
-  // Back to top button
-  var backToTop = document.querySelector('.back-to-top');
-  if (backToTop) {
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 300) {
-        backToTop.style.display = 'block';
-      } else {
-        backToTop.style.display = 'none';
-      }
-    });
-    backToTop.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-
   // Form validation (basic)
   var contactForm = document.getElementById('contact-form');
   if (contactForm) {
@@ -850,3 +809,72 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// ===== TIMELINE ANIMATION (TRUE SEQUENTIAL) =====
+function initTimelineAnimations() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    if (timelineItems.length === 0) return;
+    let animated = false;
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !animated) {
+                animated = true;
+                timelineItems.forEach((el, i) => {
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0) scale(1)';
+                        el.classList.add('animated');
+                    }, 400 * i);
+                });
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    timelineItems.forEach((el) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(40px) scale(0.97)';
+        el.style.transition = 'opacity 1.2s cubic-bezier(0.4,0,0.2,1), transform 1.2s cubic-bezier(0.4,0,0.2,1)';
+        observer.observe(el);
+    });
+}
+
+// ===== GENERAL SECTION REVEAL ANIMATIONS (TRUE SEQUENTIAL) =====
+function initSectionRevealAnimations() {
+    const sectionGroups = [
+        document.querySelectorAll('.fade-in'),
+        document.querySelectorAll('.enhanced-card'),
+        document.querySelectorAll('.stat-card'),
+        document.querySelectorAll('.blog-card'),
+        document.querySelectorAll('.testimonial'),
+        document.querySelectorAll('.about-glass-card')
+    ];
+    sectionGroups.forEach(group => {
+        if (group.length === 0) return;
+        let animated = false;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    animated = true;
+                    group.forEach((el, i) => {
+                        setTimeout(() => {
+                            el.style.opacity = '1';
+                            el.style.transform = 'translateY(0) scale(1)';
+                            el.classList.add('animated');
+                        }, 350 * i);
+                    });
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        group.forEach((el) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px) scale(0.97)';
+            el.style.transition = 'opacity 1s cubic-bezier(0.4,0,0.2,1), transform 1s cubic-bezier(0.4,0,0.2,1)';
+            observer.observe(el);
+        });
+    });
+}
