@@ -177,6 +177,34 @@ a:hover {
   box-shadow: none;
 }
 
+/* Responsive navbar improvements */
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    margin: 0.2rem 0;
+    padding: 0.75rem 1rem !important;
+    text-align: center;
+  }
+  
+  .navbar-collapse {
+    margin-top: 1rem;
+    background: rgba(10, 14, 26, 0.98);
+    border-radius: 15px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 188, 212, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand span {
+    font-size: 1.5rem !important;
+  }
+  
+  .navbar-brand img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
 /* ===== HERO SECTION ===== */
 .hero-section {
   min-height: 100vh;
