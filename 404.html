@@ -266,17 +266,280 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
             .debug-container {
-                padding: 20px;
-                margin: 10px;
+                padding: 15px;
+                margin: 5px;
+                border-radius: 10px;
             }
             
             .error-code {
-                font-size: 4rem;
+                font-size: 3.5rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
             }
             
             .debug-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .debug-section {
+                padding: 15px;
+                margin: 15px 0;
+            }
+            
+            .debug-section h3 {
+                font-size: 1.1rem;
+                flex-wrap: wrap;
+            }
+            
+            .debug-card {
+                padding: 12px;
+            }
+            
+            .debug-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                padding: 10px 0;
+            }
+            
+            .debug-value {
+                word-break: break-all;
+                font-size: 0.85rem;
+                max-width: 100%;
+            }
+            
+            .console-output {
+                padding: 15px;
+                font-size: 0.8rem;
+                max-height: 200px;
+            }
+            
+            .stack-trace {
+                padding: 12px;
+                font-size: 0.75rem;
+                max-height: 150px;
+            }
+            
+            .resource-monitor {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .resource-item {
+                padding: 10px;
+            }
+            
+            .resource-value {
+                font-size: 1.5rem;
+            }
+            
+            .btn-debug {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+                margin: 3px;
+                width: calc(50% - 6px);
+                justify-content: center;
+            }
+            
+            .timeline {
+                padding-left: 15px;
+            }
+            
+            .timeline-item {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+            
+            .debug-container {
+                padding: 10px;
+                margin: 2px;
+            }
+            
+            .error-code {
+                font-size: 2.5rem;
+            }
+            
+            .error-title {
+                font-size: 1.2rem;
+            }
+            
+            .error-header {
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+            
+            .debug-section {
+                padding: 10px;
+                margin: 10px 0;
+            }
+            
+            .debug-section h3 {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+            
+            .debug-card {
+                padding: 8px;
+            }
+            
+            .debug-card h4 {
+                font-size: 0.95rem;
+                margin-bottom: 8px;
+            }
+            
+            .debug-item {
+                padding: 8px 0;
+            }
+            
+            .debug-label {
+                font-size: 0.85rem;
+            }
+            
+            .debug-value {
+                font-size: 0.8rem;
+            }
+            
+            .console-output {
+                padding: 10px;
+                font-size: 0.75rem;
+                max-height: 150px;
+            }
+            
+            .stack-trace {
+                padding: 8px;
+                font-size: 0.7rem;
+                max-height: 120px;
+            }
+            
+            .resource-monitor {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .resource-item {
+                padding: 8px;
+            }
+            
+            .resource-value {
+                font-size: 1.2rem;
+            }
+            
+            .resource-label {
+                font-size: 0.8rem;
+            }
+            
+            .btn-debug {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+                margin: 2px;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            
+            .timeline {
+                padding-left: 12px;
+            }
+            
+            .timeline-item {
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+            }
+            
+            .timeline-item::before {
+                left: -18px;
+                width: 6px;
+                height: 6px;
+            }
+            
+            .status-indicator {
+                width: 8px;
+                height: 8px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .error-code {
+                font-size: 2rem;
+            }
+            
+            .error-title {
+                font-size: 1rem;
+            }
+            
+            .debug-container {
+                padding: 8px;
+            }
+            
+            .debug-section {
+                padding: 8px;
+            }
+            
+            .console-output,
+            .stack-trace {
+                max-height: 100px;
+                font-size: 0.65rem;
+            }
+            
+            .resource-value {
+                font-size: 1rem;
+            }
+            
+            .btn-debug {
+                font-size: 0.75rem;
+                padding: 6px 10px;
+            }
+        }
+
+        /* Landscape mobile orientation */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .error-code {
+                font-size: 2rem;
+            }
+            
+            .error-header {
+                margin-bottom: 15px;
+            }
+            
+            .debug-section {
+                margin: 10px 0;
+            }
+            
+            .console-output,
+            .stack-trace {
+                max-height: 80px;
+            }
+        }
+
+        /* Touch-friendly improvements */
+        @media (pointer: coarse) {
+            .btn-debug {
+                min-height: 44px;
+                touch-action: manipulation;
+            }
+            
+            .console-output,
+            .stack-trace {
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        /* Reduce animations on mobile for better performance */
+        @media (max-width: 768px) {
+            .animate-pulse {
+                animation: none;
             }
         }
     </style>
