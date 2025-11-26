@@ -414,6 +414,15 @@ a:hover {
   .hero-cta, .hero-cta-outline {
     width: 100%;
   }
+  .hero-image-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    max-width: 280px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
