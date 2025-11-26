@@ -1548,45 +1548,52 @@ a:hover {
   background: var(--dark-bg);
 }
 
+/* ===== BLOG SECTION ===== */
 .blog-card {
   background: var(--card-bg) !important;
   border: 1px solid #222 !important;
   transition: var(--transition);
   overflow: hidden;
+  border-radius: 16px;
 }
 
 .blog-card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-primary) !important;
   border-color: #444 !important;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
 }
 
-.blog-card .card-img-top {
-  height: 200px;
+.blog-img-wrapper {
+  height: 100%;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.blog-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: var(--transition);
+  transition: transform 0.5s ease;
+  filter: grayscale(0%);
+  opacity: 0.85;
 }
 
-.blog-card:hover .card-img-top {
+.blog-card:hover .blog-img {
   transform: scale(1.05);
+  opacity: 1;
 }
 
-.blog-card .card-title {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.blog-card .card-text {
-  color: var(--text-secondary);
-  line-height: 1.6;
+.blog-meta .badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.5em 1em;
 }
 
 .blog-date {
-  color: #a0a0a0;
-  font-weight: 600;
   font-size: 0.9rem;
-  display: inline-block;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  color: #e0e0e0 !important;
+  font-weight: 500;
 }
 
 /* Modern Read More Button for Blog */
