@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --bg-dark: #1a1d23;
-            --bg-secondary: #23272f;
-            --accent: #00bcd4;
+            --bg-dark: #050505;
+            --bg-secondary: #0a0a0a;
+            --accent: #ffffff;
             --text-light: #e0e0e0;
             --text-muted: #a0a0a0;
-            --border-color: #333740;
+            --border-color: #222;
             --error-color: #ff4757;
             --warning-color: #ffa502;
             --success-color: #2ed573;
         }
 
         body {
-            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-secondary) 100%);
+            background: var(--bg-dark);
             color: var(--text-light);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             min-height: 100vh;
@@ -35,7 +35,7 @@
             background: var(--bg-secondary);
             border-radius: 15px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: none;
             border: 1px solid var(--border-color);
         }
 
@@ -43,7 +43,7 @@
             text-align: center;
             margin-bottom: 40px;
             padding-bottom: 20px;
-            border-bottom: 2px solid var(--accent);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .error-code {

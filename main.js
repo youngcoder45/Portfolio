@@ -8,36 +8,47 @@ document.addEventListener('DOMContentLoaded', function() {
     initProjectFilters();
     initCounters();
     initContactForm();
-    initScrollAnimations();
-    initParallaxEffects();
+    // initScrollAnimations();
+    // initParallaxEffects();
     initResponsiveFeatures();
-    initEasterEggs();
-    initTimelineAnimations();
-    initSectionRevealAnimations();
+    // initEasterEggs();
+    // initTimelineAnimations();
+    // initSectionRevealAnimations();
 });
+
+// Removed Custom Cursor, Particles, and Tilt Effect for a cleaner, more professional look.
+
 
 // ===== PRELOADER (VISIBLE MINIMUM DURATION) =====
 function initPreloader() {
     const preloader = document.getElementById('preloader');
     if (!preloader) return;
     document.body.classList.add('overflow-hidden');
-    const minDuration = 1500; // ms
+    
+    const minDuration = 1000; // Reduced duration
     const start = Date.now();
+    
     function hidePreloader() {
         const elapsed = Date.now() - start;
         const wait = Math.max(0, minDuration - elapsed);
+        
         setTimeout(() => {
             preloader.classList.add('loader-hidden');
             document.body.classList.remove('overflow-hidden');
             setTimeout(() => {
-                preloader.remove();
+                if(preloader.parentNode) preloader.parentNode.removeChild(preloader);
             }, 700);
         }, wait);
     }
-    Promise.all([
-        new Promise(res => window.addEventListener('load', res)),
-        document.fonts ? document.fonts.ready : Promise.resolve()
-    ]).then(hidePreloader);
+
+    // Force hide after 3 seconds max as fallback
+    setTimeout(hidePreloader, 3000);
+
+    if (document.readyState === 'complete') {
+        hidePreloader();
+    } else {
+        window.addEventListener('load', hidePreloader);
+    }
 }
 
 // ===== NAVIGATION =====
@@ -105,21 +116,22 @@ function updateActiveNavigation() {
 // ===== HERO ANIMATIONS =====
 function initHeroAnimations() {
     const roleTexts = document.querySelectorAll('.role-text');
-    if (roleTexts.length === 0) return;
+    
+    if (roleTexts.length > 0) {
+        let currentRole = 0;
 
-    let currentRole = 0;
+        function showNextRole() {
+            roleTexts.forEach(text => text.classList.remove('active'));
+            roleTexts[currentRole].classList.add('active');
+            currentRole = (currentRole + 1) % roleTexts.length;
+        }
 
-    function showNextRole() {
-        roleTexts.forEach(text => text.classList.remove('active'));
-        roleTexts[currentRole].classList.add('active');
-        currentRole = (currentRole + 1) % roleTexts.length;
+        // Initial setup
+        showNextRole();
+
+        // Rotate roles every 3 seconds
+        setInterval(showNextRole, 3000);
     }
-
-    // Initial setup
-    showNextRole();
-
-    // Rotate roles every 3 seconds
-    setInterval(showNextRole, 3000);
 
     // Animate hero elements on load
     setTimeout(() => {
@@ -685,48 +697,8 @@ if(newsletterForm) {
 }
 
 // === DYNAMIC FEATURES INIT ===
-// HERO PARTICLES
-(function() {
-  if (window.particlesJS) {
-    particlesJS('hero-particles', {
-      particles: {
-        number: { value: 32, density: { enable: true, value_area: 800 } },
-        color: { value: ['#00bcd4', '#ff0364', '#fff'] },
-        shape: { type: 'circle' },
-        opacity: { value: 0.18, random: true },
-        size: { value: 4, random: true },
-        move: { enable: true, speed: 1.2, direction: 'none', random: true, straight: false, out_mode: 'out' }
-      },
-      interactivity: {
-        detect_on: 'canvas',
-        events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' } },
-        modes: { repulse: { distance: 80 }, push: { particles_nb: 4 } }
-      },
-      retina_detect: true
-    });
-  }
-})();
-// COUNTER UP FOR STATISTICS
-$(function() {
-  if ($.fn.counterUp && $.fn.waypoint) {
-    $('.counter').counterUp({ delay: 20, time: 1200 });
-  }
-});
-// SMOOTH SCROLL (for anchor links)
-$(function() {
-  $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({ scrollTop: target.offset().top - 64 }, 800);
-      }
-    }
-  });
-});
-// BACK TO TOP BUTTON
-$(function() {
+// Removed legacy jQuery and particles.js dependencies in favor of modern vanilla JS implementations
+
   var offset = 200;
   var duration = 500;
   $(window).scroll(function() {
@@ -741,7 +713,6 @@ $(function() {
     $('html, body').animate({ scrollTop: 0 }, 600);
     return false;
   });
-});
 // STAGGERED BADGE ANIMATION
 (function() {
   var badges = document.querySelectorAll('.hero-badges .badge, .about-badges-animated .about-badge');

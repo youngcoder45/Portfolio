@@ -25,10 +25,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" media="all" crossorigin="anonymous">
     <!-- Main Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css" media="all">
-    <!-- Other essential styles (local) -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="all">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="all">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all">
     <!-- Open Graph & Twitter Card -->
     <meta property="og:title" content="Aditya Verma | YoungCoder45 - AI/ML Engineer & Web Developer Portfolio" />
     <meta property="og:description" content="AI/ML Engineer and Web Developer specializing in machine learning, deep learning, neural networks, and modern web technologies. View my projects, skills, and experience." />
@@ -75,8 +71,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" aria-label="Main Navigation">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home" aria-label="Homepage">
-                <img src="me.png" alt="Aditya Verma Logo" width="48" height="48" style="vertical-align:middle; border-radius:8px; margin-right:8px;" loading="lazy" />
-                <span style="color: #00bcd4; font-size: 2rem; vertical-align:middle;">Aditya Verma</span>
+                <span style="color: var(--text-primary); font-size: 1.5rem; vertical-align:middle;">Aditya Verma</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -97,39 +92,33 @@
 
     <!-- Hero Section -->
     <section class="hero-section" id="home" aria-label="Hero Section">
-        <div class="hero-bg-gradient"></div>
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 order-lg-1 mx-auto">
-                    <div class="hero-content">
+                <div class="col-lg-6">
+                    <div class="hero-content text-start">
+                        <div class="hero-status-badge">
+                            <span class="status-dot"></span>
+                            Available for freelance work
+                        </div>
                         <h1 class="hero-title hero-text-animate">
-                            Hi, I'm <span class="gradient-text">Aditya</span>
+                            Aditya Verma
                         </h1>
-                        <div class="hero-roles">
-                            <span class="role-text active">Full Stack Developer</span>
-                            <span class="role-text">AI/ML Enthusiast</span>
-                            <span class="role-text">Problem Solver</span>
-                            <span class="role-text">Creative Innovator</span>
-                        </div>
                         <p class="hero-lead hero-text-animate">
-                            Passionate developer with 4+ years of experience creating modern web applications and exploring cutting-edge technologies. I specialize in turning complex problems into elegant digital solutions.
+                            Full Stack Developer & AI/ML Enthusiast. <br>
+                            Building digital products with clean code and modern design.
                         </p>
-                        <div class="hero-badges mb-4">
-                            <span class="badge-pill"><i class="fas fa-code"></i> Full Stack</span>
-                            <span class="badge-pill"><i class="fas fa-robot"></i> AI/ML</span>
-                            <span class="badge-pill"><i class="fas fa-mobile-alt"></i> Responsive</span>
-                            <span class="badge-pill"><i class="fas fa-rocket"></i> Modern Tech</span>
-                        </div>
-                        <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary hero-cta">View My Work</a>
-                            <a href="#contact" class="btn btn-outline-light hero-cta-outline">Get In Touch</a>
+                        <div class="hero-buttons justify-content-start">
+                            <a href="#projects" class="btn hero-cta">View Work</a>
+                            <a href="#contact" class="btn hero-cta-outline">Contact Me</a>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image-wrapper">
+                        <img src="image.png" alt="Aditya Verma" class="img-fluid hero-img">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
@@ -278,8 +267,11 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <i class="devicon-github-original"></i>
-                            <span class="skill-name">GitHub</span>
+                            <!-- Arch Linux SVG (Official) -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#1793d1" fill-rule="evenodd" d="M12 2L1 21.5h4.5l2-4h9l2 4H23L12 2zm0 5l3.5 8h-7L12 7zM7.5 19h9l-1 2h-7l-1-2z"/>
+                            </svg>
+                            <span class="skill-name">Arch Linux</span>
                             <span class="skill-percentage">90%</span>
                         </div>
                         <div class="skill-bar">
@@ -518,7 +510,7 @@
                                     Want to Become Like Me?
                                 </h2>
                                 <p class="community-description mb-4">
-                                    Join <strong>The Code Verse Hub</strong> - My exclusive Discord community for developers! We're a thriving community of <span class="highlight-text">700+ members</span> and growing very fast. Connect with like-minded developers, share your projects, get coding help, and level up your programming skills together.
+                                    Join <strong>The Code Verse Hub</strong> - my exclusive Discord community for developers! We're a thriving community of <span class="highlight-text">200+ members</span> and growing very fast. Connect with like-minded developers, share your projects, get coding help, and level up your programming skills together.
                                 </p>
                                 <div class="community-features mb-4">
                                     <div class="feature-item">
@@ -736,7 +728,7 @@
                     <div class="footer-links">
                         <a href="#" id="privacy-link">Privacy Policy</a>
                         <span class="mx-2">|</span>
-                        <a href="#" class="text-muted" style="color: #00bcd4;">Terms of Service</a>
+                        <a href="#" id="terms-link" class="text-muted">Terms of Service</a>
                     </div>
                 </div>
             </div>
@@ -757,7 +749,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.9);
         z-index: 9999;
         align-items: center;
         justify-content: center;
@@ -765,7 +757,7 @@
     >
       <div
         style="
-          background: #23272f;
+          background: #0a0a0a;
           padding: 32px 24px;
           border-radius: 16px;
           max-width: 400px;
@@ -773,7 +765,7 @@
           color: #fff;
           position: relative;
           font-size: 1.15rem;
-          box-shadow: 0 8px 32px #00bcd4cc;
+          border: 1px solid #333;
         "
       >
         <button
@@ -785,7 +777,7 @@
             background: none;
             border: none;
             font-size: 2rem;
-            color: #00bcd4;
+            color: #ffffff;
             cursor: pointer;
             font-weight: bold;
             line-height: 1;
@@ -793,8 +785,8 @@
         >
           &times;
         </button>
-        <h3 style="color: #00bcd4; margin-bottom: 12px; font-size: 1.4rem; font-weight: 700;">Privacy Notice</h3>
-        <p style="font-size: 1.08rem; line-height: 1.7; color: #fff; font-weight: 500; text-shadow: 0 1px 6px #000;">This site uses a contact form to collect your name, email, and message for the sole purpose of responding to your inquiry. No data is shared with third parties. Analytics are used to understand site usage. By using this site, you consent to this policy.</p>
+        <h3 style="color: #ffffff; margin-bottom: 12px; font-size: 1.4rem; font-weight: 700;">Privacy Notice</h3>
+        <p style="font-size: 1.08rem; line-height: 1.7; color: #a0a0a0; font-weight: 500;">This site uses a contact form to collect your name, email, and message for the sole purpose of responding to your inquiry. No data is shared with third parties. Analytics are used to understand site usage. By using this site, you consent to this policy.</p>
       </div>
     </div>
     <!-- Terms of Service Modal -->
@@ -807,7 +799,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.9);
         z-index: 9999;
         align-items: center;
         justify-content: center;
@@ -815,7 +807,7 @@
     >
       <div
         style="
-          background: #23272f;
+          background: #0a0a0a;
           padding: 32px 24px;
           border-radius: 16px;
           max-width: 400px;
@@ -823,7 +815,7 @@
           color: #fff;
           position: relative;
           font-size: 1.15rem;
-          box-shadow: 0 8px 32px #00bcd4cc;
+          border: 1px solid #333;
         "
       >
         <button
@@ -835,7 +827,7 @@
             background: none;
             border: none;
             font-size: 2rem;
-            color: #00bcd4;
+            color: #ffffff;
             cursor: pointer;
             font-weight: bold;
             line-height: 1;
@@ -843,8 +835,8 @@
         >
           &times;
         </button>
-        <h3 style="color: #00bcd4; margin-bottom: 12px; font-size: 1.4rem; font-weight: 700;">Terms of Service</h3>
-        <p style="font-size: 1.08rem; line-height: 1.7; color: #fff; font-weight: 500; text-shadow: 0 1px 6px #000;">
+        <h3 style="color: #ffffff; margin-bottom: 12px; font-size: 1.4rem; font-weight: 700;">Terms of Service</h3>
+        <p style="font-size: 1.08rem; line-height: 1.7; color: #a0a0a0; font-weight: 500;">
           By using this website, you agree to use it for lawful purposes only and not to misuse or attempt to disrupt the site or its services. All content is provided for informational purposes and is subject to change without notice. No guarantees are made regarding the accuracy or completeness of information. The site owner is not liable for any damages arising from use of this site. Continued use of this site constitutes acceptance of these terms.
         </p>
       </div>
@@ -855,7 +847,7 @@
         document.getElementById("privacy-modal").style.display = "flex";
       };
       // Terms of Service modal logic
-      var termsLink = document.querySelector('.footer-links a.text-muted');
+      var termsLink = document.getElementById('terms-link');
       if (termsLink) {
         termsLink.onclick = function(e) {
           e.preventDefault();
@@ -864,6 +856,6 @@
       }
     </script>
     <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:9999;background:var(--accent);color:#fff;padding:12px 18px;border-radius:50%;font-size:1.5rem;box-shadow:0 2px 8px rgba(0,188,212,0.10);transition:opacity 0.3s;cursor:pointer;"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="back-to-top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:9999;background:#ffffff;color:#000000;padding:12px 18px;border-radius:50%;font-size:1.5rem;box-shadow:none;transition:opacity 0.3s;cursor:pointer;"><i class="fa fa-arrow-up"></i></a>
 </body>
 </html>
