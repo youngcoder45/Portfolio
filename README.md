@@ -1,4 +1,4 @@
-# 🚀 Aditya Verma | Professional. Portfolio
+# Aditya Verma | Professional. Portfolio
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://youngcoder45.netlify.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -9,36 +9,36 @@
 
 > **A modern, responsive, and accessible portfolio website showcasing expertise in web development, AI/ML, and software engineering.**
 
-**🌐 Live Demo:** [youngcoder45.netlify.app](https://youngcoder45.netlify.app/)
+** Live Demo:** [youngcoder45.netlify.app](https://youngcoder45.netlify.app/)
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [🎯 Overview](#-overview)
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🏗️ Architecture](#️-architecture)
-- [🚀 Getting Started](#-getting-started)
-- [📁 Project Structure](#-project-structure)
-- [🎨 Design System](#-design-system)
-- [⚡ Performance](#-performance)
-- [♿ Accessibility](#-accessibility)
-- [📱 Responsive Design](#-responsive-design)
-- [🔧 Configuration](#-configuration)
-- [🌐 Deployment](#-deployment)
-- [📊 Analytics & SEO](#-analytics--seo)
-- [🤝 Contributing](#-contributing)
-- [📝 License](#-license)
-- [📧 Contact](#-contact)
+- [ Overview](#-overview)
+- [ Features](#-features)
+- [ Tech Stack](#-tech-stack)
+- [ Architecture](#-architecture)
+- [ Getting Started](#-getting-started)
+- [ Project Structure](#-project-structure)
+- [ Design System](#-design-system)
+- [ Performance](#-performance)
+- [ Accessibility](#-accessibility)
+- [ Responsive Design](#-responsive-design)
+- [ Configuration](#-configuration)
+- [ Deployment](#-deployment)
+- [ Analytics & SEO](#-analytics--seo)
+- [ Contributing](#-contributing)
+- [ License](#-license)
+- [ Contact](#-contact)
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This portfolio represents a comprehensive showcase of my journey as a **Full Stack Developer** and **AI/ML Enthusiast**. Built with modern web technologies and design principles, it demonstrates proficiency in responsive design, accessibility standards, performance optimization, and user experience.
 
-### 🏆 Key Highlights
+### Key Highlights
 
 - **4+ Years** of development experience
 - **160+ Projects** completed across multiple technologies
@@ -49,18 +49,18 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎨 **User Interface & Experience**
-- **Glassmorphism Design** with modern visual effects
-- **Smooth Animations** using CSS3 and JavaScript
-- **Interactive Elements** with hover states and transitions
+### **User Interface & Experience**
+- **High-End Minimalist Design** with deep black aesthetics
+- **Subtle Aurora Effects** for premium visual depth
+- **Interactive Elements** with refined hover states
 - **Dynamic Preloader** with animated branding
-- **Parallax Effects** for engaging scrolling experience
+- **Performance Focused** static layout for speed
 - **Easter Eggs** for enhanced user engagement
 
-### 📊 **Content Sections**
-- **Hero Section** with animated role rotation
+### **Content Sections**
+- **Hero Section** with modern split layout and grayscale effects
 - **About Me** with professional introduction and badges
 - **Skills & Technologies** with animated progress bars
 - **Featured Projects** with live GitHub repositories
@@ -71,7 +71,7 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 - **Testimonials** with carousel slider
 - **Contact Form** with validation and email integration
 
-### 🔧 **Technical Features**
+### **Technical Features**
 - **SEO Optimized** with meta tags and structured data
 - **Social Media Integration** (Open Graph, Twitter Cards)
 - **Sitemap Generation** for search engines
@@ -80,7 +80,7 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 - **Cross-Browser Compatibility**
 - **Mobile-First Design**
 
-### ♿ **Accessibility & Performance**
+### **Accessibility & Performance**
 - **WCAG 2.1 AA Compliance**
 - **Keyboard Navigation** support
 - **Screen Reader** friendly
@@ -91,7 +91,7 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### **Frontend Technologies**
 | Technology | Version | Purpose |
@@ -113,6 +113,7 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 | Tool | Purpose |
 |------|---------|
 | **VS Code** | Primary development environment |
+| **Arch Linux** | Primary Operating System |
 | **Git** | Version control and collaboration |
 | **Netlify** | Deployment and hosting |
 | **Chrome DevTools** | Testing and debugging |
@@ -127,15 +128,15 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### **Code Organization**
 ```
-📁 Portfolio Architecture
-├── 🎨 Presentation Layer (HTML/CSS)
-├── ⚡ Business Logic (JavaScript)
-├── 📊 Data Layer (JSON/APIs)
-└── 🔧 Configuration (Meta tags, SEO)
+Portfolio Architecture
+├── Presentation Layer (HTML/CSS)
+├── Business Logic (JavaScript)
+├── Data Layer (JSON/APIs)
+└── Configuration (Meta tags, SEO)
 ```
 
 ### **CSS Architecture**
@@ -165,7 +166,7 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### **Prerequisites**
 - Modern web browser (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
@@ -207,32 +208,32 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio/
-├── 📄 index.html              # Main HTML file
-├── 🎨 style.css               # Main stylesheet
-├── ⚡ main.js                 # JavaScript functionality
-├── 🖼️ coder.png               # Favicon and brand logo
-├── 🚫 404.html                # Custom error page
-├── 🗺️ sitemap.xml             # SEO sitemap
-├── 📚 README.md               # Project documentation
+├── index.html              # Main HTML file
+├── style.css               # Main stylesheet
+├── main.js                 # JavaScript functionality
+├── coder.png               # Favicon and brand logo
+├── 404.html                # Custom error page
+├── sitemap.xml             # SEO sitemap
+├── README.md               # Project documentation
 │
-├── 📁 assets/                 # Static assets
-│   ├── 🖼️ img/                # Images and graphics
+├── assets/                 # Static assets
+│   ├── img/                # Images and graphics
 │   │   ├── b1.jpg → b8.jpg    # Project screenshots
 │   │   ├── favicon.jpg        # Browser favicon
-│   │   └── 📁 service/        # Service icons
+│   │   └── service/        # Service icons
 │   │       ├── icon-*.svg     # Feature icons
 │   │       └── service-icon-bg.svg
 │   │
-│   └── 🎨 css/                # Additional stylesheets
+│   └── css/                # Additional stylesheets
 │       ├── animate.css        # Animation library
 │       ├── main.css           # Core styles
 │       └── responsive.css     # Mobile optimizations
 │
-└── 📁 docs/                   # Documentation (optional)
+└── docs/                   # Documentation (optional)
     ├── CHANGELOG.md           # Version history
     ├── CONTRIBUTING.md        # Contribution guidelines
     └── DEPLOYMENT.md          # Deployment instructions
@@ -240,25 +241,25 @@ portfolio/
 
 ---
 
-## 🎨 Design System
+## Design System
 
 ### **Color Palette**
 ```css
 :root {
   /* Primary Colors */
-  --primary-color: #00bcd4;      /* Cyan - Trust, Technology */
-  --secondary-color: #ff0364;    /* Pink - Energy, Creativity */
-  --accent-color: #00e5ff;       /* Light Cyan - Highlights */
+  --primary-color: #ffffff;      /* White - Clarity, Focus */
+  --secondary-color: #a0a0a0;    /* Grey - Subtlety */
+  --accent-color: #333333;       /* Dark Grey - Structure */
   
   /* Background Colors */
-  --dark-bg: #0a0e1a;           /* Deep Blue - Professional */
-  --darker-bg: #060a14;         /* Darker Blue - Depth */
-  --card-bg: #1a1f2e;           /* Card Background */
+  --dark-bg: #050505;           /* Deep Black - Canvas */
+  --darker-bg: #000000;         /* Pure Black - Depth */
+  --card-bg: #111111;           /* Card Background */
   
   /* Text Colors */
   --text-primary: #ffffff;       /* High Contrast */
-  --text-secondary: #b0bec5;     /* Medium Contrast */
-  --text-muted: #78909c;         /* Low Contrast */
+  --text-secondary: #a0a0a0;     /* Medium Contrast */
+  --text-muted: #666666;         /* Low Contrast */
 }
 ```
 
@@ -290,7 +291,7 @@ xxl: 3rem    (48px)
 
 ---
 
-## ⚡ Performance
+## Performance
 
 ### **Optimization Techniques**
 - **Lazy Loading**: Images load only when visible
@@ -311,25 +312,25 @@ xxl: 3rem    (48px)
 
 ### **Bundle Analysis**
 ```
-📊 Asset Sizes
-├── 📄 HTML: ~15KB (minified)
-├── 🎨 CSS: ~45KB (optimized)
-├── ⚡ JS: ~25KB (compressed)
-├── 🖼️ Images: ~500KB (optimized)
-└── 📚 Fonts: ~120KB (subset)
+Asset Sizes
+├── HTML: ~15KB (minified)
+├── CSS: ~45KB (optimized)
+├── JS: ~25KB (compressed)
+├── Images: ~500KB (optimized)
+└── Fonts: ~120KB (subset)
 ```
 
 ---
 
-## ♿ Accessibility
+## Accessibility
 
 ### **WCAG 2.1 AA Compliance**
-- ✅ **Color Contrast**: 4.5:1 minimum ratio
-- ✅ **Keyboard Navigation**: Full keyboard accessibility
-- ✅ **Screen Readers**: ARIA labels and landmarks
-- ✅ **Focus Management**: Visible focus indicators
-- ✅ **Alternative Text**: Descriptive image alt text
-- ✅ **Semantic HTML**: Proper heading hierarchy
+- **Color Contrast**: 4.5:1 minimum ratio
+- **Keyboard Navigation**: Full keyboard accessibility
+- **Screen Readers**: ARIA labels and landmarks
+- **Focus Management**: Visible focus indicators
+- **Alternative Text**: Descriptive image alt text
+- **Semantic HTML**: Proper heading hierarchy
 
 ### **Accessibility Features**
 ```html
@@ -355,7 +356,7 @@ xxl: 3rem    (48px)
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 ### **Breakpoint System**
 ```css
@@ -378,14 +379,14 @@ xxl: 3rem    (48px)
 ### **Device Testing**
 | Device Category | Screen Size | Status |
 |----------------|-------------|---------|
-| **Mobile Phones** | 320px - 767px | ✅ Optimized |
-| **Tablets** | 768px - 991px | ✅ Optimized |
-| **Laptops** | 992px - 1199px | ✅ Optimized |
-| **Desktops** | 1200px+ | ✅ Optimized |
+| **Mobile Phones** | 320px - 767px | Optimized |
+| **Tablets** | 768px - 991px | Optimized |
+| **Laptops** | 992px - 1199px | Optimized |
+| **Desktops** | 1200px+ | Optimized |
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 ### **Environment Variables**
 ```javascript
@@ -416,7 +417,7 @@ const CONFIG = {
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 ### **Netlify Deployment**
 ```bash
@@ -439,17 +440,17 @@ npm run build  # (if using build tools)
 ```
 
 ### **Deployment Checklist**
-- ✅ Test all functionality
-- ✅ Validate HTML/CSS
-- ✅ Check responsive design
-- ✅ Verify accessibility
-- ✅ Test performance
-- ✅ Configure analytics
-- ✅ Set up monitoring
+- Test all functionality
+- Validate HTML/CSS
+- Check responsive design
+- Verify accessibility
+- Test performance
+- Configure analytics
+- Set up monitoring
 
 ---
 
-## 📊 Analytics & SEO
+## Analytics & SEO
 
 ### **SEO Implementation**
 ```html
@@ -489,7 +490,7 @@ npm run build  # (if using build tools)
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 ### **How to Contribute**
 1. **Fork** the repository
@@ -524,7 +525,7 @@ npm run build  # (if using build tools)
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
@@ -542,7 +543,7 @@ copies of the Software...
 
 ---
 
-## 📧 Contact
+## Contact
 
 ### **Get In Touch**
 
@@ -555,11 +556,11 @@ copies of the Software...
 [![Discord](https://img.shields.io/badge/Discord-CodeVerse%20Hub-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/3xKFvKhuGR)
 
 ### **Professional Services**
-- 🚀 **Web Development**: Modern, responsive websites
-- 🤖 **AI/ML Solutions**: Custom machine learning applications  
-- 💻 **Full Stack Development**: End-to-end application development
-- 🎨 **UI/UX Design**: User-centered design solutions
-- 📱 **Mobile Development**: Cross-platform applications
+- **Web Development**: Modern, responsive websites
+- **AI/ML Solutions**: Custom machine learning applications  
+- **Full Stack Development**: End-to-end application development
+- **UI/UX Design**: User-centered design solutions
+- **Mobile Development**: Cross-platform applications
 
 ---
 
@@ -567,12 +568,12 @@ copies of the Software...
 
 ### **Thank you for visiting my portfolio!** 
 
-*If you found this project helpful, please consider giving it a ⭐*
+*If you found this project helpful, please consider giving it a *
 
-**[⬆ Back to Top](#-aditya-verma--professional-portfolio)**
+**[ Back to Top](#-aditya-verma--professional-portfolio)**
 
 ---
 
-**Built with ❤️ by [Aditya Verma](https://youngcoder45.netlify.app/) | © 2025 All Rights Reserved**
+**Built with by [Aditya Verma](https://youngcoder45.netlify.app/) | 2025 All Rights Reserved**
 
 </div>
