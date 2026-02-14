@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     initPreloader();
     initNavigation();
-    initHeroAnimations();
+    initHeroParticles();
     initSkillBars();
     initProjectFilters();
     initCounters();
@@ -113,40 +113,110 @@ function updateActiveNavigation() {
     });
 }
 
-// ===== HERO ANIMATIONS =====
-function initHeroAnimations() {
-    const roleTexts = document.querySelectorAll('.role-text');
-    
-    if (roleTexts.length > 0) {
-        let currentRole = 0;
-
-        function showNextRole() {
-            roleTexts.forEach(text => text.classList.remove('active'));
-            roleTexts[currentRole].classList.add('active');
-            currentRole = (currentRole + 1) % roleTexts.length;
-        }
-
-        // Initial setup
-        showNextRole();
-
-        // Rotate roles every 3 seconds
-        setInterval(showNextRole, 3000);
+// ===== HERO PARTICLES (CLEAN & MINIMAL) =====
+function initHeroParticles() {
+    if (document.getElementById('particles-js')) {
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 60, // Reduced density for cleaner look
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff" // Pure white
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.3, // Very subtle
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 0.5, // Slow breathing effect
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 2, // Smaller particles
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.15, // Faint lines
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1, // Slow movement
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab" // Connect lines on hover
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 0.5
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 3
+                    }
+                }
+            },
+            "retina_detect": true
+        });
     }
 
-    // Animate hero elements on load
-    setTimeout(() => {
-        const heroElements = document.querySelectorAll('.hero-text-animate');
-        heroElements.forEach((element, index) => {
-            setTimeout(() => {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
-            }, index * 200);
-        });
-    }, 500);
+    // Animate hero text
+    const heroElements = document.querySelectorAll('.hero-text-animate');
+    heroElements.forEach((element, index) => {
+        setTimeout(() => {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }, index * 200);
+    });
 }
 
-// ===== SKILL BARS ANIMATION (IMPROVED) =====
+
+// ===== SKILLS BARS ANIMATION (REMOVED - MOVED TO TECH STACK GRID) =====
 function initSkillBars() {
+    // This function is no longer needed as we switched to a tech stack grid layout
+    return;
+    /*
     const skillBars = document.querySelectorAll('.skill-progress');
     const skillPercents = document.querySelectorAll('.skill-percentage');
     if (skillBars.length === 0) return;
@@ -196,6 +266,7 @@ function initSkillBars() {
         }, { threshold: 0.3 });
         observer.observe(skillsSection);
     }
+    */
 }
 
 // ===== PROJECT FILTERS =====

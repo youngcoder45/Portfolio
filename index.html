@@ -92,6 +92,9 @@
 
     <!-- Hero Section -->
     <section class="hero-section" id="home" aria-label="Hero Section">
+        <!-- Background Particles -->
+        <div id="particles-js"></div>
+        
         <div class="container">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6">
@@ -163,140 +166,134 @@
         <div class="container">
             <h2 class="section-title text-center mb-5">Skills & Technologies</h2>
 
-            <!-- Skills Categories -->
-            <div class="skills-categories mb-5">
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend Development</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-html5-plain colored"></i>
-                            <span class="skill-name">HTML5</span>
-                            <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="95"></div>
-                        </div>
+            <!-- Tech Stack Grid (Unified) -->
+            <div class="tech-stack-wrapper mb-5">
+                <div class="tech-stack-grid">
+                    <!-- Languages -->
+                    <div class="tech-item">
+                        <i class="devicon-python-plain colored"></i>
+                        <span class="tech-name">Python</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-css3-plain colored"></i>
-                            <span class="skill-name">CSS3/SCSS</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span class="tech-name">JavaScript</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-javascript-plain colored"></i>
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span class="tech-name">TypeScript</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-react-original colored"></i>
-                            <span class="skill-name">React</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-java-plain colored"></i>
+                        <span class="tech-name">Java</span>
                     </div>
-                </div>
+                    <div class="tech-item">
+                        <i class="devicon-c-plain colored"></i>
+                        <span class="tech-name">C</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-cplusplus-plain colored"></i>
+                        <span class="tech-name">C++</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-rust-plain colored"></i>
+                        <span class="tech-name">Rust</span>
+                    </div>
+                    
+                    <!-- Frontend -->
+                    <div class="tech-item">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span class="tech-name">HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span class="tech-name">CSS3/SCSS</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <span class="tech-name">React</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <span class="tech-name">Bootstrap</span>
+                    </div>
 
-                <div class="skill-category">
-                    <h3 class="category-title">Backend Development</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-python-plain colored"></i>
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="88"></div>
-                        </div>
+                    <!-- Backend & AI -->
+                    <div class="tech-item">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span class="tech-name">Node.js</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-nodejs-plain colored"></i>
-                            <span class="skill-name">Node.js</span>
-                            <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-tensorflow-original colored"></i>
+                        <span class="tech-name">TensorFlow</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-mysql-plain colored"></i>
-                            <span class="skill-name">SQL/Databases</span>
-                            <span class="skill-percentage">82%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="82"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-pytorch-original colored"></i>
+                        <span class="tech-name">PyTorch</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fas fa-brain"></i>
-                            <span class="skill-name">AI/ML</span>
-                            <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="70"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-pandas-plain colored"></i>
+                        <span class="tech-name">Pandas</span>
                     </div>
-                </div>
+                    <div class="tech-item">
+                        <div style="font-size: 3rem; color: #4477aa; font-weight: bold; margin-bottom: 1rem; text-align: center; line-height: 1;">S</div>
+                        <span class="tech-name">Seaborn</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-scikitlearn-plain colored"></i>
+                        <span class="tech-name">Scikit-learn</span>
+                    </div>
 
-                <div class="skill-category">
-                    <h3 class="category-title">Tools & Platforms</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-git-plain colored"></i>
-                            <span class="skill-name">Git/GitHub</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
+                    <!-- Database -->
+                    <div class="tech-item">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span class="tech-name">PostgreSQL</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <!-- Arch Linux SVG (Official) -->
-                            <svg viewBox="0 0 24 24" width="24" height="24" style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#1793d1" fill-rule="evenodd" d="M12 2L1 21.5h4.5l2-4h9l2 4H23L12 2zm0 5l3.5 8h-7L12 7zM7.5 19h9l-1 2h-7l-1-2z"/>
-                            </svg>
-                            <span class="skill-name">Arch Linux</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span class="tech-name">SQL</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="devicon-vscode-plain colored"></i>
-                            <span class="skill-name">VS Code</span>
-                            <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="95"></div>
-                        </div>
+
+                    <!-- Tools -->
+                    <div class="tech-item">
+                        <i class="devicon-git-plain colored"></i>
+                        <span class="tech-name">Git</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fas fa-cloud"></i>
-                            <span class="skill-name">Cloud Services</span>
-                            <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75"></div>
-                        </div>
+                    <div class="tech-item">
+                        <i class="devicon-github-original colored"></i>
+                        <span class="tech-name">GitHub</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-docker-plain colored"></i>
+                        <span class="tech-name">Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-godot-plain colored"></i>
+                        <span class="tech-name">Godot</span>
+                    </div>
+                    <!-- Niri WM (Using generic window icon as placeholder) -->
+                    <div class="tech-item">
+                        <i class="fas fa-layer-group" style="color: #7fdbff;"></i>
+                        <span class="tech-name">Niri WM</span>
+                    </div>
+                    <!-- KDE Plasma (Using generic desktop icon or text) -->
+                    <div class="tech-item">
+                        <i class="fas fa-desktop" style="color: #1c7cd6;"></i>
+                        <span class="tech-name">KDE Plasma</span>
+                    </div>
+                    <div class="tech-item">
+                        <!-- Arch Linux SVG (Official) -->
+                        <svg viewBox="0 0 24 24" width="40" height="40" style="margin-bottom: 0.75rem;" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#1793d1" fill-rule="evenodd" d="M12 2L1 21.5h4.5l2-4h9l2 4H23L12 2zm0 5l3.5 8h-7L12 7zM7.5 19h9l-1 2h-7l-1-2z"/>
+                        </svg>
+                        <span class="tech-name">Arch Linux</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-vscode-plain colored"></i>
+                        <span class="tech-name">VS Code</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-cloud" style="color: #4db6ac;"></i>
+                        <span class="tech-name">Cloud</span>
                     </div>
                 </div>
             </div>
@@ -329,23 +326,24 @@
                     </div>
                 </div>
 
-                <!-- My KDE Dotfiles -->
+                <!-- Niri Minimal Dots -->
                 <div class="enhanced-card" data-category="linux">
                     <div class="project-image-wrapper">
-                        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="KDE Dotfiles Screenshot" class="project-img">
+                        <!-- Using raw github content for screenshot or placeholder if fails -->
+                        <img src="https://raw.githubusercontent.com/youngcoder45/New-Niri-minimal-dots/main/Screenshots/1.png" onerror="this.src='https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'" alt="Niri Minimal Dots Screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-tech-stack">
-                                <span class="tech-tag">Linux</span>
-                                <span class="tech-tag">KDE Plasma</span>
-                                <span class="tech-tag">Bash</span>
+                                <span class="tech-tag">Niri WM</span>
+                                <span class="tech-tag">Wayland</span>
+                                <span class="tech-tag">CSS</span>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">My KDE Dotfiles</h3>
-                        <p class="project-description">A comprehensive collection of configuration files and scripts to customize and optimize the KDE Plasma desktop environment on Arch Linux.</p>
+                        <h3 class="project-title">Niri Minimal Dots</h3>
+                        <p class="project-description">A highly configured, minimal, and aesthetic collection of dotfiles for the Niri scrollable tiling window manager. Featuring a clean "Noctalia" dark theme.</p>
                         <div class="project-links">
-                            <a href="https://github.com/youngcoder45/My-KDE-Dotfiles" class="btn-github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/youngcoder45/New-Niri-minimal-dots" class="btn-github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -393,24 +391,23 @@
                     </div>
                 </div>
 
-                <!-- Music Website -->
-                <div class="enhanced-card" data-category="web">
+                <!-- CodeVerse Linux Distro -->
+                <div class="enhanced-card" data-category="linux">
                     <div class="project-image-wrapper">
-                        <img src="assets/img/b1.png" alt="Music Website Screenshot" class="project-img">
+                        <img src="assets/img/b1.png" alt="CodeVerse Linux Distro Screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-tech-stack">
-                                <span class="tech-tag">HTML/CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Audio API</span>
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">Shell</span>
+                                <span class="tech-tag">Open Source</span>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Music Website</h3>
-                        <p class="project-description">An interactive music platform featuring artist profiles, albums, and a vibrant UI. Developed to deliver an immersive listening and discovery experience.</p>
+                        <h3 class="project-title">CodeVerse Linux Distro</h3>
+                        <p class="project-description">A community-driven Linux distribution developed by members of the CodeVerseHub server. Focused on collaboration and built entirely open-source.</p>
                         <div class="project-links">
-                            <a href="https://github.com/youngcoder45/MC_Error.me" class="btn-github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="https://mcerror.netlify.app/" class="btn-live" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Visit Site</a>
+                            <a href="https://github.com/TheCodeVerseHub/CodeVerseLinuxDistro" class="btn-github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -521,12 +518,12 @@
                                     Want to Become Like Me?
                                 </h2>
                                 <p class="community-description mb-4">
-                                    Join <strong>The Code Verse Hub</strong> - my exclusive Discord community for developers! We're a thriving community of <span class="highlight-text">800+ members</span> and growing very fast. Connect with like-minded developers, share your projects, get coding help, and level up your programming skills together.
+                                    Join <strong>The Code Verse Hub</strong> - my exclusive Discord community for developers! We're a thriving community of <span class="highlight-text">1100+ members</span> and growing very fast. Connect with like-minded developers, share your projects, get coding help, and level up your programming skills together.
                                 </p>
                                 <div class="community-features mb-4">
                                     <div class="feature-item">
                                         <i class="fas fa-users"></i>
-                                        <span>800+ Active Developers</span>
+                                        <span>1100+ Active Developers</span>
                                     </div>
                                     <div class="feature-item">
                                         <i class="fas fa-rocket"></i>
@@ -541,7 +538,7 @@
                                         <span>Networking & Collaboration</span>
                                     </div>
                                 </div>
-                                <a href="https://discord.gg/p4f25KSWfE" class="btn-discord" target="_blank" rel="noopener noreferrer">
+                                <a href="https://discord.gg/the-codeverse-hub-1263067254153805905" class="btn-discord" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-discord me-2"></i>
                                     Join The Code Verse Hub Today
                                 </a>
@@ -552,7 +549,7 @@
                                         <i class="fab fa-discord"></i>
                                     </div>
                                     <div class="member-count">
-                                        <span class="count-number counter" data-count="800">800</span>
+                                        <span class="count-number counter" data-count="1100">1100</span>
                                         <span class="count-label">+ Members</span>
                                     </div>
                                 </div>
@@ -663,7 +660,7 @@
                                     <a href="https://twitter.com/youngcoder45" class="contact-social" aria-label="Twitter">
                                         <i class="fab fa-twitter"></i>
                                     </a>
-                                    <a href="https://discord.gg/p4f25KSWfE" class="contact-social" aria-label="Discord">
+                                    <a href="https://discord.gg/the-codeverse-hub-1263067254153805905" class="contact-social" aria-label="Discord">
                                         <i class="fab fa-discord"></i>
                                     </a>
                                     <!-- Instagram -->
@@ -741,6 +738,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--  -->
     <script src="main.js"></script>
