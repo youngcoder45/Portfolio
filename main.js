@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     initProjectFilters();
     initCounters();
     initContactForm();
-    // initScrollAnimations();
+    initScrollAnimations();
     // initParallaxEffects();
     initResponsiveFeatures();
     // initEasterEggs();
     // initTimelineAnimations();
-    // initSectionRevealAnimations();
+    initSectionRevealAnimations();
 });
 
 // Removed Custom Cursor, Particles, and Tilt Effect for a cleaner, more professional look.
@@ -119,34 +119,34 @@ function initHeroParticles() {
         particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 60, // Reduced density for cleaner look
+                    "value": 100, // Increased density for tech feel
                     "density": {
                         "enable": true,
                         "value_area": 800
                     }
                 },
                 "color": {
-                    "value": "#ffffff" // Pure white
+                    "value": ["#ffffff", "#aaaaaa", "#4477aa"] // Multi-color particles
                 },
                 "shape": {
-                    "type": "circle",
+                    "type": ["circle", "triangle"], // Mixed shapes
                     "stroke": {
                         "width": 0,
                         "color": "#000000"
                     }
                 },
                 "opacity": {
-                    "value": 0.3, // Very subtle
+                    "value": 0.5,
                     "random": true,
                     "anim": {
                         "enable": true,
-                        "speed": 0.5, // Slow breathing effect
+                        "speed": 1,
                         "opacity_min": 0.1,
                         "sync": false
                     }
                 },
                 "size": {
-                    "value": 2, // Smaller particles
+                    "value": 3,
                     "random": true,
                     "anim": {
                         "enable": false
@@ -156,14 +156,14 @@ function initHeroParticles() {
                     "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
-                    "opacity": 0.15, // Faint lines
+                    "opacity": 0.2, // Stronger connections
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 1, // Slow movement
+                    "speed": 2, // Faster movement
                     "direction": "none",
-                    "random": false,
+                    "random": true, // Random movement
                     "straight": false,
                     "out_mode": "out",
                     "bounce": false,
@@ -177,7 +177,7 @@ function initHeroParticles() {
                 "events": {
                     "onhover": {
                         "enable": true,
-                        "mode": "grab" // Connect lines on hover
+                        "mode": "grab"
                     },
                     "onclick": {
                         "enable": true,
@@ -187,13 +187,13 @@ function initHeroParticles() {
                 },
                 "modes": {
                     "grab": {
-                        "distance": 140,
+                        "distance": 200, // Larger interaction radius
                         "line_linked": {
-                            "opacity": 0.5
+                            "opacity": 0.6
                         }
                     },
                     "push": {
-                        "particles_nb": 3
+                        "particles_nb": 4
                     }
                 }
             },
@@ -201,14 +201,31 @@ function initHeroParticles() {
         });
     }
 
-    // Animate hero text
-    const heroElements = document.querySelectorAll('.hero-text-animate');
-    heroElements.forEach((element, index) => {
-        setTimeout(() => {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }, index * 200);
-    });
+    // ReactBits-style Typing Effect
+    const typingElement = document.querySelector('.typing-text');
+    if (typingElement) {
+        const text = "Building intelligent systems and scalable web applications.";
+        typingElement.textContent = '';
+        
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                typingElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50); // Faster typing speed
+            } else {
+                // Add blinking cursor class if needed, or leave as is
+                typingElement.style.borderRight = '2px solid #4ade80';
+                setInterval(() => {
+                    typingElement.style.borderRightColor = 
+                        typingElement.style.borderRightColor === 'transparent' ? '#4ade80' : 'transparent';
+                }, 500);
+            }
+        }
+        
+        // Start typing after a short delay
+        setTimeout(typeWriter, 1000);
+    }
 }
 
 
@@ -415,7 +432,8 @@ function isValidEmail(email) {
 
 // ===== SCROLL ANIMATIONS =====
 function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.fade-in, .skill-category, .enhanced-card, .timeline-item, .stat-card');
+    // Only select elements NOT handled by section reveal
+    const animatedElements = document.querySelectorAll('.skill-category, .timeline-item');
     if (animatedElements.length === 0) return;
 
     const observer = new IntersectionObserver((entries) => {
