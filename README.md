@@ -1,4 +1,4 @@
-# Aditya Verma | Professional. Portfolio
+# Aditya Verma | Professional Portfolio
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/youngcoder45/deploy-status)](https://youngcoder45.netlify.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
