@@ -7,7 +7,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-> **A modern, responsive, and accessible portfolio website showcasing expertise in web development, AI/ML, and software engineering**
+> **A modern, responsive, and accessible portfolio website showcasing expertise in web development, AI/ML, and software engineering.**
 
 ** Live Demo:** [youngcoder45.netlify.app](https://youngcoder45.netlify.app/)
 
