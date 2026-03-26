@@ -548,7 +548,7 @@ copies of the Software...
 **Aditya Verma** - *Full Stack Developer & AI/ML Enthusiast*
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-youngcoder45.netlify.app-00bcd4?style=for-the-badge&logo=netlify&logoColor=white)](https://youngcoder45.netlify.app/)
-[![Email](https://img.shields.io/badge/Email-contact@aditya-verma.me-ff0364?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@aditya-verma.me)
+[![Email](https://img.shields.io/badge/Email-contact@aditya-verma.me?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@aditya-verma.me)
 [![GitHub](https://img.shields.io/badge/GitHub-youngcoder45-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/youngcoder45)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-aditya--verma-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aditya-verma-45a8b3250)
 [![Discord](https://img.shields.io/badge/Discord-CodeVerse%20Hub-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/3xKFvKhuGR)
