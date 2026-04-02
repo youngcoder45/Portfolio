@@ -1,0 +1,73 @@
+name: Good first issue
+description: Create a small, well-scoped task suitable for first-time contributors.
+title: "[Good First Issue]: "
+labels:
+  - good first issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to create a contributor-friendly task.
+        Keep it small, concrete, and easy to verify.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should be improved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this needed? Link related issues/PRs.
+    validations:
+      required: false
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Suggested files/areas
+      description: Point contributors to where changes likely belong.
+      placeholder: |
+        - index.html
+        - style.css
+        - main.js
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] …
+        - [ ] …
+        - [ ] …
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Maintainer checklist
+      options:
+        - label: Scope is small (1-2 files or a tiny change)
+          required: true
+        - label: Reproduction/verification steps are clear
+          required: true
+        - label: No sensitive information required
+          required: true

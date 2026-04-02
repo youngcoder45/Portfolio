@@ -1,0 +1,47 @@
+name: Security issue (do not disclose publicly)
+description: Use only if private reporting is not possible. Prefer SECURITY.md instructions.
+title: "[Security]: "
+labels:
+  - security
+body:
+  - type: markdown
+    attributes:
+      value: |
+        IMPORTANT: Please do NOT include vulnerability details in a public issue.
+
+        Preferred: follow the private reporting steps in SECURITY.md.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have read SECURITY.md and will not post sensitive details here.
+          required: true
+
+  - type: textarea
+    id: highlevel
+    attributes:
+      label: High-level summary (non-sensitive)
+      description: Briefly describe the general area affected without exploit details.
+      placeholder: "Potential XSS risk in … (details sent privately)"
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Private contact
+      description: How can we reach you for private follow-up?
+      placeholder: "email@example.com"
+    validations:
+      required: true
+
+  - type: textarea
+    id: private
+    attributes:
+      label: Private disclosure channel used
+      description: Tell us where you sent the full details (e.g., GitHub advisory, email).
+      placeholder: "Sent full report to contact@aditya-verma.me"
+    validations:
+      required: true

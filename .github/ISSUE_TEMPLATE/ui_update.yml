@@ -1,0 +1,65 @@
+name: UI update
+description: Request a visual/layout change or design adjustment.
+title: "[UI]: "
+labels:
+  - ui update
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for layout/visual changes (spacing, typography, colors, responsiveness, animations).
+
+  - type: input
+    id: area
+    attributes:
+      label: Which section/page?
+      placeholder: "Hero / About / Projects / Contact / Navbar"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior/appearance
+      placeholder: "Currently the card spacing …"
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired
+    attributes:
+      label: Desired behavior/appearance
+      placeholder: "Change it so that …"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / mockups
+      description: Attach images or links that show the desired outcome.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - Cosmetic (nice-to-have)
+        - Usability improvement
+        - Accessibility improvement
+        - Responsive/mobile fix
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Looks good at 320px width
+        - [ ] No layout shift introduced
+        - [ ] Keyboard navigation unaffected
+    validations:
+      required: true

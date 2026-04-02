@@ -7,28 +7,30 @@
 
 > **A modern, responsive, and accessible portfolio website showcasing expertise in web development, AI/ML, and software engineering.**
 
-** Live Demo:** [youngcoder45.netlify.app](https://youngcoder45.netlify.app/)
+**Live Demo:** https://youngcoder45.netlify.app/
 
 ---
 
 ## Table of Contents
 
-- [ Overview](#-overview)
-- [ Features](#-features)
-- [ Tech Stack](#-tech-stack)
-- [ Architecture](#-architecture)
-- [ Getting Started](#-getting-started)
-- [ Project Structure](#-project-structure)
-- [ Design System](#-design-system)
-- [ Performance](#-performance)
-- [ Accessibility](#-accessibility)
-- [ Responsive Design](#-responsive-design)
-- [ Configuration](#-configuration)
-- [ Deployment](#-deployment)
-- [ Analytics & SEO](#-analytics--seo)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Contact](#-contact)
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Design System](#design-system)
+- [Performance](#performance)
+- [Accessibility](#accessibility)
+- [Responsive Design](#responsive-design)
+- [Configuration](#configuration)
+- [Deployment](#deployment)
+- [Analytics & SEO](#analytics--seo)
+- [Changelog](#changelog)
+- [Security](#security)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ---
 
@@ -176,8 +178,8 @@ Portfolio Architecture
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/youngcoder45/portfolio.git
-   cd portfolio
+  git clone https://github.com/youngcoder45/Personal-Portfolio.git
+  cd Personal-Portfolio
    ```
 
 2. **Open in development environment**
@@ -209,32 +211,26 @@ Portfolio Architecture
 ## Project Structure
 
 ```
-portfolio/
-├── index.html              # Main HTML file
-├── style.css               # Main stylesheet
-├── main.js                 # JavaScript functionality
-├── coder.png               # Favicon and brand logo
-├── 404.html                # Custom error page
-├── sitemap.xml             # SEO sitemap
-├── README.md               # Project documentation
-│
-├── assets/                 # Static assets
-│   ├── img/                # Images and graphics
-│   │   ├── b1.jpg → b8.jpg    # Project screenshots
-│   │   ├── favicon.jpg        # Browser favicon
-│   │   └── service/        # Service icons
-│   │       ├── icon-*.svg     # Feature icons
-│   │       └── service-icon-bg.svg
-│   │
-│   └── css/                # Additional stylesheets
-│       ├── animate.css        # Animation library
-│       ├── main.css           # Core styles
-│       └── responsive.css     # Mobile optimizations
-│
-└── docs/                   # Documentation (optional)
-    ├── CHANGELOG.md           # Version history
-    ├── CONTRIBUTING.md        # Contribution guidelines
-    └── DEPLOYMENT.md          # Deployment instructions
+Personal-Portfolio/
+├── index.html                     # Main page
+├── style.css                      # Main styles
+├── main.js                        # Main scripts
+├── particles.min.js               # Particles library
+├── 404.html                       # Custom 404 page
+├── _redirects                     # Netlify redirects
+├── robots.txt                     # Robots rules
+├── sitemap.xml                    # SEO sitemap
+├── BingSiteAuth.xml               # Search engine verification
+├── google*.html                   # Search engine verification
+├── README.md                      # Documentation
+├── CHANGELOG.md                   # Version history
+├── CONTRIBUTING.md                # Contribution guidelines
+├── SECURITY.md                    # Security policy
+├── assets/
+│   └── img/
+│       └── me.png
+└── .github/
+  └── ISSUE_TEMPLATE/            # GitHub issue templates
 ```
 
 ---
@@ -428,9 +424,6 @@ const CONFIG = {
 
 ### **Manual Deployment**
 ```bash
-# Build for production
-npm run build  # (if using build tools)
-
 # Deploy to any static hosting
 1. Upload files to web server
 2. Configure domain and SSL
@@ -488,21 +481,21 @@ npm run build  # (if using build tools)
 
 ---
 
+## Changelog
+
+All notable changes are documented in [CHANGELOG.md](CHANGELOG.md).
+
+---
+
+## Security
+
+Security policy and reporting instructions live in [SECURITY.md](SECURITY.md).
+
+---
+
 ## Contributing
 
-### **How to Contribute**
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### **Contribution Guidelines**
-- Follow existing code style and conventions
-- Write meaningful commit messages
-- Test your changes thoroughly
-- Update documentation if needed
-- Ensure accessibility compliance
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development workflow, style guidance, and how to propose changes.
 
 ### **Code Style**
 ```javascript
@@ -525,19 +518,7 @@ npm run build  # (if using build tools)
 
 ## License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 Aditya Verma
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software...
-```
+This project is licensed under the **BSD 2-Clause License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -568,7 +549,7 @@ copies of the Software...
 
 *If you found this project helpful, please consider giving it a *
 
-**[ Back to Top](#-aditya-verma--professional-portfolio)**
+**[Back to Top](#aditya-verma--professional-portfolio)**
 
 ---
 
