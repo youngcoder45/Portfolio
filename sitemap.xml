@@ -14,66 +14,8 @@
       <image:caption>Professional portfolio of Aditya Verma (YoungCoder45)</image:caption>
     </image:image>
   </url>
-  
-  <!-- Main Page Sections (for deep linking and SEO) -->
-  <url>
-    <loc>https://aditya-verma.me/#about</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://aditya-verma.me/#skills</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://aditya-verma.me/#projects</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://aditya-verma.me/#experience</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://aditya-verma.me/#community</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.7</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://aditya-verma.me/#blog</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://aditya-verma.me/#contact</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <!-- Alternative format (for legacy browsers) -->
-  <url>
-    <loc>https://aditya-verma.me/index.html</loc>
-    <lastmod>2026-02-26</lastmod>
-    <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <!-- Static Assets (if you want to include them) -->
+
+  <!-- Static Assets -->
   <url>
     <loc>https://aditya-verma.me/coder.png</loc>
     <lastmod>2026-02-26</lastmod>
