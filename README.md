@@ -41,7 +41,7 @@ This portfolio represents a comprehensive showcase of my journey as a **Full Sta
 ### Key Highlights
 
 - **4+ Years** of development experience
-- **160+ Projects** completed across multiple technologies
+- **60+ Projects** completed across multiple technologies
 - **10+ Programming Languages** proficiency
 - **Modern Web Standards** compliance
 - **Accessibility First** approach
