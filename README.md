@@ -7,7 +7,7 @@
 
 > **A modern, responsive, and accessible portfolio website showcasing expertise in web development, AI/ML, and software engineering.**
 
-**Live Demo:** https://youngcoder45.netlify.app/
+**Live Demo:** https://aditya-verma.me/
 
 ---
 
@@ -194,7 +194,7 @@ Portfolio Architecture
 3. **Access the application**
    ```
    Local Development: http://localhost:5500
-   Production: https://youngcoder45.netlify.app/
+  Production: https://aditya-verma.me/
    ```
 
 ### **Development Workflow**
@@ -528,7 +528,7 @@ This project is licensed under the **BSD 2-Clause License** - see the [LICENSE](
 
 **Aditya Verma** - *Full Stack Developer & AI/ML Enthusiast*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-youngcoder45.netlify.app-00bcd4?style=for-the-badge&logo=netlify&logoColor=white)](https://youngcoder45.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-aditya--verma.me-00bcd4?style=for-the-badge&logo=netlify&logoColor=white)](https://aditya-verma.me/)
 [![Email](https://img.shields.io/badge/Email-contact@aditya-verma.me?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@aditya-verma.me)
 [![GitHub](https://img.shields.io/badge/GitHub-youngcoder45-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/youngcoder45)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-aditya--verma-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aditya-verma-45a8b3250)
@@ -553,6 +553,6 @@ This project is licensed under the **BSD 2-Clause License** - see the [LICENSE](
 
 ---
 
-**Built with by [Aditya Verma](https://youngcoder45.netlify.app/) | 2025 All Rights Reserved**
+**Built with by [Aditya Verma](https://aditya-verma.me/) | 2025 All Rights Reserved**
 
 </div>

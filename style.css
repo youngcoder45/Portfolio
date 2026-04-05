@@ -799,13 +799,6 @@ a:hover {
   .footer-links .mx-2 {
     display: none;
   }
-
-  .back-to-top {
-    bottom: 16px !important;
-    right: 16px !important;
-    padding: 8px 12px;
-    font-size: 1.2rem;
-  }
 }
 
 .hero-bg-gradient {
@@ -2508,11 +2501,6 @@ textarea.form-control-new {
 
   .footer-links .mx-2 {
     display: none;
-  }
-
-  .back-to-top {
-    bottom: 16px !important;
-    right: 16px !important;
   }
 }
 

@@ -1,0 +1,32 @@
+# aditya-verma.me
+
+This is the personal portfolio website of Aditya Verma (YoungCoder45).
+
+## Primary URL
+https://aditya-verma.me/
+
+## What this site contains
+- About: background and mission
+- Skills/Tech Stack: tools and technologies
+- Projects: featured projects with links
+- Experience: timeline + stats
+- Community: Discord community details
+- Writing: links to blog/articles
+- Contact: contact form and social links
+
+## Navigation
+This is a single-page site. Use section anchors:
+- https://aditya-verma.me/#about
+- https://aditya-verma.me/#skills
+- https://aditya-verma.me/#projects
+- https://aditya-verma.me/#experience
+- https://aditya-verma.me/#community
+- https://aditya-verma.me/#blog
+- https://aditya-verma.me/#contact
+
+## Sitemap
+https://aditya-verma.me/sitemap.xml
+
+## Notes
+- Preferred language: English
+- Contact: use the contact form at #contact

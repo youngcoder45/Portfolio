@@ -11,10 +11,26 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
     // initParallaxEffects();
     initResponsiveFeatures();
+    initEmailObfuscation();
     // initEasterEggs();
     // initTimelineAnimations();
     initSectionRevealAnimations();
 });
+
+function initEmailObfuscation() {
+    const emailLinks = document.querySelectorAll('.email-obfuscated');
+    if (emailLinks.length === 0) return;
+
+    emailLinks.forEach((link) => {
+        const user = link.getAttribute('data-user');
+        const domain = link.getAttribute('data-domain');
+        if (!user || !domain) return;
+
+        const email = `${user}@${domain}`;
+        link.textContent = email;
+        link.setAttribute('href', `mailto:${email}`);
+    });
+}
 
 // Removed Custom Cursor, Particles, and Tilt Effect for a cleaner, more professional look.
 
@@ -786,22 +802,7 @@ if(newsletterForm) {
 }
 
 // === DYNAMIC FEATURES INIT ===
-// Removed legacy jQuery and particles.js dependencies in favor of modern vanilla JS implementations
-
-  var offset = 200;
-  var duration = 500;
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > offset) {
-      $('.back-to-top').fadeIn(400);
-    } else {
-      $('.back-to-top').fadeOut(400);
-    }
-  });
-  $('.back-to-top').on('click',function(event) {
-    event.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 600);
-    return false;
-  });
+// Legacy jQuery-based behaviors removed (jQuery is not loaded)
 // STAGGERED BADGE ANIMATION
 (function() {
   var badges = document.querySelectorAll('.hero-badges .badge, .about-badges-animated .about-badge');
@@ -815,60 +816,6 @@ if(newsletterForm) {
     }, 200 + i*180);
   });
 })();
-
-document.addEventListener('DOMContentLoaded', function () {
-  // Navbar: Smooth scroll and active link
-  if (typeof $ === 'function') {
-    $('.navbar-nav a.nav-link').on('click', function (e) {
-      var target = $(this.getAttribute('href'));
-      if (target.length) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: target.offset().top - 60 }, 800);
-      }
-    });
-    // Highlight active nav link on scroll
-    $(window).on('scroll', function () {
-      var scrollPos = $(document).scrollTop();
-      $('.navbar-nav a.nav-link').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr('href'));
-        if (refElement.position() && refElement.position().top - 80 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-          $('.navbar-nav a.nav-link').removeClass('active');
-          currLink.addClass('active');
-        }
-      });
-    });
-  }
-
-  // Form validation (basic)
-  var contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      var valid = true;
-      var inputs = contactForm.querySelectorAll('input, textarea');
-      inputs.forEach(function (input) {
-        if (!input.value) {
-          valid = false;
-          input.classList.add('is-invalid');
-        } else {
-          input.classList.remove('is-invalid');
-        }
-      });
-      if (!valid) {
-        e.preventDefault();
-      }
-    });
-  }
-
-  // Burger menu for mobile (if present)
-  var burger = document.querySelector('.navbar-toggler');
-  var navCollapse = document.getElementById('navbarCollapse');
-  if (burger && navCollapse) {
-    burger.addEventListener('click', function () {
-      navCollapse.classList.toggle('show');
-    });
-  }
-});
 
 // ===== TIMELINE ANIMATION (TRUE SEQUENTIAL) =====
 function initTimelineAnimations() {
