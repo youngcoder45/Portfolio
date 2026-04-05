@@ -9,7 +9,7 @@
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
     <image:image>
-      <image:loc>https://aditya-verma.me/coder.png</image:loc>
+      <image:loc>https://aditya-verma.me/assets/img/me.png</image:loc>
       <image:title>Aditya Verma - Portfolio</image:title>
       <image:caption>Professional portfolio of Aditya Verma (YoungCoder45)</image:caption>
     </image:image>
@@ -17,10 +17,10 @@
 
   <!-- Static Assets -->
   <url>
-    <loc>https://aditya-verma.me/coder.png</loc>
+    <loc>https://aditya-verma.me/assets/img/me.png</loc>
     <lastmod>2026-02-26</lastmod>
     <priority>0.3</priority>
-    <changefreq>rarely</changefreq>
+    <changefreq>yearly</changefreq>
   </url>
   
   <url>
